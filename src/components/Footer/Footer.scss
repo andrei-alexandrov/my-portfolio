@@ -1,0 +1,34 @@
+@import "../../variables";
+
+.footer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    margin-top: -7rem;
+
+    .footer-text {
+        color: $black;
+    }
+
+    .footer-wrapper {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 9rem;
+    }
+
+    .icons>a>svg {
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+        transition: transform 1s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+        }
+    }
+}

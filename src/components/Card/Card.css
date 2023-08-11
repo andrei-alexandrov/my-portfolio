@@ -1,0 +1,178 @@
+.container {
+    position: relative;
+    display: flex;
+    padding: 57px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 180px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 420px;
+}
+
+.card .lines {
+    position: absolute;
+    inset: 0;
+    background: rgb(105, 107, 92);
+    overflow: hidden;
+}
+
+.card .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #FCA61F, #FCA61F, #FCA61F, transparent);
+    animation: animate 4s linear infinite;
+}
+
+.card:hover .lines::before {
+    animation-play-state: running;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #fafafa;
+}
+
+.dark-mode .card .lines::after {
+    background: #0c0c0c;
+    /* background: #232d48; */
+}
+
+.card .imgBx {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    will-change: transform;
+    background-color: rgb(245, 242, 242);
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.card:hover .imgBx {
+    top: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+.card:hover .imgBx::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(transparent, #fba61e, #000000, #fba61e, transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .imgBx::before {
+    animation-play-state: running;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.card:hover .imgBx::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #c7c0c0;
+}
+
+.card .imgBx img {
+    position: absolute;
+    width: 192px;
+    height: 192px;
+    z-index: 1;
+    opacity: 0.5s;
+    transition: 0.5;
+}
+
+.card:hover .imgBx img {
+    opacity: 1;
+}
+
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 102%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details {
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(25px);
+}
+
+.card:hover .content .details {
+    transform: translateY(0px);
+}
+
+.card:hover .content .details h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: orange;
+    line-height: 1.2em;
+}
+
+.card:hover .content .details p {
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover:hover .content .details p {
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: auto;
+    }
+}

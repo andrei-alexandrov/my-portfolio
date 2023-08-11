@@ -1,0 +1,13 @@
+@import "./variables";
+
+.App {
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+@media screen and (max-width: 480px) {
+    .App {
+        padding: 0.5rem 1rem;
+    }
+}
