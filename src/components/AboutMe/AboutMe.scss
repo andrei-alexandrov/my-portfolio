@@ -110,3 +110,61 @@
         left: -3rem;
     }
 }
+
+@media screen and (min-width: 1600px) {
+   
+    .about-me-wrapper {
+        height: 80vh;
+        margin-top: 5rem;
+       
+    }
+
+    .about-me-left-side {
+        gap: 3rem;
+      
+
+        .about-me-name {
+            > :nth-child(1),
+            > :nth-child(2) {
+                font-size: 4rem;
+            }
+
+            > :nth-child(3) {
+                font-size: 24px;
+             
+            }
+        }
+
+        .surprise-message {
+            gap: 3rem;
+            
+        }
+
+        .cocktail-btn {
+            width: 18rem;
+            
+        }
+
+        .about-me-img-wrapper>a>img {
+            height: 3rem;
+           
+            margin-right: 1.5rem;
+           
+            bottom: 9rem;
+          
+        }
+    }
+
+    .about-me-right-side {
+        .person {
+            width: 280px;
+            height: 280px;
+
+        }
+
+        .orange-splash {
+            width: 130px;
+            height: 130px;
+        }
+    }
+}

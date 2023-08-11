@@ -122,7 +122,7 @@ export default function Projects() {
                 iconscout/react-unicorns, tsparticles, thecocktaildb API.
             </div>
             <div className="link-content">Source code:
-                <a href="#" target='_blank'>
+                <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank'>
                     <img src={Github} alt="Github image" />
                 </a>
             </div>

@@ -82,3 +82,64 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 1600px) {
+
+
+    .navbar-left-side {
+        .navbar-name {
+            font-size: 1.5rem;
+        }
+    }
+
+    .navbar-right-side {
+        .navbar-list {
+            gap: 3rem;
+
+            margin-right: 6rem;
+
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .navbar-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+
+        height: auto;
+    }
+
+    .navbar-left-side {
+        margin-bottom: 1rem;
+
+
+        .navbar-name {
+            font-size: 1.5rem;
+
+        }
+    }
+
+    .navbar-right-side {
+        justify-content: flex-start;
+
+        margin-top: 1rem;
+
+        .navbar-list {
+            flex: 1;
+
+            gap: 1rem;
+
+            margin-right: 0;
+
+        }
+    }
+
+    .navbar-btn {
+        display: block;
+        width: 100%;
+
+    }
+}
