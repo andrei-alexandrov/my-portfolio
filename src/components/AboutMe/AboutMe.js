@@ -16,7 +16,7 @@ export default function AboutMe({ darkMode }) {
 
     const handleCocktail = async () => {
         try {
-            const response = await fetch("https:thecocktaildb.com/api/json/v1/1/random.php");
+            const response = await fetch("https://thecocktaildb.com/api/json/v1/1/random.php");
             if (response.ok) {
                 const data = await response.json();
                 console.log(data);
