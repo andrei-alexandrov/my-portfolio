@@ -7,7 +7,6 @@
     height: 10vh;
     color: $orange;
     position: relative;
-    z-index: 10;
 
     .navbar-left-side {
         flex: 1;
@@ -41,7 +40,6 @@
             list-style-type: none;
             cursor: pointer;
 
-
             li {
                 transition: transform 1.5s;
 
@@ -60,86 +58,121 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    .navbar-wrapper {
-        flex-direction: column;
-        align-items: start;
-        height: auto;
-    }
-
-    .navbar-right-side {
-        flex: initial;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-
-    .navbar-btn {
-        display: block;
-    }
-
-    .navbar-list {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1600px) {
-
-
-    .navbar-left-side {
-        .navbar-name {
-            font-size: 1.5rem;
-        }
-    }
-
-    .navbar-right-side {
-        .navbar-list {
-            gap: 3rem;
-
-            margin-right: 6rem;
-
-        }
-    }
-}
-
+//TODO 480px
 @media screen and (max-width: 480px) {
-
-
     .navbar-wrapper {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+        color: $orange;
+        position: relative;
 
-        height: auto;
-    }
+        .navbar-left-side {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
 
-    .navbar-left-side {
-        margin-bottom: 1rem;
+            .navbar-name {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+        }
 
+        .navbar-right-side {
+            .navbar-list {
+                right: -1.3rem;
+            }
+        }
 
-        .navbar-name {
-            font-size: 1.5rem;
-
+        .navbar-btn {
+            @include button();
+            //TODO
         }
     }
+}
 
-    .navbar-right-side {
-        justify-content: flex-start;
+// @media screen and (max-width: 768px) {
 
-        margin-top: 1rem;
+//     .navbar-wrapper {
+//         flex-direction: column;
+//         align-items: start;
+//         height: auto;
+//     }
 
-        .navbar-list {
+//     .navbar-right-side {
+//         flex: initial;
+//         justify-content: center;
+//         margin-top: 1rem;
+//     }
+
+//     .navbar-btn {
+//         display: block;
+//     }
+
+//     .navbar-list {
+//         display: none;
+//     }
+// }
+
+@media screen and (min-width: 1600px) {
+    .navbar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+        color: $orange;
+        position: relative;
+
+        .navbar-left-side {
             flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
 
-            gap: 1rem;
-
-            margin-right: 0;
-
+            .navbar-name {
+                font-size: 2.3rem;
+                font-weight: bold;
+            }
         }
-    }
 
-    .navbar-btn {
-        display: block;
-        width: 100%;
+        .navbar-right-side {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
 
+            .navbar-list {
+                flex: 1;
+                position: relative;
+                right: 2rem;
+            }
+
+            .navbar-list>ul {
+                display: flex;
+                gap: 2rem;
+                margin-right: 4rem;
+                list-style-type: none;
+                cursor: pointer;
+                font-size: 2.3rem;
+
+                li {
+                    transition: transform 1.5s;
+
+                    &:hover {
+                        color: $orange;
+                        transform: scale(1.3);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .navbar-btn {
+            @include button();
+            margin-top: 12px;
+            height: 3.5rem;
+            width: 12rem;
+            font-size: 22px;
+        }
     }
 }

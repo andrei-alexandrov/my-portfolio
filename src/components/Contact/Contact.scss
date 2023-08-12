@@ -58,6 +58,7 @@
     }
 }
 
+//TODO
 @media screen and (max-width: 480px) {
     .contact-form {
         flex-direction: column;
@@ -88,16 +89,69 @@
     }
 }
 
-@media screen and (max-width: 1600px) {
+//TODO
+@media screen and (min-width: 481px) and (max-width: 111141px) {
+    .button {
+        @include button();
+        z-index: 1500;
+    }
+}
+
+@media screen and (min-width: 1600px) {
     .contact-form {
-        margin-top: 4rem;
-       
+        margin-top: 10rem;
         height: 60vh;
-  
+
+        .title>:nth-child(1) {
+            color: $black;
+            font-weight: bold;
+            font-size: 5rem;
+        }
+
+        .title>:nth-child(2) {
+            color: $orange;
+            font-weight: bold;
+            font-size: 5rem;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex: 1;
+            margin-top: 1.5rem;
+        }
 
         .form>form {
-            margin-left: 4rem;
-           
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            margin-left: 8rem;
+        }
+
+        .form .user {
+            width: 28rem;
+            height: 2.8rem;
+            pad: 0.3em;
+            outline: none;
+            border: 2px solid $orange;
+            border-radius: 8px;
+            font-size: 23px;
+        }
+
+        textarea {
+            height: 9rem !important;
+        }
+
+        .button {
+            @include button();
+            height: 3.5rem;
+            width: 12rem;
+            font-size: 20px;
+            position: relative;
+            top: 2rem;
+            z-index: 500;
         }
     }
 }

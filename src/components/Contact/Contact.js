@@ -19,7 +19,7 @@ export default function Contact() {
                 form.current.reset();
                 setTimeout(() => {
                     setDone(false);
-                }, 9000);
+                }, 12000);
             })
             .catch((error) => {
                 console.log("Error sending email:", error.text);

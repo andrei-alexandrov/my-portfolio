@@ -15,7 +15,7 @@ export default function ToggleTheme() {
 
   return (
     <div>
-      <span style={{ fontSize: 20 }}>toggle</span>
+      <div className='toggle-navbar-text'>toggle</div>
       <div>
         <div className='toggle' onClick={handleClick}>
           <Moon />

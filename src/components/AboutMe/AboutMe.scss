@@ -42,8 +42,8 @@
             gap: 4rem;
 
             img {
-                width: 11rem;
-                height: 11rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 1.5rem;
             }
         }
@@ -58,7 +58,7 @@
             margin-right: 1rem;
             transition: transform 1s;
             position: relative;
-            bottom: 8rem;
+            bottom: 5rem;
 
             &:hover {
                 cursor: pointer;
@@ -95,76 +95,163 @@
     }
 }
 
+//TODO 480px
 @media screen and (max-width: 480px) {
     .about-me-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 64rem;
-        gap: 7rem;
-    }
 
-    .about-me-right-side {
-        transform: scale(0.8rem);
-        left: -3rem;
+        .about-me-left-side {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            display: 1;
+            flex-direction: column;
+            gap: 2rem;
+
+            .about-me-name {
+                margin-top: 12rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .about-me-name>:nth-child(1) {
+                color: $black;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+
+            .about-me-name>:nth-child(2) {
+                color: $orange;
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+
+            .about-me-name>:nth-child(3) {
+                font-weight: 100;
+                font-size: 18px;
+                color: $gray;
+                margin-top: 10px;
+            }
+
+            .surprise-message {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                img {
+                    position: relative;
+                    left: 1rem;
+                    width: 8rem;
+                    height: 8rem;
+                    border-radius: 1.5rem;
+                }
+            }
+
+            .cocktail-btn {
+                @include button();
+                width: 16rem;
+                position: relative;
+                left: 0.6rem;
+            }
+
+            .about-me-img-wrapper>a>img {
+                height: 2.5rem;
+                // transition: transform 1s;
+                top: 1rem;
+                left: 6.2rem;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.3);
+                }
+            }
+        }
+
+        .about-me-right-side {
+
+            .orange-splash {
+                width: 10px;
+                height: 10px;
+                object-fit: contain;
+                position: absolute;
+                top: 3%;
+                left: -46%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 }
 
 @media screen and (min-width: 1600px) {
-   
     .about-me-wrapper {
         height: 80vh;
         margin-top: 5rem;
-       
-    }
 
-    .about-me-left-side {
-        gap: 3rem;
-      
-
-        .about-me-name {
-            > :nth-child(1),
-            > :nth-child(2) {
-                font-size: 4rem;
-            }
-
-            > :nth-child(3) {
-                font-size: 24px;
-             
-            }
-        }
-
-        .surprise-message {
+        .about-me-left-side {
             gap: 3rem;
-            
-        }
 
-        .cocktail-btn {
-            width: 18rem;
-            
+            .about-me-name {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .about-me-name>:nth-child(1) {
+                color: $black;
+                font-weight: bold;
+                font-size: 5rem;
+            }
+
+            .about-me-name>:nth-child(2) {
+                color: $orange;
+                font-weight: bold;
+                font-size: 5rem;
+            }
+
+            .about-me-name>:nth-child(3) {
+                font-weight: 100;
+                font-size: 30px;
+                color: $gray;
+                margin-top: 10px;
+            }
+
+            .surprise-message {
+                display: flex;
+                gap: 4rem;
+
+                img {
+                    width: 15rem;
+                    height: 15rem;
+                    border-radius: 1.5rem;
+                }
+            }
+
+            .cocktail-btn {
+                @include button();
+                width: 20rem;
+                height: 3.5rem;
+                font-size: 22px;
+            }
+
+            .about-me-img-wrapper>a>img {
+                height: 3.8rem;
+                margin-right: 1rem;
+                transition: transform 1s;
+                position: relative;
+                bottom: 8rem;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.3);
+                }
+            }
         }
 
         .about-me-img-wrapper>a>img {
             height: 3rem;
-           
             margin-right: 1.5rem;
-           
             bottom: 9rem;
-          
-        }
-    }
-
-    .about-me-right-side {
-        .person {
-            width: 280px;
-            height: 280px;
-
-        }
-
-        .orange-splash {
-            width: 130px;
-            height: 130px;
         }
     }
 }

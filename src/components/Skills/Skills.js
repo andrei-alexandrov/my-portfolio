@@ -28,14 +28,17 @@ export default function Skills() {
                 <div className="skills-left-side">
                     <div className="skills-details">
                         <span style={{ color: "#232d48" }}>My <span style={{ color: "#FCA61F" }}>Skills</span></span>
-                        <span>JavaScript ES2015+ features <br />React.js <br />
+                        <span>
+                            JavaScript ES2015+ features <br />React.js <br />
                             HTML5, CSS3, SASS, Bootstrap, <br />
                             DOM/BOM, OOP, MVC, HTTP, AJAX - Promises and fetch/axios<br />
                             Error handling <br />
                             Responsive design basics<br />
                             Git/Github</span>
-                        <span style={{ color: "#FCA61F" }}>Education:</span>
-                        <div style={{ color: "#788097" }}>2022- 2023 IT Talents training camp</div>
+                        <div className="education">
+                            <span style={{ color: "#FCA61F" }}>Education:</span>
+                            <div style={{ color: "#788097" }}>2022- 2023 IT Talents training camp</div>
+                        </div>
                         <Link spy={true} to='Contact' smooth={true} offset={-30}>
                             <button className="contact-btn">Contact me</button>
                         </Link>
