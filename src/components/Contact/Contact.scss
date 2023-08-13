@@ -29,14 +29,14 @@
         justify-content: center;
         position: relative;
         flex: 1;
-    }
 
-    .form>form {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-        margin-left: 8rem;
+        >form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            margin-left: 8rem;
+        }
     }
 
     .form .user {
@@ -47,6 +47,7 @@
         border: 2px solid $orange;
         border-radius: 8px;
         font-size: 16px;
+        padding-left: 8px;
     }
 
     textarea {
@@ -85,6 +86,10 @@
             form {
                 margin: 0;
             }
+
+            .user {
+                padding-left: 8px;
+            }
         }
     }
 }
@@ -114,22 +119,6 @@
             font-size: 5rem;
         }
 
-        .form {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            flex: 1;
-            margin-top: 1.5rem;
-        }
-
-        .form>form {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            align-items: center;
-            margin-left: 8rem;
-        }
-
         .form .user {
             width: 28rem;
             height: 2.8rem;
@@ -138,10 +127,11 @@
             border: 2px solid $orange;
             border-radius: 8px;
             font-size: 23px;
+            padding-left: 8px;
         }
 
         textarea {
-            height: 9rem !important;
+            height: 10rem !important;
         }
 
         .button {
@@ -150,7 +140,7 @@
             width: 12rem;
             font-size: 20px;
             position: relative;
-            top: 2rem;
+            top: 1rem;
             z-index: 500;
         }
     }

@@ -15,7 +15,6 @@ export default function ToggleTheme() {
 
   return (
     <div>
-      <div className='toggle-navbar-text'>toggle</div>
       <div>
         <div className='toggle' onClick={handleClick}>
           <Moon />

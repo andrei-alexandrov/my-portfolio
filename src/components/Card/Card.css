@@ -1,9 +1,7 @@
 .container {
-    position: relative;
     display: flex;
     padding: 57px 10px;
     justify-content: center;
-    align-items: center;
 }
 
 .card {
@@ -22,6 +20,7 @@
     inset: 0;
     background: rgb(105, 107, 92);
     overflow: hidden;
+    /* border-radius: 10px; */
 }
 
 .card .lines::before {
@@ -58,7 +57,6 @@
 
 .dark-mode .card .lines::after {
     background: #0c0c0c;
-    /* background: #232d48; */
 }
 
 .card .imgBx {
@@ -76,6 +74,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    border: 2px solid;
 }
 
 .card:hover .imgBx {
@@ -111,24 +110,10 @@
     }
 }
 
-.card:hover .imgBx::after {
-    content: "";
-    position: absolute;
-    inset: 4px;
-    background: #c7c0c0;
-}
-
 .card .imgBx img {
     position: absolute;
     width: 192px;
     height: 192px;
-    z-index: 1;
-    opacity: 0.5s;
-    transition: 0.5;
-}
-
-.card:hover .imgBx img {
-    opacity: 1;
 }
 
 .card .content {
@@ -138,19 +123,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    overflow: hidden;
 }
 
 .card .content .details {
     padding: 30px 20px;
     text-align: center;
-    width: 100%;
-    transition: 0.5s;
-    transform: translateY(25px);
-}
-
-.card:hover .content .details {
-    transform: translateY(0px);
 }
 
 .card:hover .content .details h2 {
@@ -160,20 +137,14 @@
     line-height: 1.2em;
 }
 
-.card:hover .content .details p {
-    color: #fff;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.card:hover:hover .content .details p {
-    opacity: 1;
-}
-
-/* //TODO 480px */
+/* TODO 480px */
 @media screen and (max-width: 480px) {
     .card {
-        display: none;
+        position: relative;
+        width: 330px;
+        height: 170px;
+        transition: 0.5s;
+        left: 0.6rem;
     }
 }
 

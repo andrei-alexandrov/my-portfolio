@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import { motion } from "framer-motion"
+import { themeContext } from "../../Context"
 
 import Card from "../Card/Card"
 import Github from "../../images/github.png"
@@ -10,7 +11,10 @@ import OrangeShape from "../../images/orangeShape.png"
 import "./AboutMe.scss"
 import "../../index.scss"
 
-export default function AboutMe({ darkMode }) {
+export default function AboutMe() {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     const transition = { duration: 2, type: 'linear' };
     const [cocktail, setCocktail] = useState("");
 
@@ -26,10 +30,10 @@ export default function AboutMe({ darkMode }) {
                     console.error("No cocktail data found.");
                 }
             } else {
-                console.error("Error fetching joke. Status:", response.status);
+                console.error("Error fetching cocktail. Status:", response.status);
             }
         } catch (error) {
-            console.error("Error fetching joke:", error);
+            console.error("Error fetching cocktail:", error);
         }
     };
 
@@ -40,22 +44,22 @@ export default function AboutMe({ darkMode }) {
     return (
         <div className="about-me-wrapper">
             <div className="about-me-left-side">
-                <div className="about-me-name">
-                    <span>Hello, i Am</span>
+                <div className="about-me">
+                    <span style={{ color: darkMode ? '#edebe8' : '' }} >Hello, I am</span>
                     <span>Andrei Alexandrov</span>
                     <span>
-                        Frontend developer with JavaScript and React.js, based in Sofia/Bulgaria.<br />
+                        Front-end developer with JavaScript and React.js, based in Sofia, Bulgaria.<br />
                         <br />
                         Detail-oriented with a creative mind.<br />
                         Mostly attracted to web/app design and UX, <br />
                         but have also willingness to learn new concepts and technologies. <br />
                         <br />
-                        Excited to gain more IT knowledge, <br />
-                        I am eager to contribute my skills and creativity to a dynamic team.
+                        I am passionate about furthering my IT knowledge <br />
+                        and developing my skills and creativity as part of a dynamic team.
                     </span>
                 </div>
 
-                <div className="surprise-message">
+                <div className="btn-message">
                     <button className="cocktail-btn" onClick={handleCocktail}>Click for a random cocktail</button>
                     {cocktail && <img src={cocktail} alt="Cocktail" />}
                 </div>
@@ -71,7 +75,6 @@ export default function AboutMe({ darkMode }) {
                         <img src={Instagram} alt="Instagram icon" />
                     </a>
                 </div>
-
             </div>
 
             <div className="about-me-right-side">
@@ -80,12 +83,7 @@ export default function AboutMe({ darkMode }) {
                     initial={{ left: '-87%' }}
                     whileInView={{ left: '-43%' }}
                     transition={transition}
-                    className="orange-splash" src={OrangeShape} alt="rocket-image" />
-            </div>
-
-            <div>
-                <div className="blur-right" ></div>
-                <div className="blur-bottom"></div>
+                    className="orange-splash" src={OrangeShape} alt="splash-image" />
             </div>
         </div>
     )

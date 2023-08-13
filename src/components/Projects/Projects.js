@@ -79,7 +79,7 @@ export default function Projects() {
                 ))}
             </Swiper>
 
-            <div className="project-two-title">2. Adopt alien creatures</div>
+            <div className="project-two-title">2. Adopt Alien Creatures</div>
             <div>A small project for adopting alien creatures. You can adopt/leave an alien, or
                 donate to support it. Animated background on most pages.
                 <br />

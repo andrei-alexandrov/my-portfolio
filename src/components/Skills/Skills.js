@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "react-scroll"
 import { motion } from "framer-motion"
+import { themeContext } from "../../Context"
 
 import ReactIcon from "../../images/skillsImages/ReactIcon.png"
 import JsIcon from "../../images/skillsImages/JSImage.jpg"
@@ -14,12 +15,14 @@ import "./Skills.scss";
 
 
 export default function Skills() {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     const transition = { duration: 1.7, ease: 'linear' };
 
     const handleMouseEnter = () => {
         const randomRotation = Math.random();
         document.querySelector('.main-circle').style.setProperty('--random-rotation', randomRotation);
-
     };
 
     return (
@@ -27,7 +30,7 @@ export default function Skills() {
             <div className="skills-wrapper">
                 <div className="skills-left-side">
                     <div className="skills-details">
-                        <span style={{ color: "#232d48" }}>My <span style={{ color: "#FCA61F" }}>Skills</span></span>
+                        <span style={{ color: darkMode ? '#edebe8' : '' }}>My <span style={{ color: "#FCA61F" }}>Skills</span></span>
                         <span>
                             JavaScript ES2015+ features <br />React.js <br />
                             HTML5, CSS3, SASS, Bootstrap, <br />
@@ -37,7 +40,14 @@ export default function Skills() {
                             Git/Github</span>
                         <div className="education">
                             <span style={{ color: "#FCA61F" }}>Education:</span>
-                            <div style={{ color: "#788097" }}>2022- 2023 IT Talents training camp</div>
+                            <div style={{ color: "#788097" }}>2022- 2023 IT Talents training camp <br />
+                                2020 - 2021 Software university  {`(Java basics, 2 months)`} <br />
+                                2014 – 2016	Sofia University {`(Master: European Projects)`} <br />
+                                2008 – 2012	Sofia University  {`(Bachelor: European Studies)`}<br /> <br />
+                                <span style={{ color: "#FCA61F" }}>Hobbies:</span>
+                                <div style={{ color: "#788097" }}>Badminton, Tennis/Table tennis,
+                                    Movie music composer {`(piano)`} </div>
+                            </div>
                         </div>
                         <Link spy={true} to='Contact' smooth={true} offset={-30}>
                             <button className="contact-btn">Contact me</button>

@@ -2,13 +2,9 @@
 @import "../../mixins";
 
 .toggle>* {
-    width: 1rem;
+    width: 1.3rem;
     height: 1rem;
     color: $orange;
-}
-
-.toggle-navbar-text {
-    font-size: 20px;
 }
 
 .toggle {
@@ -32,11 +28,5 @@
         width: 2.3rem;
         height: 2rem;
         color: $orange;
-    }
-
-    .toggle-navbar-text {
-        position: relative;
-        left: 4px;
-        font-size: 1.6rem;
     }
 }

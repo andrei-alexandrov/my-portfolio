@@ -1,10 +1,14 @@
-import React, { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState, useContext } from "react"
+import { themeContext } from "../../Context"
 
+import emailjs from "@emailjs/browser";
 import heathEmoji from "../../images/hearthEmoji.png"
 import "./Contact.scss";
 
 export default function Contact() {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     const form = useRef();
     const [done, setDone] = useState(false);
 
@@ -29,7 +33,7 @@ export default function Contact() {
     return (
         <div className='contact-form' id='Contact'>
             <div className='title'>
-                <div>Let's connect</div>
+                <div style={{ color: darkMode ? '#edebe8' : '' }}>Let's connect</div>
                 <div>Contact me</div>
                 <div className='blur'></div>
             </div>

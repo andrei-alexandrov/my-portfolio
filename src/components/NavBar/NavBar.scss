@@ -3,10 +3,8 @@
 
 .navbar-wrapper {
     display: flex;
-    justify-content: space-between;
     height: 10vh;
     color: $orange;
-    position: relative;
 
     .navbar-left-side {
         flex: 1;
@@ -22,9 +20,9 @@
 
     .navbar-right-side {
         display: flex;
-        flex: 1;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        flex: 1;
         font-weight: 400;
 
         .navbar-list {
@@ -41,11 +39,11 @@
             cursor: pointer;
 
             li {
-                transition: transform 1.5s;
+                transition: transform 1s;
 
                 &:hover {
                     color: $orange;
-                    transform: scale(1.3);
+                    transform: scale(1.2);
                     font-weight: bold;
                 }
             }
@@ -63,6 +61,7 @@
     .navbar-wrapper {
         display: flex;
         justify-content: space-between;
+        left: 1.5rem;
         height: 10vh;
         color: $orange;
         position: relative;
@@ -70,7 +69,6 @@
         .navbar-left-side {
             display: flex;
             align-items: center;
-            gap: 2rem;
 
             .navbar-name {
                 font-size: 1.1rem;
@@ -80,52 +78,45 @@
 
         .navbar-right-side {
             .navbar-list {
-                right: -1.3rem;
+                right: -1.5rem;
             }
         }
 
         .navbar-btn {
             @include button();
-            //TODO
+            position: relative;
+            right: 17.2rem;
+            top: 5rem;
         }
     }
 }
 
-// @media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    //TODO
+}
 
-//     .navbar-wrapper {
-//         flex-direction: column;
-//         align-items: start;
-//         height: auto;
-//     }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    //TODO
+}
 
-//     .navbar-right-side {
-//         flex: initial;
-//         justify-content: center;
-//         margin-top: 1rem;
-//     }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    //TODO
+}
 
-//     .navbar-btn {
-//         display: block;
-//     }
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+    //TODO
+}
 
-//     .navbar-list {
-//         display: none;
-//     }
-// }
-
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1536px) {
     .navbar-wrapper {
         display: flex;
         justify-content: space-between;
         height: 10vh;
         color: $orange;
-        position: relative;
 
         .navbar-left-side {
             flex: 1;
             display: flex;
-            align-items: center;
             gap: 2rem;
 
             .navbar-name {
@@ -144,23 +135,21 @@
             .navbar-list {
                 flex: 1;
                 position: relative;
-                right: 2rem;
+                right: 5rem;
             }
 
             .navbar-list>ul {
                 display: flex;
                 gap: 2rem;
                 margin-right: 4rem;
-                list-style-type: none;
-                cursor: pointer;
                 font-size: 2.3rem;
 
                 li {
-                    transition: transform 1.5s;
+                    transition: transform 1s;
 
                     &:hover {
                         color: $orange;
-                        transform: scale(1.3);
+                        transform: scale(1.2);
                         font-weight: bold;
                     }
                 }
