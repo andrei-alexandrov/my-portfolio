@@ -70,7 +70,7 @@ export default function AboutMe() {
                     {cocktail && (
                         <div className="cocktail-info">
                             <img src={cocktail.image} alt="Cocktail" />
-                            <span>{cocktail.name}</span>
+                            <span style={{ color: darkMode ? '#edebe8' : '' }}>{cocktail.name}</span>
                         </div>
                     )}
                 </div>
