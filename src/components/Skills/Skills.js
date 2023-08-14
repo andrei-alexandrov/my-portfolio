@@ -49,9 +49,16 @@ export default function Skills() {
                                     Movie music composer {`(piano)`} </div>
                             </div>
                         </div>
-                        <Link spy={true} to='Contact' smooth={true} offset={-30}>
-                            <button className="contact-btn">Contact me</button>
-                        </Link>
+
+                        <div className="skills-btn-wrapper">
+                            <Link spy={true} to='Contact' smooth={true} offset={-30}>
+                                <button className="contact-btn">Contact me</button>
+                            </Link>
+
+                            <a href="/pdf-files/Andrei_Alexandrov_CV.pdf" download>
+                                <button className="contact-btn">Download CV</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
 

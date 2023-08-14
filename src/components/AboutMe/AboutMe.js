@@ -16,7 +16,10 @@ export default function AboutMe() {
     const darkMode = theme.state.darkMode;
 
     const transition = { duration: 2, type: 'linear' };
-    const [cocktail, setCocktail] = useState("");
+    const [cocktail, setCocktail] = useState({
+        image: "",
+        name: ""
+    });
 
     const handleCocktail = async () => {
         try {
@@ -25,7 +28,10 @@ export default function AboutMe() {
                 const data = await response.json();
                 console.log(data);
                 if (data.drinks && data.drinks.length > 0) {
-                    setCocktail(data.drinks[0].strDrinkThumb);
+                    setCocktail({
+                        image: data.drinks[0].strDrinkThumb,
+                        name: data.drinks[0].strDrink
+                    });
                 } else {
                     console.error("No cocktail data found.");
                 }
@@ -61,7 +67,12 @@ export default function AboutMe() {
 
                 <div className="btn-message">
                     <button className="cocktail-btn" onClick={handleCocktail}>Click for a random cocktail</button>
-                    {cocktail && <img src={cocktail} alt="Cocktail" />}
+                    {cocktail && (
+                        <div className="cocktail-info">
+                            <img src={cocktail.image} alt="Cocktail" />
+                            <span>{cocktail.name}</span>
+                        </div>
+                    )}
                 </div>
 
                 <div className="about-me-img-wrapper">
@@ -80,7 +91,7 @@ export default function AboutMe() {
             <div className="about-me-right-side">
                 <Card className={darkMode ? "dark-mode" : ""} />
                 <motion.img
-                    initial={{ left: '-87%' }}
+                    initial={{ left: '-27%' }}
                     whileInView={{ left: '-43%' }}
                     transition={transition}
                     className="orange-splash" src={OrangeShape} alt="splash-image" />

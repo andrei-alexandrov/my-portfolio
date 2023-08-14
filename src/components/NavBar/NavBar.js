@@ -22,9 +22,15 @@ export default function NavBar() {
                     </ul>
                 </div>
             </div>
-            <Link spy={true} to='Contact' smooth={true} offset={-30}>
-                <button className="navbar-btn">Contact me</button>
-            </Link>
-        </nav>
+
+            <div className="navbar-btn-wrapper">
+                <Link spy={true} to='Contact' smooth={true} offset={-30}>
+                    <button className="navbar-btn">Contact me</button>
+                </Link>
+                <a href="/pdf-files/Andrei_Alexandrov_CV.pdf" download>
+                    <button className="navbar-btn">Download CV</button>
+                </a>
+            </div>
+        </nav >
     )
 }

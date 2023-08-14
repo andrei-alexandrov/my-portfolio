@@ -114,22 +114,22 @@
 //TODO 480px
 @media screen and (max-width: 480px) {
     .portfolio {
-        margin-top: 1rem;
-    }
+        margin-top: 12rem;
 
-    .portfolio div:nth-child(1),
-    .portfolio div:nth-child(2),
-    .portfolio div:nth-child(6) {
-        font-size: 1.8rem;
-    }
+        .portfolio div:nth-child(1),
+        .portfolio div:nth-child(2),
+        .portfolio div:nth-child(6) {
+            font-size: 1.8rem;
+        }
 
-    .portfolio div:nth-child(3),
-    .portfolio div:nth-child(7) {
-        font-size: 1.5rem;
-    }
+        .portfolio div:nth-child(3),
+        .portfolio div:nth-child(7) {
+            font-size: 1.5rem;
+        }
 
-    .portfolio img {
-        border-radius: 5px;
+        .portfolio img {
+            border-radius: 5px;
+        }
     }
 }
 

@@ -3,6 +3,7 @@
 
 .navbar-wrapper {
     display: flex;
+    align-items: center;
     height: 10vh;
     color: $orange;
 
@@ -52,7 +53,9 @@
 
     .navbar-btn {
         @include button();
-        margin-top: 10px;
+        font-size: 13px;
+        margin-left: 5px;
+        width: 8.5rem;
     }
 }
 
@@ -82,30 +85,37 @@
             }
         }
 
-        .navbar-btn {
-            @include button();
-            position: relative;
-            right: 17.2rem;
-            top: 5rem;
+        .navbar-btn-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .navbar-btn {
+                @include button();
+                position: relative;
+                right: 22.2rem;
+                top: 5rem;
+                font-size: 14px;
+            }
         }
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
-    //TODO
-}
+// @media screen and (min-width: 481px) and (max-width: 767px) {
+//     //TODO
+// }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    //TODO
-}
+// @media screen and (min-width: 768px) and (max-width: 1023px) {
+//     //TODO
+// }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-    //TODO
-}
+// @media screen and (min-width: 1024px) and (max-width: 1279px) {
+//     //TODO
+// }
 
-@media screen and (min-width: 1280px) and (max-width: 1535px) {
-    //TODO
-}
+// @media screen and (min-width: 1280px) and (max-width: 1535px) {
+//     //TODO
+// }
 
 @media screen and (min-width: 1536px) {
     .navbar-wrapper {

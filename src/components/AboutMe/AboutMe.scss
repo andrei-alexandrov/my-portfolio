@@ -49,12 +49,18 @@
                 height: 10rem;
                 border-radius: 1.5rem;
             }
+
+            .cocktail-info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cocktail-btn {
+                @include button();
+                width: 16rem;
+            }
         }
 
-        .cocktail-btn {
-            @include button();
-            width: 16rem;
-        }
 
         .about-me-img-wrapper>a>img {
             height: 2.5rem;
@@ -74,13 +80,7 @@
         flex: 1;
 
         .orange-splash {
-            width: 110px;
-            height: 110px;
-            object-fit: contain;
-            position: absolute;
-            top: 3%;
-            left: -46%;
-            transform: translate(-50%, -50%);
+            display: none;
         }
     }
 }
@@ -163,6 +163,66 @@
                 top: 3%;
                 left: -46%;
                 transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .about-me-wrapper {
+        .about-me-left-side {
+
+            .about-me>:nth-child(1),
+            .about-me>:nth-child(2) {
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            .about-me>:nth-child(3) {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .btn-message {
+                margin-top: 2rem;
+            }
+
+            .about-me-img-wrapper>a>img {
+                top: 1rem;
+                left: 14rem;
+            }
+        }
+
+        .about-me-right-side {
+            position: absolute;
+            left: 10.5rem;
+            bottom: -10rem;
+
+            .orange-splash {
+                width: 10px;
+                height: 10px;
+                object-fit: contain;
+                position: absolute;
+                top: 3%;
+                left: -46%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .about-me-wrapper {
+        height: auto;
+        margin-top: 2rem;
+
+        .about-me-left-side {
+            .btn-message {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 2rem;
             }
         }
     }

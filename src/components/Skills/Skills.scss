@@ -33,11 +33,17 @@
             margin-top: 10px;
         }
 
-        .contact-btn {
-            @include button();
-            width: fit-content;
-            margin-top: 1rem;
+        .skills-btn-wrapper {
+            display: flex;
+
+            .contact-btn {
+                @include button();
+                font-size: 14px;
+                margin-top: 1rem;
+                margin-right: 5px;
+            }
         }
+
     }
 
     .skills-right-side {
@@ -140,8 +146,7 @@
         flex-direction: column;
         height: 55rem;
         padding: 0;
-        gap: 5rem;
-        margin-top: 20rem;
+        margin-top: 28rem;
 
         .skills-details {
             display: flex;
@@ -157,12 +162,31 @@
 
             .main-circle {
                 left: -0.5rem !important;
-                top: -3rem;
+                top: 5rem;
             }
 
             .rotation {
                 font-size: 22px;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .skills-wrapper {
+        margin-top: 15rem;
+    }
+
+    .skills-right-side {
+        transform: scale(0.7);
+
+        .main-circle {
+            left: -0.5rem !important;
+            top: 5rem;
+        }
+
+        .rotation {
+            font-size: 22px;
         }
     }
 }
