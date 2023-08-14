@@ -1,5 +1,6 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Arrows from "../Arrows/Arrows";
 
 // Sports match project photos
 import LoginPage from "../../images/projects/sports_match/loginPage.jpg"
@@ -23,8 +24,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+
 export default function Projects() {
     const [enlargedImg, setEnlargedImg] = useState(null);
+    const swiperRefProjectOne = useRef(null);
+    const swiperRefProjectTwo = useRef(null);
 
     const handleImageClick = (img) => {
         setEnlargedImg(img);
@@ -44,7 +48,7 @@ export default function Projects() {
                 <br />
                 ---
                 <br />
-                Used: Javascript, React.js, React Router, SASS, react-bootstrap, 
+                Used: Javascript, React.js, React Router, SASS, react-bootstrap,
                 emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage.
             </div>
 
@@ -55,6 +59,7 @@ export default function Projects() {
             </div>
 
             <Swiper
+                ref={swiperRefProjectOne}
                 spaceBetween={30}
                 slidesPerView={3}
                 grabCursor={true}
@@ -72,12 +77,14 @@ export default function Projects() {
                     <SwiperSlide key={index}>
                         <img
                             src={img}
-                            alt=""
+                            alt="project-photo"
                             onClick={() => handleImageClick(img)}
                         />
                     </SwiperSlide>
                 ))}
             </Swiper>
+
+            <Arrows swiperRef={swiperRefProjectOne} />
 
             <div className="project-two-title">2. Adopt Alien Creatures</div>
             <div>A small project for adopting alien creatures. You can adopt/leave an alien, or
@@ -94,6 +101,7 @@ export default function Projects() {
             </div>
 
             <Swiper
+                ref={swiperRefProjectTwo}
                 spaceBetween={30}
                 slidesPerView={3}
                 grabCursor={true}
@@ -109,12 +117,14 @@ export default function Projects() {
                     <SwiperSlide key={index}>
                         <img
                             src={img}
-                            alt=""
+                            alt="project-photo"
                             onClick={() => handleImageClick(img)}
                         />
                     </SwiperSlide>
                 ))}
             </Swiper>
+
+            <Arrows swiperRef={swiperRefProjectTwo} />
 
             <div className="project-two-title">3. This portfolio</div>
             <div className="portfolio-project-text">
