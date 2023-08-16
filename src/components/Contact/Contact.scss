@@ -46,7 +46,7 @@
         outline: none;
         border: 2px solid $orange;
         border-radius: 8px;
-        font-size: 16px;
+        font-size: 1rem;
         padding-left: 8px;
     }
 
@@ -96,6 +96,40 @@
 
 //TODO
 @media screen and (min-width: 481px) and (max-width: 111141px) {
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 3rem;
+
+        .title {
+            align-items: center;
+            margin-bottom: 2rem;
+
+
+            :nth-child(1) {
+                font-size: 2rem;
+            }
+
+            :nth-child(2) {
+                font-size: 2rem;
+            }
+        }
+
+        .form {
+            align-items: center;
+            margin-left: 0;
+
+            form {
+                margin: 0;
+            }
+
+            .user {
+                padding-left: 8px;
+            }
+        }
+    }
+
     .button {
         @include button();
         z-index: 1500;
@@ -104,19 +138,20 @@
 
 @media screen and (min-width: 1600px) {
     .contact-form {
-        margin-top: 10rem;
+        margin-top: 7rem;
+        margin-bottom: 9rem;
         height: 60vh;
 
         .title>:nth-child(1) {
             color: $black;
             font-weight: bold;
-            font-size: 5rem;
+            font-size: 3rem;
         }
 
         .title>:nth-child(2) {
             color: $orange;
             font-weight: bold;
-            font-size: 5rem;
+            font-size: 3rem;
         }
 
         .form .user {

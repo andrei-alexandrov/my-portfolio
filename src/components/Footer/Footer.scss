@@ -39,29 +39,52 @@
 //TODO 480px
 @media screen and (max-width: 480px) {
     .footer {
+        margin-top: 1rem;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+
 
         .footer-text {
-            margin-top: -6.1rem;
-            font-size: 1rem;
-            color: $black;
             position: relative;
             right: 1rem;
-            top: 74px;
-        }
-
-        .icons>a>svg {
-            margin-top: 1rem;
-            margin-right: 0.5rem;
-            position: relative;
-            left: -0.7rem;
-            width: 1.5rem;
+            bottom: 0.5rem;
+            font-size: 0.9rem;
         }
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .footer {
+        margin-top: 0.1rem;
+
+        .footer-text {
+            position: relative;
+            right: 1.2rem;
+            color: $black;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .footer {
+        margin-top: 0.1rem;
+
+        .footer-text {
+            position: relative;
+            bottom: 1.5rem;
+            right: 1.2rem;
+            color: $black;
+            font-size: 1rem;
+        }
+
+        .icons>a>svg {
+            display: none;
+        }
+    }
+}
+
 
 @media screen and (min-width: 1600px) {
     .footer {
@@ -69,7 +92,7 @@
         position: relative;
         align-items: center;
         margin: -0.5rem -3.5rem;
-        margin-top: -7rem;
+        margin-top: -5rem;
         font-size: 1.8rem;
         height: 23rem;
 

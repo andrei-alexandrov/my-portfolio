@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Arrows from "../Arrows/Arrows";
+import { Col, Row, Container } from "react-bootstrap"
 
 // Sports match project photos
 import LoginPage from "../../images/projects/sports_match/loginPage.jpg"
@@ -39,111 +40,117 @@ export default function Projects() {
     };
 
     return (
-        <div className="portfolio" id="Projects">
-            <div>My Projects</div>
-            <div>1. Sports Match</div>
-            <div>My own idea created with React.js that helps people with common interests in different sports
-                to meet and play together. The website also provides an opportunity to choose the most
-                convenient places for practicing the desired sport in the respective city/neighborhood.
-                <br />
-                ---
-                <br />
-                Used: Javascript, React.js, React Router, SASS, react-bootstrap,
-                emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage.
-            </div>
+        <Container fluid>
+            <Row>
+                <Col>
+                    <div className="portfolio" id="Projects">
+                        <div>My Projects</div>
+                        <div className="project-title">1. Sports Match</div>
+                        <div className="portfolio-project-text">My own idea created with React.js that helps people with common interests in different sports
+                            to meet and play together. The website also provides an opportunity to choose the most
+                            convenient places for practicing the desired sport in the respective city/neighborhood.
+                            <br />
+                            ---
+                            <br />
+                            Used: Javascript, React.js, React Router, SASS, react-bootstrap,
+                            emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage.
+                        </div>
 
-            <div className="link-content">Source code:
-                <a href="https://www.github.com/andrei-alexandrov/sports-match" target='_blank'>
-                    <img src={Github} alt="Github image" />
-                </a>
-            </div>
+                        <div className="link-content">Source code:
+                            <a href="https://www.github.com/andrei-alexandrov/sports-match" target='_blank'>
+                                <img src={Github} alt="Github image" />
+                            </a>
+                        </div>
 
-            <Swiper
-                ref={swiperRefProjectOne}
-                spaceBetween={30}
-                slidesPerView={3}
-                grabCursor={true}
-                className="portfolio-slider"
-            >
-                {[
-                    HomeScreen,
-                    BuddySearch,
-                    ChatPage,
-                    LoginPage,
-                    ProfilePage,
-                    ActivitiesPage,
-                    PlacesPage
-                ].map((img, index) => (
-                    <SwiperSlide key={index}>
-                        <img
-                            src={img}
-                            alt="project-photo"
-                            onClick={() => handleImageClick(img)}
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                        <Swiper
+                            ref={swiperRefProjectOne}
+                            spaceBetween={30}
+                            slidesPerView={3}
+                            grabCursor={true}
+                            className="portfolio-slider"
+                        >
+                            {[
+                                HomeScreen,
+                                BuddySearch,
+                                ChatPage,
+                                LoginPage,
+                                ProfilePage,
+                                ActivitiesPage,
+                                PlacesPage
+                            ].map((img, index) => (
+                                <SwiperSlide key={index}>
+                                    <img
+                                        src={img}
+                                        alt="project-photo"
+                                        onClick={() => handleImageClick(img)}
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
 
-            <Arrows swiperRef={swiperRefProjectOne} />
+                        <Arrows swiperRef={swiperRefProjectOne} />
 
-            <div className="project-two-title">2. Adopt Alien Creatures</div>
-            <div>A small project for adopting alien creatures. You can adopt/leave an alien, or
-                donate to support it. Animated background on most pages.
-                <br />
-                ---
-                <br />
-                Used: Javascript, MVC pattern</div>
+                        <div className="project-title">2. Adopt Alien Creatures</div>
+                        <div className="portfolio-project-text">A small project for adopting alien creatures. You can adopt/leave an alien, or
+                            donate to support it. Animated background on most pages.
+                            <br />
+                            ---
+                            <br />
+                            Used: Javascript, MVC pattern</div>
 
-            <div className="link-content">Source code:
-                <a href="https://www.github.com/andrei-alexandrov/adopt-aliens" target='_blank'>
-                    <img src={Github} alt="Github image" />
-                </a>
-            </div>
+                        <div className="link-content">Source code:
+                            <a href="https://www.github.com/andrei-alexandrov/adopt-aliens" target='_blank'>
+                                <img src={Github} alt="Github image" />
+                            </a>
+                        </div>
 
-            <Swiper
-                ref={swiperRefProjectTwo}
-                spaceBetween={30}
-                slidesPerView={3}
-                grabCursor={true}
-                className="portfolio-slider"
-            >
-                {[
-                    LoginAlienPage,
-                    HomeAlienPage,
-                    AdoptedAlienPage,
-                    DonateAlienPage,
-                    LoginAlienPageTwo
-                ].map((img, index) => (
-                    <SwiperSlide key={index}>
-                        <img
-                            src={img}
-                            alt="project-photo"
-                            onClick={() => handleImageClick(img)}
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                        <Swiper
+                            ref={swiperRefProjectTwo}
+                            spaceBetween={30}
+                            slidesPerView={3}
+                            grabCursor={true}
+                            className="portfolio-slider"
+                        >
+                            {[
+                                LoginAlienPage,
+                                HomeAlienPage,
+                                AdoptedAlienPage,
+                                DonateAlienPage,
+                                LoginAlienPageTwo
+                            ].map((img, index) => (
+                                <SwiperSlide key={index}>
+                                    <img
+                                        src={img}
+                                        alt="project-photo"
+                                        onClick={() => handleImageClick(img)}
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
 
-            <Arrows swiperRef={swiperRefProjectTwo} />
+                        <Arrows swiperRef={swiperRefProjectTwo} />
 
-            <div className="project-two-title">3. This portfolio</div>
-            <div className="portfolio-project-text">
-                Used: JavaScript, React.js, swiper, react-particles, SASS, emailJS, framer motion, react-scroll,
-                iconscout/react-unicorns, tsparticles, thecocktaildb API.
-            </div>
-            <div className="link-content">Source code:
-                <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank'>
-                    <img src={Github} alt="Github image" />
-                </a>
-            </div>
+                        <div className="project-title">3. This portfolio</div>
+                        <div className="portfolio-project-text">
+                            Used: JavaScript, React.js, swiper, react-particles, SASS, emailJS, framer motion, react-scroll,
+                            iconscout/react-unicorns, tsparticles, thecocktaildb API.
+                        </div>
+                        <div className="link-content">Source code:
+                            <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank'>
+                                <img src={Github} alt="Github image" />
+                            </a>
+                        </div>
 
-            {enlargedImg && (
-                <div className="enlarged-image-overlay" onClick={handleCloseClick}>
-                    <div className="enlarged-image-container">
-                        <img src={enlargedImg} alt="" className="enlarged-image" />
+                        {enlargedImg && (
+                            <div className="enlarged-image-overlay" onClick={handleCloseClick}>
+                                <div className="enlarged-image-container">
+                                    <img src={enlargedImg} alt="" className="enlarged-image" />
+                                </div>
+                            </div>
+                        )}
                     </div>
-                </div>
-            )}
-        </div>
+                </Col>
+            </Row>
+        </Container>
     );
 }

@@ -6,13 +6,13 @@
 
 .card {
     position: relative;
-    width: 350px;
-    height: 180px;
+    width: 22rem;
+    height: 11.2rem;
     transition: 0.5s;
 }
 
 .card:hover {
-    height: 420px;
+    height: 26.2rem;
 }
 
 .card .lines {
@@ -27,8 +27,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 600px;
-    height: 120px;
+    width: 37.6rem;
+    height: 7.6rem;
     background: linear-gradient(transparent, #FCA61F, #FCA61F, #FCA61F, transparent);
     animation: animate 4s linear infinite;
 }
@@ -50,7 +50,7 @@
 .card .lines::after {
     content: "";
     position: absolute;
-    inset: 3px;
+    inset: 0.2rem;
     background: #fafafa;
 }
 
@@ -60,10 +60,10 @@
 
 .card .imgBx {
     position: absolute;
-    top: -60px;
+    top: -3.75rem;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 9.4rem;
+    height: 9.4rem;
     transform: translateX(-50%);
     /* will-change: transform; */
     background-color: rgb(245, 242, 242);
@@ -77,9 +77,9 @@
 }
 
 .card:hover .imgBx {
-    top: 25px;
-    width: 200px;
-    height: 200px;
+    top: 1.6rem;
+    width: 12.5rem;
+    height: 12.5rem;
 }
 
 .card:hover .imgBx::before {
@@ -87,8 +87,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 500px;
-    height: 150px;
+    width: 31.2rem;
+    height: 9.4rem;
     transform: translate(-50%, -50%);
     background: linear-gradient(transparent, #fba61e, #000000, #fba61e, transparent);
     animation: animate2 6s linear infinite;
@@ -111,8 +111,8 @@
 
 .card .imgBx img {
     position: absolute;
-    width: 192px;
-    height: 192px;
+    width: 12rem;
+    height: 12rem;
 }
 
 .card .content {
@@ -125,7 +125,7 @@
 }
 
 .card .content .details {
-    padding: 30px 20px;
+    padding: 1.9rem 1.2rem;
     text-align: center;
 }
 
@@ -136,12 +136,25 @@
     line-height: 1.2em;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media screen and (min-width: 768px) and (max-width: 944px) {
+
+    .card {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {}
+
+@media screen and (min-width: 1600px) {}
+
 /* TODO 480px */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .card {
         position: relative;
-        width: 330px;
-        height: 170px;
+        width: 20.6rem;
+        height: 10.6rem;
         transition: 0.5s;
         left: 0.6rem;
     }
@@ -151,51 +164,51 @@
 @media screen and (min-width: 1600px) {
     .card {
         position: relative;
-        width: 600px;
-        height: 290px;
+        width: 37rem;
+        height: 18rem;
         transition: 0.5s;
     }
 
     .card:hover {
-        height: 640px;
+        height: 40rem;
     }
 
     .card .lines::before {
-        width: 700px;
-        height: 150px;
+        width: 44rem;
+        height: 9.4rem;
     }
 
     .card .imgBx {
-        top: -70px;
-        width: 200px;
-        height: 200px;
+        top: -4.4rem;
+        width: 12.5rem;
+        height: 12.5rem;
     }
 
     .card:hover .imgBx {
-        top: 30px;
-        width: 320px;
-        height: 320px;
+        top: 1.9rem;
+        width: 20rem;
+        height: 20rem;
     }
 
     .card:hover .imgBx::before {
-        width: 600px;
-        height: 170px;
+        width: 38rem;
+        height: 10.6rem;
     }
 
     .card .lines::after {
         content: "";
         position: absolute;
-        inset: 5px;
+        inset: 0.3rem;
         background: #fafafa;
     }
 
     .card .imgBx img {
-        width: 312px;
-        height: 312px;
+        width: 19.5rem;
+        height: 19.5rem;
     }
 
     .card .content {
         height: 100%;
         font-size: 2rem;
     }
-}
+} */

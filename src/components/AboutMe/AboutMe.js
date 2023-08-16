@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useContext } from "react"
 import { motion } from "framer-motion"
 import { themeContext } from "../../Context"
+import { Col, Row, Container } from "react-bootstrap"
+
 
 import Card from "../Card/Card"
 import Github from "../../images/github.png"
@@ -48,54 +50,60 @@ export default function AboutMe() {
     }, []);
 
     return (
-        <div className="about-me-wrapper">
-            <div className="about-me-left-side">
-                <div className="about-me">
-                    <span style={{ color: darkMode ? '#edebe8' : '' }} >Hello, I am</span>
-                    <span>Andrei Alexandrov</span>
-                    <span>
-                        Front-end developer with JavaScript and React.js, based in Sofia, Bulgaria.<br />
-                        <br />
-                        Detail-oriented with a creative mind.<br />
-                        Mostly attracted to web/app design and UX, <br />
-                        but have also willingness to learn new concepts and technologies. <br />
-                        <br />
-                        I am passionate about furthering my IT knowledge <br />
-                        and developing my skills and creativity as part of a dynamic team.
-                    </span>
-                </div>
+        <Container fluid>
+            <Row>
+                <Col xs={12} md={6} xl={7}>
+                    <div className="about-me-wrapper">
+                        <div className="about-me-left-side">
+                            <div className="about-me">
+                                <span style={{ color: darkMode ? '#edebe8' : '' }} >Hello, I am</span>
+                                <span>Andrei Alexandrov</span>
+                                <span>
+                                    Front-end developer with JavaScript and React.js, based in Sofia, Bulgaria.<br />
+                                    <br />
+                                    Detail-oriented with a creative mind.<br />
+                                    Mostly attracted to web/app design and UX, <br />
+                                    but have also willingness to learn new concepts and technologies. <br />
+                                    <br />
+                                    I am passionate about furthering my IT knowledge <br />
+                                    and developing my skills and creativity as part of a dynamic team.
+                                </span>
+                            </div>
 
-                <div className="btn-message">
-                    <button className="cocktail-btn" onClick={handleCocktail}>Click for a random cocktail</button>
-                    {cocktail && (
-                        <div className="cocktail-info">
-                            <img src={cocktail.image} alt="Cocktail" />
-                            <span style={{ color: darkMode ? '#edebe8' : '' }}>{cocktail.name}</span>
+                            <div className="btn-message">
+                                <button className="cocktail-btn" onClick={handleCocktail}>Click for a random cocktail</button>
+                                {cocktail && (
+                                    <div className="cocktail-info">
+                                        <img src={cocktail.image} alt="Cocktail" />
+                                        <div style={{ color: darkMode ? '#edebe8' : '' }}>{cocktail.name}</div>
+                                    </div>
+                                )}              
+                            </div>
+
+                            <div className="about-me-img-wrapper">
+                                <a href="https://www.github.com/andrei-alexandrov" target='_blank'>
+                                    <img src={Github} alt="Github icon" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/andrei-alexandrov/" target='_blank'>
+                                    <img src={LinkedIn} alt="LinkedIn icon" />
+                                </a>
+                                <a href="https://www.instagram.com/andrei_alexandrov_/" target='_blank'>
+                                    <img src={Instagram} alt="Instagram icon" />
+                                </a>
+                            </div>
                         </div>
-                    )}
-                </div>
 
-                <div className="about-me-img-wrapper">
-                    <a href="https://www.github.com/andrei-alexandrov" target='_blank'>
-                        <img src={Github} alt="Github icon" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/andrei-alexandrov/" target='_blank'>
-                        <img src={LinkedIn} alt="LinkedIn icon" />
-                    </a>
-                    <a href="https://www.instagram.com/andrei_alexandrov_/" target='_blank'>
-                        <img src={Instagram} alt="Instagram icon" />
-                    </a>
-                </div>
-            </div>
-
-            <div className="about-me-right-side">
-                <Card className={darkMode ? "dark-mode" : ""} />
-                <motion.img
-                    initial={{ left: '-27%' }}
-                    whileInView={{ left: '-43%' }}
-                    transition={transition}
-                    className="orange-splash" src={OrangeShape} alt="splash-image" />
-            </div>
-        </div>
+                        <div className="about-me-right-side">
+                            <Card className={darkMode ? "dark-mode" : ""} />
+                            <motion.img
+                                initial={{ left: '-27%' }}
+                                whileInView={{ left: '-43%' }}
+                                transition={transition}
+                                className="orange-splash" src={OrangeShape} alt="splash-image" />
+                        </div>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     )
 }

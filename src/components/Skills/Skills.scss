@@ -1,5 +1,6 @@
 @import "../../variables";
 @import "../../mixins";
+@import "../../screenSizesFonts";
 
 .skills-wrapper {
     position: relative;
@@ -13,7 +14,6 @@
         position: relative;
         display: 1;
         flex-direction: column;
-
 
         .skills-details {
             display: flex;
@@ -43,7 +43,6 @@
                 margin-right: 5px;
             }
         }
-
     }
 
     .skills-right-side {
@@ -146,15 +145,14 @@
         flex-direction: column;
         height: 55rem;
         padding: 0;
-        margin-top: 28rem;
+        margin-top: 50rem;
 
         .skills-details {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            gap: 1rem;
             text-align: center;
+            font-size: $text-480px;
         }
 
         .skills-right-side {
@@ -173,20 +171,68 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
     .skills-wrapper {
-        margin-top: 15rem;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        margin-top: 52rem;
 
-    .skills-right-side {
-        transform: scale(0.7);
-
-        .main-circle {
-            left: -0.5rem !important;
-            top: 5rem;
+        .skills-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: $text-480px;
         }
 
-        .rotation {
-            font-size: 22px;
+        .skills-right-side {
+            transform: scale(0.7);
+
+            .main-circle {
+                left: -0.5rem !important;
+                top: 5rem;
+            }
+
+            .rotation {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .skills-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        margin-top: 12rem;
+
+        .skills-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: $text-480px;
+        }
+
+        .skills-right-side {
+            transform: scale(0.7);
+
+            .main-circle {
+                left: -0.5rem !important;
+                top: 5rem;
+            }
+
+            .rotation {
+                font-size: 22px;
+            }
         }
     }
 }
