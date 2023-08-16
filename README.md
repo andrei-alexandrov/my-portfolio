@@ -1,6 +1,7 @@
-I created my portfolio using React.js + some external libraries like swiper, react-particles, SASS, emailJS, react-scroll, iconscout/react-unicorns and others.
+I created my portfolio using React.js + some external libraries like swiper, react-particles, SASS, emailJS, react-scroll, iconscout/react-unicorns and others. It is also responsive.
 
-Added various motion effects using framer-motion and css/sass styling + light/dark theme.
+Added various motion effects using framer-motion and css/sass styling + light/dark theme. 
+
 
 ## Summary
 1. About me section
