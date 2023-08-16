@@ -32,7 +32,7 @@ export default function AboutMe() {
                 if (data.drinks && data.drinks.length > 0) {
                     setCocktail({
                         image: data.drinks[0].strDrinkThumb,
-                        name: data.drinks[0].strDrink
+                        // name: data.drinks[0].strDrink
                     });
                 } else {
                     console.error("No cocktail data found.");
@@ -75,19 +75,19 @@ export default function AboutMe() {
                                 {cocktail && (
                                     <div className="cocktail-info">
                                         <img src={cocktail.image} alt="Cocktail" />
-                                        <div style={{ color: darkMode ? '#edebe8' : '' }}>{cocktail.name}</div>
+                                        {/* <div className="cocktail-text" style={{ color: darkMode ? '#edebe8' : '' }}>{cocktail.name}</div> */}
                                     </div>
-                                )}              
+                                )}
                             </div>
 
                             <div className="about-me-img-wrapper">
-                                <a href="https://www.github.com/andrei-alexandrov" target='_blank'>
+                                <a href="https://www.github.com/andrei-alexandrov" target='_blank' rel="noreferrer" >
                                     <img src={Github} alt="Github icon" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/andrei-alexandrov/" target='_blank'>
+                                <a href="https://www.linkedin.com/in/andrei-alexandrov/" target='_blank' rel="noreferrer" >
                                     <img src={LinkedIn} alt="LinkedIn icon" />
                                 </a>
-                                <a href="https://www.instagram.com/andrei_alexandrov_/" target='_blank'>
+                                <a href="https://www.instagram.com/andrei_alexandrov_/" target='_blank' rel="noreferrer" >
                                     <img src={Instagram} alt="Instagram icon" />
                                 </a>
                             </div>

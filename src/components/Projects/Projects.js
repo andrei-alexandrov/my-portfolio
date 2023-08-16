@@ -57,8 +57,8 @@ export default function Projects() {
                         </div>
 
                         <div className="link-content">Source code:
-                            <a href="https://www.github.com/andrei-alexandrov/sports-match" target='_blank'>
-                                <img src={Github} alt="Github image" />
+                            <a href="https://www.github.com/andrei-alexandrov/sports-match" target='_blank' rel="noreferrer">
+                                <img src={Github} alt="Github" />
                             </a>
                         </div>
 
@@ -81,7 +81,7 @@ export default function Projects() {
                                 <SwiperSlide key={index}>
                                     <img
                                         src={img}
-                                        alt="project-photo"
+                                        alt="Project"
                                         onClick={() => handleImageClick(img)}
                                     />
                                 </SwiperSlide>
@@ -99,8 +99,8 @@ export default function Projects() {
                             Used: Javascript, MVC pattern</div>
 
                         <div className="link-content">Source code:
-                            <a href="https://www.github.com/andrei-alexandrov/adopt-aliens" target='_blank'>
-                                <img src={Github} alt="Github image" />
+                            <a href="https://www.github.com/andrei-alexandrov/adopt-aliens" target='_blank' rel="noreferrer">
+                                <img src={Github} alt="Github" />
                             </a>
                         </div>
 
@@ -121,7 +121,7 @@ export default function Projects() {
                                 <SwiperSlide key={index}>
                                     <img
                                         src={img}
-                                        alt="project-photo"
+                                        alt="Project"
                                         onClick={() => handleImageClick(img)}
                                     />
                                 </SwiperSlide>
@@ -136,8 +136,8 @@ export default function Projects() {
                             iconscout/react-unicorns, tsparticles, thecocktaildb API.
                         </div>
                         <div className="link-content">Source code:
-                            <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank'>
-                                <img src={Github} alt="Github image" />
+                            <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank' rel="noreferrer">
+                                <img src={Github} alt="Github" />
                             </a>
                         </div>
 

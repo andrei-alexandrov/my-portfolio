@@ -60,6 +60,9 @@
                 @include button();
                 width: 16rem;
                 height: 2.8rem;
+                // background: linear-gradient(45deg, #fd7448, #fca36f, #fca975, #fbd99d, #f1eada, #cfd7ec, #bbc6e4, #8a9ed1, #5a75be, #5773be);
+                background: linear-gradient(45deg, #fd7448, #fd774b, #fca36f, #fbd99d, #f9e2aa, #f1eada, #ebeef4, #cfd7ec, #bbc6e4, #8a9ed1, #5a75be, #5773be);
+                color: black;
             }
         }
 
@@ -91,7 +94,7 @@
     .about-me-wrapper {
         display: flex;
         flex-direction: column;
-      
+
         .about-me-left-side {
             display: flex;
             justify-content: center;
@@ -128,14 +131,6 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-
-                img {
-                    border-radius: 1.5rem;
-                }
-
-                span {
-                    font-size: 1rem;
-                }
             }
 
             .cocktail-btn {
@@ -152,6 +147,11 @@
             .about-me-img-wrapper>a>img {
                 height: 2.5rem;
                 top: 1rem;
+                left: 7px;
+            }
+
+            .cocktail-text {
+                font-size: 15px;
             }
         }
 
@@ -195,6 +195,11 @@
 
             .about-me-img-wrapper>a>img {
                 top: 1rem;
+                left: 7px;
+            }
+
+            .cocktail-text {
+                font-size: 16px;
             }
         }
 

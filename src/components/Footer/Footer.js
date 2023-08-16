@@ -20,13 +20,13 @@ export default function Footer() {
                             <span className='footer-text'>Created by Andrei Alexandrov 2023</span>
                             <span className='footer-text'>andrei.alxv@gmail.com</span>
                             <div className='icons'>
-                                <a href='https://www.github.com/andrei-alexandrov' target='_blank'>
+                                <a href='https://www.github.com/andrei-alexandrov' target='_blank' rel="noreferrer">
                                     <Github color='white' size='3rem' />
                                 </a>
-                                <a href='https://www.linkedin.com/in/andrei-alexandrov/' target='_blank'>
+                                <a href='https://www.linkedin.com/in/andrei-alexandrov/' target='_blank' rel="noreferrer">
                                     <LinkedIn color='white' size='3rem' />
                                 </a>
-                                <a href='https://www.instagram.com/andrei_alexandrov_/' target='_blank'>
+                                <a href='https://www.instagram.com/andrei_alexandrov_/' target='_blank' rel="noreferrer">
                                     <Instagram color='white' size='3rem' />
                                 </a>
                             </div>
