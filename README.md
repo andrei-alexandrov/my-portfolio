@@ -17,7 +17,8 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 ![sunThemeSkills](./src/images/gitHubImages/sun-theme-skills.png)
 ![darkThemeProjects](./src/images/gitHubImages/dark-theme-projects.png)
 ![sunThemeProjects](./src/images/gitHubImages/sun-theme-project-2.png)
-![sunThemeContact](./src/images/gitHubImages/sun-theme-contact.png)
+![sunThemeContactNewDark](./src/images/gitHubImages/home-dark-new.png)
+![sunThemeContactNewLlight](./src/images/gitHubImages/home-light-new.png)
 ![aboutMe480px](./src/images/gitHubImages/aboutMe480px.png)
 ![contact480px](./src/images/gitHubImages/contact480px.png)
 
