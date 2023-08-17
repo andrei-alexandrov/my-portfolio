@@ -17,6 +17,10 @@ Added various motion effects using framer-motion and css/sass styling + light/da
 ![darkThemeProjects](./src/images/gitHubImages/dark-theme-projects.png)
 ![sunThemeProjects](./src/images/gitHubImages/sun-theme-project-2.png)
 ![sunThemeContact](./src/images/gitHubImages/sun-theme-contact.png)
+![aboutMe480px](./src/images/gitHubImages/aboutMe480px.png)
+![projects480px](./src/images/gitHubImages/projects480px.png)
+![contact480px](./src/images/gitHubImages/contact480px.png)
+![skillsTablet](./src/images/gitHubImages/skillsTablet.png)
 
 ## Available Scripts
 
