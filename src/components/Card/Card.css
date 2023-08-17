@@ -125,7 +125,7 @@
 }
 
 .card .content .details {
-    padding: 1.9rem 1.2rem;
+    padding: 1.3rem 1.2rem;
     text-align: center;
 }
 
@@ -136,30 +136,34 @@
     line-height: 1.2em;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {}
+.textContentTap {
+    display: none;
+}
 
-@media screen and (min-width: 768px) and (max-width: 944px) {
-
-    .card {
+/* TODO */
+@media screen and (max-width: 480px) {
+    .textContent {
         display: none;
     }
-}
 
-@media screen and (min-width: 1200px) and (max-width: 1599px) {}
-
-@media screen and (min-width: 1600px) {}
-
-/* TODO 480px */
-/* @media screen and (max-width: 480px) {
-    .card {
-        position: relative;
-        width: 20.6rem;
-        height: 10.6rem;
-        transition: 0.5s;
-        left: 0.6rem;
+    .textContentTap{
+        display: block;
     }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .textContent {
+        display: none;
+    }
+
+    .textContentTap {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1069px) {}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {}
 
 @media screen and (min-width: 1600px) {
     .card {
@@ -170,7 +174,7 @@
     }
 
     .card:hover {
-        height: 40rem;
+        height: 39rem;
     }
 
     .card .lines::before {
@@ -211,4 +215,9 @@
         height: 100%;
         font-size: 2rem;
     }
-} */
+
+    .card .content .details {
+        padding: 1.9rem 1.2rem;
+        text-align: center;
+    }
+}

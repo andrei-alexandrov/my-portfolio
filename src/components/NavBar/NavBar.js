@@ -28,7 +28,7 @@ export default function NavBar() {
                         </div>
 
                         <div className="navbar-btn-wrapper">
-                            <Link spy={true} to='Contact' smooth={true} offset={-30}>
+                            <Link spy={true} to='Contact' smooth={true} offset={-22}>
                                 <button className="navbar-btn">Contact me</button>
                             </Link>
                             <a href="/pdf-files/Andrei_Alexandrov_CV.pdf" download>

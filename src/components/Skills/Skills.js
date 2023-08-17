@@ -81,6 +81,7 @@ export default function Skills() {
                                         <img src={GithubIcon} alt="Github icon" />
                                         <img src={BootstrapIcon} alt="Bootstrap icon" />
                                         <span className="rotation">Hover for random rotation</span>
+                                        <span className="rotation-tap">Tap for random rotation</span>
                                     </div>
                                 </div>
                             </motion.div>

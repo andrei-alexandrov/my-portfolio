@@ -4,6 +4,8 @@ import { Col, Row, Container } from "react-bootstrap"
 
 import emailjs from "@emailjs/browser";
 import heathEmoji from "../../images/hearthEmoji.png"
+import SackMeditate from "../../images/sackMeditate.gif"
+import SackHappy from "../../images/sackHappy.gif"
 import "./Contact.scss";
 
 export default function Contact() {
@@ -12,6 +14,7 @@ export default function Contact() {
 
     const form = useRef();
     const [done, setDone] = useState(false);
+    const [isInputClicked, setInputClicked] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -21,10 +24,11 @@ export default function Contact() {
             .then((result) => {
                 console.log("Email sent:", result.text);
                 setDone(true);
+                setInputClicked(false);
                 form.current.reset();
-                // setTimeout(() => {
-                //     setDone(false);
-                // }, 12000);
+                setTimeout(() => {
+                    setDone(false);
+                }, 10000);
             })
             .catch((error) => {
                 console.log("Error sending email:", error.text);
@@ -39,16 +43,16 @@ export default function Contact() {
                         <div className='title'>
                             <div style={{ color: darkMode ? '#edebe8' : '' }}>Let's connect</div>
                             <div>Contact me</div>
-                            <div className='blur'></div>
+                            <img src={isInputClicked ? SackHappy : SackMeditate} className='sackboy-meditate' alt="animated-pic" />
                         </div>
 
                         <div className='form'>
                             <form ref={form} onSubmit={sendEmail}>
                                 <input type='text' name='user_name' className='user' placeholder='Name' required pattern=".{2,}"
-                                    title="Name must be at least 2 characters long" />
-                                <input type='email' name='user_email' className='user' placeholder='Email' required />
+                                    title="Name must be at least 2 characters long" onClick={() => setInputClicked(true)} />
+                                <input type='email' name='user_email' className='user' placeholder='Email' onClick={() => setInputClicked(true)} required />
                                 <textarea name='message' className='user' placeholder='Message' required minLength={10}
-                                    title="Message must be at least 10 characters long"
+                                    title="Message must be at least 10 characters long" onClick={() => setInputClicked(true)}
                                 />
                                 <input type='submit' value="Let's talk" className='button' />
                                 <span style={{ color: "#242D49", fontWeight: "bold", fontSize: "26px" }}>
@@ -59,7 +63,6 @@ export default function Contact() {
                                         </div>
                                     )}
                                 </span>
-                                <div className='blur'></div>
                             </form>
                         </div>
                     </div>

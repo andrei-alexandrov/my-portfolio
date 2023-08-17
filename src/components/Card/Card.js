@@ -29,13 +29,18 @@ function Card() {
                                 <div className="content">
                                     <div className="details">
                                         {!hovered ? (
-                                            <p className="textContent" style={{ color: "orange" }}>
-                                                Hover me
-                                            </p>
+                                            <>
+                                                <p className="textContentTap" style={{ color: "orange" }}>
+                                                    Tap here
+                                                </p>
+                                                <p className="textContent" style={{ color: "orange" }}>
+                                                    Hover me
+                                                </p>
+                                            </>
                                         ) : (
                                             <>
                                                 <h2 className="title">Nice to meet you!</h2>
-                                                <p className="textContent" style={{ color: "orange" }}>
+                                                <p className="textContentInside" style={{ color: "orange" }}>
                                                     Have a nice day {":)"}
                                                 </p>
                                             </>

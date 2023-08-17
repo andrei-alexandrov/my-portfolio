@@ -24,6 +24,15 @@
         font-size: 3rem;
     }
 
+    .sackboy-meditate {
+        margin-top: 15px;
+        width: 7.2rem;
+    }
+
+    .sackboy-happy {
+        display: none;
+    }
+
     .form {
         display: flex;
         justify-content: center;
@@ -104,7 +113,7 @@
 
         .title {
             align-items: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
 
 
             :nth-child(1) {
