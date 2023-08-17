@@ -1,7 +1,8 @@
 I created my portfolio using React.js + some external libraries like swiper, react-particles, SASS, emailJS, react-scroll, iconscout/react-unicorns and others. It is also responsive.
 
-Added various motion effects using framer-motion and css/sass styling + light/dark theme. 
+Added various motion effects using framer-motion and css/sass styling. Added light/dark theme.
 
+Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei-alexandrov-portfolio.netlify.app/) to view my portfolio.
 
 ## Summary
 1. About me section
@@ -18,7 +19,6 @@ Added various motion effects using framer-motion and css/sass styling + light/da
 ![sunThemeProjects](./src/images/gitHubImages/sun-theme-project-2.png)
 ![sunThemeContact](./src/images/gitHubImages/sun-theme-contact.png)
 ![aboutMe480px](./src/images/gitHubImages/aboutMe480px.png)
-![projects480px](./src/images/gitHubImages/projects480px.png)
 ![contact480px](./src/images/gitHubImages/contact480px.png)
 
 ## Available Scripts
