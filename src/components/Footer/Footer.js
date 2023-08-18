@@ -1,7 +1,6 @@
 import React from 'react'
 import Github from "@iconscout/react-unicons/icons/uil-github"
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin"
-import Instagram from "@iconscout/react-unicons/icons/uil-instagram"
 import { Col, Row, Container } from "react-bootstrap"
 
 import "./Footer.scss"
@@ -25,9 +24,6 @@ export default function Footer() {
                                 </a>
                                 <a href='https://www.linkedin.com/in/andrei-alexandrov/' target='_blank' rel="noreferrer">
                                     <LinkedIn color='white' size='3rem' />
-                                </a>
-                                <a href='https://www.instagram.com/andrei_alexandrov_/' target='_blank' rel="noreferrer">
-                                    <Instagram color='white' size='3rem' />
                                 </a>
                             </div>
                         </div>

@@ -5,7 +5,7 @@
     position: relative;
     align-items: center;
     margin: -0.5rem -3.5rem;
-    margin-top: -7rem;
+    margin-top: -5rem;
 
     .footer-wrapper {
         position: absolute;
@@ -15,7 +15,6 @@
         flex-direction: column;
         width: 100%;
         margin-top: 9rem;
-        left: 20px;
 
         .footer-text {
             color: $black;
@@ -44,12 +43,22 @@
         justify-content: center;
         align-items: center;
 
+        .footer-wrapper {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 9rem;
+            left: 17px;
 
-        .footer-text {
-            position: relative;
-            right: 1rem;
-            bottom: 0.5rem;
-            font-size: 0.9rem;
+            .footer-text {
+                position: relative;
+                right: 1rem;
+                bottom: 0.4rem;
+                font-size: 0.9rem;
+            }
         }
     }
 }
@@ -58,11 +67,22 @@
     .footer {
         margin-top: 0.1rem;
 
-        .footer-text {
-            position: relative;
-            right: 1.2rem;
-            color: $black;
-            font-size: 1rem;
+        .footer-wrapper {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 9rem;
+            left: 17px;
+
+            .footer-text {
+                position: relative;
+                right: 1.2rem;
+                color: $black;
+                font-size: 1rem;
+            }
         }
     }
 }
@@ -71,16 +91,20 @@
     .footer {
         margin-top: 0.1rem;
 
-        .footer-text {
-            position: relative;
-            bottom: 1.5rem;
-            right: 1.2rem;
-            color: $black;
-            font-size: 1rem;
-        }
+        .footer-wrapper {
+            left: 21px;
 
-        .icons>a>svg {
-            display: none;
+            .footer-text {
+                position: relative;
+                bottom: 1.5rem;
+                right: 1.2rem;
+                color: $black;
+                font-size: 1rem;
+            }
+
+            .icons>a>svg {
+               display: none;
+            }
         }
     }
 }
@@ -92,7 +116,7 @@
         position: relative;
         align-items: center;
         margin: -0.5rem -3.5rem;
-        margin-top: -5rem;
+        margin-top: -0.8rem;
         font-size: 1.8rem;
         height: 23rem;
 
@@ -109,7 +133,6 @@
             flex-direction: column;
             width: 100%;
             margin-top: 11rem;
-            left: 40px
         }
 
         .icons>a>svg {

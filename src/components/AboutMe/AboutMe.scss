@@ -83,10 +83,9 @@
 
     .about-me-right-side {
         flex: 1;
-
-        .orange-splash {
-            display: none;
-        }
+        // .orange-splash {
+        //     display: none;
+        // }
     }
 }
 
@@ -149,7 +148,7 @@
             .about-me-img-wrapper>a>img {
                 height: 2.5rem;
                 top: 1rem;
-                left: 7px;
+                left: 0.3rem;
             }
 
             .cocktail-text {
@@ -197,7 +196,7 @@
 
             .about-me-img-wrapper>a>img {
                 top: 1rem;
-                left: 7px;
+                left: 0.3rem;
             }
 
             .cocktail-text {

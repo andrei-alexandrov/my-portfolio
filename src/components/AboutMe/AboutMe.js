@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react"
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 import { themeContext } from "../../Context"
 import { Col, Row, Container } from "react-bootstrap"
 
@@ -7,8 +7,7 @@ import { Col, Row, Container } from "react-bootstrap"
 import Card from "../Card/Card"
 import Github from "../../images/github.png"
 import LinkedIn from "../../images/linkedin.png"
-import Instagram from "../../images/instagram.png"
-import OrangeShape from "../../images/orangeShape.png"
+// import OrangeShape from "../../images/orangeShape.png"
 
 import "./AboutMe.scss"
 import "../../index.scss"
@@ -17,7 +16,7 @@ export default function AboutMe() {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
 
-    const transition = { duration: 2, type: 'linear' };
+    // const transition = { duration: 2, type: 'linear' };
     const [cocktail, setCocktail] = useState({
         image: "",
         name: ""
@@ -87,19 +86,19 @@ export default function AboutMe() {
                                 <a href="https://www.linkedin.com/in/andrei-alexandrov/" target='_blank' rel="noreferrer" >
                                     <img src={LinkedIn} alt="LinkedIn icon" />
                                 </a>
-                                <a href="https://www.instagram.com/andrei_alexandrov_/" target='_blank' rel="noreferrer" >
+                                {/* <a href="https://www.instagram.com/andrei_alexandrov_/" target='_blank' rel="noreferrer" >
                                     <img src={Instagram} alt="Instagram icon" />
-                                </a>
+                                </a> */}
                             </div>
                         </div>
 
                         <div className="about-me-right-side">
                             <Card className={darkMode ? "dark-mode" : ""} />
-                            <motion.img
+                            {/* <motion.img
                                 initial={{ left: '-27%' }}
                                 whileInView={{ left: '-43%' }}
                                 transition={transition}
-                                className="orange-splash" src={OrangeShape} alt="splash-image" />
+                                className="orange-splash" src={OrangeShape} alt="splash-image" /> */}
                         </div>
                     </div>
                 </Col>
