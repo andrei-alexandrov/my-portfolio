@@ -20,6 +20,9 @@ export default function NavBar() {
                                     <Link spy={true} to='Skills' smooth={true} offset={-75}>
                                         <li>Skills</li>
                                     </Link>
+                                    <Link spy={true} to='ColoredCircle' smooth={true} offset={-115}>
+                                        <li>Circle</li>
+                                    </Link>
                                     <Link spy={true} to='Projects' smooth={true} offset={-30}>
                                         <li>Projects</li>
                                     </Link>

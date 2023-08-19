@@ -9,6 +9,7 @@ import { themeContext } from "./Context"
 import { useContext } from "react"
 
 import "./App.scss";
+import ColoredCircle from "./components/ColoredCircle/ColoredCircle"
 
 function App() {
   const theme = useContext(themeContext);
@@ -25,6 +26,7 @@ function App() {
       <ParticlesAnimation />
       <AboutMe />
       <Skills />
+      <ColoredCircle />
       <Projects />
       <Contact />
       <Footer />

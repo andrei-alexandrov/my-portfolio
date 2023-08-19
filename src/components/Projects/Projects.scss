@@ -8,9 +8,8 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    // z-index: 10;
     gap: 0.5rem;
-    margin-top: 2rem;
+    margin-top: 14rem;
 
     .link-content {
         display: flex;
@@ -146,7 +145,7 @@
     }
 
     .portfolio {
-        margin-top: 11rem;
+        margin-top: 7rem;
 
         .portfolio-project-text {
             font-size: $text-480px;
@@ -196,10 +195,9 @@
     }
 }
 
-
 @media screen and (min-width: 1600px) {
     .portfolio {
-        margin-top: 4rem;
+        margin-top: 15.7rem;
         gap: 1rem;
 
         .link-content {

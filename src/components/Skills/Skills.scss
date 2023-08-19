@@ -193,7 +193,7 @@
         flex-direction: column;
         height: 55rem;
         padding: 0;
-        margin-top: 52rem;
+        margin-top: 55rem;
 
         .skills-details {
             display: flex;
@@ -228,8 +228,9 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1199px) {
+
     .skills-wrapper {
-        margin-top: 6rem;
+        margin-top: 40rem;
 
         .skills-details {
             font-size: $text-481-768;

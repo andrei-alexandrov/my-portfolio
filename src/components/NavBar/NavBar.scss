@@ -58,15 +58,18 @@
     .navbar-wrapper {
         height: 10vh;
         color: $orange;
+        display: flex;
+        flex-direction: column;
+        left: 2.9rem;
+        position: relative;
+        align-items: center;
+        margin-bottom: 3rem;
+        margin-top: 2.5rem;
 
         .navbar-left-side {
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .navbar-right-side {
-            display: none;
         }
 
         .navbar-btn-wrapper {
@@ -79,22 +82,46 @@
     .navbar-wrapper {
         height: 10vh;
         color: $orange;
-        .navbar-left-side{
+
+        .navbar-left-side {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .navbar-right-side {
             display: none;
         }
 
         .navbar-btn-wrapper {
             display: none;
-
         }
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .navbar-wrapper {
+        height: 10vh;
+        color: $orange;
+
+        .navbar-left-side {
+            display: flex;
+           
+            align-items: center;
+        }
+
+        .navbar-right-side {
+            .navbar-list {
+                display: flex;
+                margin-left: 2rem;
+            }
+        }
+
+        .navbar-btn-wrapper {
+          display: flex;
+        }
+    }
+}
 
 @media screen and (min-width: 1536px) {
     .navbar-wrapper {

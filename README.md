@@ -2,7 +2,7 @@ I created my portfolio using React.js + some external libraries like swiper, rea
 
 Added various motion effects using framer-motion and css/sass styling. Added light/dark theme.
 
-Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei-alexandrov-portfolio.netlify.app/) to view my portfolio.
+Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei-alexandrov-portfolio.netlify.app/) to view it.
 
 ## Summary
 1. About me section
@@ -15,10 +15,12 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 ![sunThemeHome](./src/images/gitHubImages/sun-theme-home.png)
 ![darkThemeSkills](./src/images/gitHubImages/dark-theme-skills.png)
 ![sunThemeSkills](./src/images/gitHubImages/sun-theme-skills.png)
+![circle](./src/images/gitHubImages/circle.png)
 ![darkThemeProjects](./src/images/gitHubImages/dark-theme-projects.png)
 ![sunThemeProjects](./src/images/gitHubImages/sun-theme-project-2.png)
 ![sunThemeContactNewDark](./src/images/gitHubImages/contact-dark-new.png)
 ![sunThemeContactNewLlight](./src/images/gitHubImages/contact-light-new.png)
+![circleMobile](./src/images/gitHubImages/circleMobile.png)
 ![aboutMe480px](./src/images/gitHubImages/aboutMe480px.png)
 ![contact480px](./src/images/gitHubImages/contact480px.png)
 

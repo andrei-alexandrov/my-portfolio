@@ -146,7 +146,7 @@
         display: none;
     }
 
-    .textContentTap{
+    .textContentTap {
         display: block;
     }
 }
@@ -161,7 +161,7 @@
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1069px) {}
+@media screen and (min-width: 769px) and (max-width: 1199px) {}
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {}
 
