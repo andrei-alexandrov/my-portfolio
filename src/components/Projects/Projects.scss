@@ -9,7 +9,7 @@
     justify-content: center;
     position: relative;
     gap: 0.5rem;
-    margin-top: 14rem;
+    margin-top: 5rem;
 
     .link-content {
         display: flex;
@@ -145,7 +145,7 @@
     }
 
     .portfolio {
-        margin-top: 7rem;
+        margin-top: 6rem;
 
         .portfolio-project-text {
             font-size: $text-480px;
@@ -177,7 +177,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .portfolio {
-        margin-top: 10rem;
+        margin-top: 5rem;
 
         .project-title {
             font-size: 1.7rem;
@@ -197,7 +197,7 @@
 
 @media screen and (min-width: 1600px) {
     .portfolio {
-        margin-top: 15.7rem;
+        margin-top: 10rem;
         gap: 1rem;
 
         .link-content {

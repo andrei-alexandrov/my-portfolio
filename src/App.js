@@ -9,7 +9,7 @@ import { themeContext } from "./Context"
 import { useContext } from "react"
 
 import "./App.scss";
-import ColoredCircle from "./components/ColoredCircle/ColoredCircle"
+import Card from "./components/Card/Card"
 
 function App() {
   const theme = useContext(themeContext);
@@ -26,7 +26,7 @@ function App() {
       <ParticlesAnimation />
       <AboutMe />
       <Skills />
-      <ColoredCircle />
+      <Card />
       <Projects />
       <Contact />
       <Footer />

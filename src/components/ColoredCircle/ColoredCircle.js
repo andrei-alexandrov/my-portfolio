@@ -10,7 +10,7 @@ export default function ColoredCircle() {
 
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
-    const gradient = 'silver';
+    const gradient = '#fba61e';
 
     const getRandomRGBA = () => {
         const randomR = Math.floor(Math.random() * 256);

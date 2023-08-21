@@ -2,6 +2,7 @@
     display: flex;
     padding: 57px 10px;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 .card {
@@ -142,6 +143,10 @@
 
 /* TODO */
 @media screen and (max-width: 480px) {
+    .container {
+        margin-top: 15rem;
+    }
+
     .textContent {
         display: none;
     }
@@ -152,6 +157,10 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        margin-top: 13rem;
+    }
+
     .textContent {
         display: none;
     }
@@ -160,10 +169,6 @@
         display: block;
     }
 }
-
-@media screen and (min-width: 769px) and (max-width: 1199px) {}
-
-@media screen and (min-width: 1200px) and (max-width: 1599px) {}
 
 @media screen and (min-width: 1600px) {
     .card {

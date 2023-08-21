@@ -19,7 +19,7 @@ function Card() {
         <Container fluid>
             <Row>
                 <Col>
-                    <div id="nice-card">
+                    <div id="Card">
                         <div className="container">
                             <div className="card" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                                 <div className="lines"></div>
@@ -31,7 +31,7 @@ function Card() {
                                         {!hovered ? (
                                             <>
                                                 <p className="textContentTap" style={{ color: "orange" }}>
-                                                    Tap here
+                                                    Tap on the left
                                                 </p>
                                                 <p className="textContent" style={{ color: "orange" }}>
                                                     Hover me

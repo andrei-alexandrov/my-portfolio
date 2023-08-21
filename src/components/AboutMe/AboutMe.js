@@ -2,8 +2,7 @@ import React, { useState, useEffect, useContext } from "react"
 import { themeContext } from "../../Context"
 import { Col, Row, Container } from "react-bootstrap"
 
-
-import Card from "../Card/Card"
+import ColoredCircle from "../ColoredCircle/ColoredCircle"
 import Github from "../../images/github.png"
 import LinkedIn from "../../images/linkedin.png"
 
@@ -48,7 +47,7 @@ export default function AboutMe() {
     return (
         <Container fluid>
             <Row>
-                <Col xs={12} md={6} xl={7}>
+                <Col>
                     <div className="about-me-wrapper">
                         <div className="about-me-left-side">
                             <div className="about-me">
@@ -87,7 +86,8 @@ export default function AboutMe() {
                         </div>
 
                         <div className="about-me-right-side">
-                            <Card className={darkMode ? "dark-mode" : ""} />
+                            {/* <Card className={darkMode ? "dark-mode" : ""} /> */}
+                            <ColoredCircle />
                         </div>
                     </div>
                 </Col>

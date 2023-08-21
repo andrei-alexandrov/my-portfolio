@@ -39,7 +39,7 @@ export default function Skills() {
                                         JavaScript ES2015+ features <br />React.js <br />
                                         HTML5, CSS3, SASS, Bootstrap, <br />
                                         DOM/BOM, OOP, MVC, HTTP, AJAX - Promises and fetch/axios<br />
-                                        Error handling <br />
+                                        REST API's, JSON, Error handling <br />
                                         Responsive design basics<br />
                                         Git/Github</span>
                                     <div>
