@@ -6,10 +6,10 @@
 }
 
 .card {
-    position: relative;
     width: 22rem;
     height: 11.2rem;
     transition: 0.5s;
+    --bs-card-border-width: var(--bs-border-width-1);
 }
 
 .card:hover {
@@ -66,7 +66,6 @@
     width: 9.4rem;
     height: 9.4rem;
     transform: translateX(-50%);
-    /* will-change: transform; */
     background-color: rgb(245, 242, 242);
     transition: 0.5s;
     overflow: hidden;
@@ -74,7 +73,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    border: 2px solid;
+    border: 1px solid;
 }
 
 .card:hover .imgBx {
@@ -178,7 +177,6 @@
 
 @media screen and (min-width: 1600px) {
     .card {
-        position: relative;
         width: 37rem;
         height: 18rem;
         transition: 0.5s;
@@ -205,30 +203,16 @@
         height: 20rem;
     }
 
-    .card:hover .imgBx::before {
-        width: 38rem;
-        height: 10.6rem;
-    }
-
-    .card .lines::after {
-        content: "";
-        position: absolute;
-        inset: 0.3rem;
-        background: #fafafa;
-    }
-
     .card .imgBx img {
-        width: 19.5rem;
-        height: 19.5rem;
+        width: 19.4rem;
+        height: 19.4rem;
     }
 
     .card .content {
-        height: 100%;
         font-size: 2rem;
     }
 
     .card .content .details {
-        padding: 1.9rem 1.2rem;
-        text-align: center;
+        padding: 2.5rem;
     }
 }

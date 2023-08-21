@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Arrows from "../Arrows/Arrows";
-import { Col, Row, Container } from "react-bootstrap"
+import { Container, Row, Col  } from "react-bootstrap"
 
 // Sports match project photos
 import LoginPage from "../../images/projects/sports_match/loginPage.jpg"

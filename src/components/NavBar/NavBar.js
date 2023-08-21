@@ -1,7 +1,7 @@
 import React from "react"
 import ToggleTheme from "../ToggleTheme/ToggleTheme"
 import { Link } from "react-scroll"
-import { Col, Row, Container } from "react-bootstrap"
+import { Container, Row, Col  } from "react-bootstrap"
 
 import "./NavBar.scss"
 
@@ -17,13 +17,13 @@ export default function NavBar() {
                         <div className="navbar-right-side">
                             <div className="navbar-list">
                                 <ul>
-                                    <Link spy={true} to='Skills' smooth={true} offset={-75}>
+                                    <Link spy={true} to='Skills' smooth={true} duration={60} offset={-55}>
                                         <li>Skills</li>
                                     </Link>
-                                    <Link spy={true} to='Card' smooth={true} offset={-95}>
+                                    <Link spy={true} to='Card' smooth={true} duration={60} offset={-95}>
                                         <li>Card</li>
                                     </Link>
-                                    <Link spy={true} to='Projects' smooth={true} offset={-30}>
+                                    <Link spy={true} to='Projects' smooth={true} duration={60} offset={-30}>
                                         <li>Projects</li>
                                     </Link>
                                 </ul>

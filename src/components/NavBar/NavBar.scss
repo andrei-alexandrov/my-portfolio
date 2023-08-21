@@ -23,6 +23,7 @@
             flex: 1;
             position: relative;
             right: 2rem;
+            top: 9.5px;
         }
 
         .navbar-list>ul {
@@ -54,20 +55,15 @@
 //TODO 480px
 @media screen and (max-width: 480px) {
     .navbar-wrapper {
-        height: 10vh;
-        color: $orange;
-        display: flex;
-        flex-direction: column;
-        left: 2.9rem;
         position: relative;
-        align-items: center;
-        margin-bottom: 3rem;
+        flex-direction: column;
+        color: $orange;
+        left: 2.9rem;
+        margin-bottom: 3.3rem;
         margin-top: 2.5rem;
 
-        .navbar-left-side {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .navbar-right-side {
+            margin-top: 1.8rem;
         }
 
         .navbar-btn-wrapper {
@@ -78,17 +74,20 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .navbar-wrapper {
-        height: 10vh;
+        position: relative;
+        flex-direction: column;
         color: $orange;
+        left: 2.9rem;
+        margin-top: 1.4rem;
 
         .navbar-left-side {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            position: relative;
+            right: 2.5rem;
         }
 
         .navbar-right-side {
-            display: none;
+            position: relative;
+            margin-top: 1.8rem;
         }
 
         .navbar-btn-wrapper {
@@ -104,7 +103,7 @@
 
         .navbar-left-side {
             display: flex;
-           
+
             align-items: center;
         }
 
@@ -116,7 +115,7 @@
         }
 
         .navbar-btn-wrapper {
-          display: flex;
+            display: flex;
         }
     }
 }
@@ -171,7 +170,6 @@
         }
 
         .navbar-btn {
-            @include button();
             margin-top: 12px;
             width: 10.6rem;
         }

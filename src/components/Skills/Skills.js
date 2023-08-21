@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Link } from "react-scroll"
 import { motion } from "framer-motion"
 import { themeContext } from "../../Context"
-import { Col, Row, Container } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 
 import ReactIcon from "../../images/skillsImages/ReactIcon.png"
 import JsIcon from "../../images/skillsImages/JSImage.jpg"

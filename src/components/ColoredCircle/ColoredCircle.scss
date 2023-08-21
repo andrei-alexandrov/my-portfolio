@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3.2rem;
+    margin-top: 6.1rem;
 }
 
 .drop-card {
@@ -52,12 +52,13 @@
         button {
             position: relative;
             padding: 10px 25px;
-            bottom: 1.5rem;
             background: white;
             color: #000000;
             border-radius: 25px;
             border: 1px solid black;
             font-family: "Gumela", sans-serif;
+            font-size: 14px;
+            top: 1rem;
 
             &:hover {
                 cursor: pointer;
@@ -72,7 +73,7 @@
 
 @media screen and (max-width: 480px) {
     .drop-card-container {
-        margin-top: 2.5rem;
+        margin-top: 5rem;
 
         .drop-card {
             width: 20rem;
@@ -92,10 +93,15 @@
     .drop-card-container {
         position: relative;
         left: 0.6rem;
+        margin-top: 3rem;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1199px) {}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .drop-card-container {
+        margin-top: 3rem;
+    }
+}
 
 @media screen and (min-width: 1600px) {
     .drop-card {
