@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
-import Arrows from "../Arrows/Arrows";
 import { Container, Row, Col  } from "react-bootstrap"
+import ColoredLines from "../ColoredLines/ColoredLines";
+import Arrows from "../Arrows/Arrows";
 
 // Sports match project photos
 import LoginPage from "../../images/projects/sports_match/loginPage.jpg"
@@ -26,6 +27,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 
+
 export default function Projects() {
     const [enlargedImg, setEnlargedImg] = useState(null);
     const swiperRefProjectOne = useRef(null);
@@ -44,6 +46,7 @@ export default function Projects() {
             <Row>
                 <Col>
                     <div className="portfolio" id="Projects">
+                        <ColoredLines />
                         <div>My Projects</div>
                         <div className="project-title">1. Sports Match</div>
                         <div className="portfolio-project-text">My own idea created with React.js that helps people with common interests in different sports
