@@ -11,11 +11,11 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 4. Contact section
 
 ## Some images
-![darkThemeHome](./src/images/gitHubImages/dark-theme-home.png)
-![sunThemeHome](./src/images/gitHubImages/sun-theme-home.png)
+![darkThemeHome](./src/images/gitHubImages/new-dark-home.png)
+![sunThemeHome](./src/images/gitHubImages/new-light-home.png)
 ![darkThemeSkills](./src/images/gitHubImages/dark-theme-skills.png)
 ![sunThemeSkills](./src/images/gitHubImages/sun-theme-skills.png)
-![circle](./src/images/gitHubImages/circle.png)
+![circle](./src/images/gitHubImages/card-solo.png)
 ![darkThemeProjects](./src/images/gitHubImages/dark-theme-projects.png)
 ![sunThemeProjects](./src/images/gitHubImages/sun-theme-project-2.png)
 ![sunThemeContactNewDark](./src/images/gitHubImages/contact-dark-new.png)

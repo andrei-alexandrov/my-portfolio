@@ -20,7 +20,7 @@ export default function NavBar() {
                                     <Link spy={true} to='Skills' smooth={true} duration={60} offset={-55}>
                                         <li>Skills</li>
                                     </Link>
-                                    <Link spy={true} to='Card' smooth={true} duration={60} offset={-95}>
+                                    <Link spy={true} to='Card' smooth={true} duration={60} offset={-165}>
                                         <li>Card</li>
                                     </Link>
                                     <Link spy={true} to='Projects' smooth={true} duration={60} offset={-30}>
