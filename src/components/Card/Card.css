@@ -170,6 +170,12 @@
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .container {
+        margin-top: 9rem;
+    }
+}
+
 @media screen and (min-width: 1600px) {
     .card {
         position: relative;
