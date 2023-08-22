@@ -7,7 +7,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    position: relative;
     gap: 0.5rem;
    
 
@@ -59,7 +58,7 @@
 .portfolio-project-text {
     color: $gray;
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -156,7 +155,7 @@
         .arrows-wrapper {
             .right-arrow {
                 position: relative;
-                top: 1.2px;
+                top: 1.6px;
             }
         }
     }

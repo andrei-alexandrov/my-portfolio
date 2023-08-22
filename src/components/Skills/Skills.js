@@ -55,7 +55,7 @@ export default function Skills() {
                                     </div>
 
                                     <div className="skills-btn-wrapper">
-                                        <Link spy={true} to='Contact' smooth={true} offset={-30}>
+                                        <Link spy={true} to='Contact' smooth={true} duration={60} offset={-30}>
                                             <button className="contact-btn">Contact me</button>
                                         </Link>
 

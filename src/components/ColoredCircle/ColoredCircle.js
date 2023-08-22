@@ -16,9 +16,8 @@ export default function ColoredCircle() {
         const randomR = Math.floor(Math.random() * 256);
         const randomG = Math.floor(Math.random() * 256);
         const randomB = Math.floor(Math.random() * 256);
-        const randomA = Math.random();
 
-        return `rgba(${randomR}, ${randomG}, ${randomB}, ${randomA})`;
+        return `rgba(${randomR}, ${randomG}, ${randomB})`;
     };
 
     const changeColors = () => {
@@ -41,7 +40,7 @@ export default function ColoredCircle() {
                     <p></p>
                     <button style={{
                         backgroundColor: darkMode ? gradient : '',
-                        
+
                     }}
                         onClick={changeColors}>Change colors</button>
                 </div>

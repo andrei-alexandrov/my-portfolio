@@ -34,10 +34,6 @@
     }
 
     .form {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        flex: 1;
 
         >form {
             display: flex;
@@ -73,7 +69,6 @@
     .contact-form {
         flex-direction: column;
         height: auto;
-        margin-top: 3rem;
 
         .title {
             align-items: center;
@@ -106,7 +101,6 @@
 //TODO
 @media screen and (min-width: 481px) and (max-width: 111141px) {
     .contact-form {
-        display: flex;
         flex-direction: column;
         height: auto;
         margin-top: 3rem;
@@ -149,7 +143,7 @@
     .contact-form {
         margin-top: 7rem;
         margin-bottom: 9rem;
-        height: 60vh;
+        height: 68vh;
 
         .title>:nth-child(1) {
             color: $black;
@@ -185,7 +179,6 @@
             font-size: 20px;
             position: relative;
             top: 1rem;
-            z-index: 500;
         }
     }
 }

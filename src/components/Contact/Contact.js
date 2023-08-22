@@ -59,7 +59,7 @@ export default function Contact() {
                                     {done && (
                                         <div className="sent-message-text" >
                                             <span style={{ color: "#fba61e", fontSize: "1.4rem" }}>Thanks for contacting me.</span>
-                                            <img src={heathEmoji} alt="Thank You" style={{ width: "70px", height: "80px", marginRight: "-55px" }} />
+                                            <img src={heathEmoji} alt="Thank You" style={{ width: "70px", height: "80px" }} />
                                         </div>
                                     )}
                                 </span>
