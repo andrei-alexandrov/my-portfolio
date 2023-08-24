@@ -22,7 +22,7 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 ![sunThemeProjects](./src/images/gitHubImages/sun-theme-project-2.png)
 ![sunThemeContactNewDark](./src/images/gitHubImages/contact-dark-new.png)
 ![sunThemeContactNewLlight](./src/images/gitHubImages/contact-light-new.png)
-![aboutMe480px](./src/images/gitHubImages/aboutMe480px.png)
+![aboutMe480px](./src/images/gitHubImages/aboutMe480pxOpened.png)
 ![aboutMe480px](./src/images/gitHubImages/aboutMe480pxClosed.png)
 ![zoomOut](./src/images/gitHubImages/zoomOut.png)
 
