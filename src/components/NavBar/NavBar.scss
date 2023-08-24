@@ -1,177 +1,48 @@
-@import "../../variables";
+@import "../../fonts";
 @import "../../mixins";
 
-.navbar-wrapper {
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    color: $orange;
+.navbar {
+    .nav-links {
+        gap: 10px;
 
-    .navbar-left-side {
-        flex: 1;
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar-right-side {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-
-        .navbar-list {
-            flex: 1;
+        a.nav-link {
             position: relative;
-            right: 2rem;
-            top: 9.5px;
-        }
+            color: orange;
+            font-size: $nav-font;
+            transition: transform 1s;
 
-        .navbar-list>ul {
-            display: flex;
-            gap: 2rem;
-            margin-right: 4rem;
-            list-style-type: none;
-            cursor: pointer;
-            font-size: 1.6rem;
-
-            li {
-                transition: transform 1s;
-
-                &:hover {
-                    color: $orange;
-                    transform: scale(1.2);
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-
-    .navbar-btn {
-        @include button();
-        margin-left: 5px;
-    }
-}
-
-//TODO 480px
-@media screen and (max-width: 480px) {
-    .navbar-wrapper {
-        position: relative;
-        flex-direction: column;
-        color: $orange;
-        left: 2.9rem;
-        margin-bottom: 3.3rem;
-        margin-top: 2.5rem;
-
-        .navbar-right-side {
-            margin-top: 1.8rem;
-        }
-
-        .navbar-btn-wrapper {
-            display: none;
-        }
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .navbar-wrapper {
-        position: relative;
-        flex-direction: column;
-        color: $orange;
-        left: 2.9rem;
-        margin-top: 1.4rem;
-
-        .navbar-left-side {
-            position: relative;
-            right: 2.5rem;
-        }
-
-        .navbar-right-side {
-            position: relative;
-            margin-top: 1.8rem;
-        }
-
-        .navbar-btn-wrapper {
-            display: none;
-        }
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1199px) {
-    .navbar-wrapper {
-        height: 10vh;
-        color: $orange;
-
-        .navbar-left-side {
-            display: flex;
-
-            align-items: center;
-        }
-
-        .navbar-right-side {
-            .navbar-list {
-                display: flex;
-                margin-left: 2rem;
-            }
-        }
-
-        .navbar-btn-wrapper {
-            display: flex;
-        }
-    }
-}
-
-@media screen and (min-width: 1536px) {
-    .navbar-wrapper {
-        display: flex;
-        justify-content: space-between;
-        height: 10vh;
-        color: $orange;
-
-        .navbar-left-side {
-            flex: 1;
-            display: flex;
-            gap: 2rem;
-
-            .navbar-name {
-                font-size: 2.3rem;
+            &:hover {
+                cursor: pointer;
+                color: orange;
+                transform: scale(1.2);
                 font-weight: bold;
             }
         }
+    }
 
-        .navbar-right-side {
-            display: flex;
-            flex: 1;
-            align-items: center;
-            justify-content: center;
-            font-weight: 400;
+    .nav-btn {
+        @include button();
+        margin-left: 5px;
+        width: 7.5rem;
+        height: 2.5rem;
+    }
 
-            .navbar-list {
-                flex: 1;
-                position: relative;
-                right: 5rem;
-            }
+    .navbar-toggler-icon {
+        border-radius: 8%;
+        animation: glowing 2s infinite;
+    }
 
-            .navbar-list>ul {
-                display: flex;
-                gap: 2rem;
-                margin-right: 4rem;
-                font-size: 2.3rem;
-
-                li {
-                    transition: transform 1s;
-
-                    &:hover {
-                        color: $orange;
-                        transform: scale(1.2);
-                        font-weight: bold;
-                    }
-                }
-            }
+    @keyframes glowing {
+        0% {
+            box-shadow: 0 0 10px rgba(223, 138, 2, 0.5);
         }
 
-        .navbar-btn {
-            margin-top: 12px;
-            width: 10.6rem;
+        50% {
+            box-shadow: 0 0 20px rgba(223, 138, 2, 0.8);
+        }
+
+        100% {
+            box-shadow: 0 0 10px rgba(223, 138, 2, 0.5);
         }
     }
 }

@@ -1,4 +1,5 @@
 I created my portfolio using React.js + some external libraries like swiper, react-particles, SASS, emailJS, react-scroll, iconscout/react-unicorns and others. It is also responsive.
+Hamburger navbar menu for smaller screens. 
 
 Added various motion effects using framer-motion and css/sass styling. Added light/dark theme.
 
@@ -7,8 +8,9 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 ## Summary
 1. About me section
 2. Skills section
-3. Projects section
-4. Contact section
+3. My Card section
+4. Projects section
+5. Contact section
 
 ## Some images
 ![darkThemeHome](./src/images/gitHubImages/new-dark-home.png)
@@ -20,9 +22,10 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 ![sunThemeProjects](./src/images/gitHubImages/sun-theme-project-2.png)
 ![sunThemeContactNewDark](./src/images/gitHubImages/contact-dark-new.png)
 ![sunThemeContactNewLlight](./src/images/gitHubImages/contact-light-new.png)
-![circleMobile](./src/images/gitHubImages/circleMobile.png)
 ![aboutMe480px](./src/images/gitHubImages/aboutMe480px.png)
-![contact480px](./src/images/gitHubImages/contact480px.png)
+![aboutMe480px](./src/images/gitHubImages/aboutMe480pxClosed.png)
+![zoomOut](./src/images/gitHubImages/zoomOut.png)
+
 
 ## Available Scripts
 

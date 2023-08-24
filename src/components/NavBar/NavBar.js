@@ -1,46 +1,35 @@
-import React from "react"
-import ToggleTheme from "../ToggleTheme/ToggleTheme"
-import { Link } from "react-scroll"
-import { Container, Row, Col  } from "react-bootstrap"
+import React from "react";
+import { Link } from "react-scroll";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
-import "./NavBar.scss"
+import ToggleTheme from "../ToggleTheme/ToggleTheme";
 
-export default function NavBar() {
+import "./Navbar.scss";
+
+export default function CustomNavbar() {
     return (
-        <Container fluid>
-            <Row>
-                <Col>
-                    <nav className="navbar-wrapper">
-                        <div className="navbar-left-side">
-                            <ToggleTheme />
-                        </div>
-                        <div className="navbar-right-side">
-                            <div className="navbar-list">
-                                <ul>
-                                    <Link spy={true} to='Skills' smooth={true} duration={60} offset={-55}>
-                                        <li>Skills</li>
-                                    </Link>
-                                    <Link spy={true} to='Card' smooth={true} duration={60} offset={-165}>
-                                        <li>Card</li>
-                                    </Link>
-                                    <Link spy={true} to='Projects' smooth={true} duration={60} offset={-30}>
-                                        <li>Projects</li>
-                                    </Link>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="navbar-btn-wrapper">
-                            <Link spy={true} to='Contact' smooth={true} duration={60} offset={-22}>
-                                <button className="navbar-btn">Contact me</button>
+            <Navbar expand="lg" className="navbar">
+                <Container>
+                    <Navbar.Brand className="">
+                        <ToggleTheme />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mx-auto nav-links d-flex flex-row justify-content-center align-items-center gap-3">
+                            <Nav.Link as={Link} spy={true} to='skills' smooth={true} duration={60}>Skills</Nav.Link>
+                            <Nav.Link as={Link} spy={true} to='cards-collection' smooth={true} duration={60} offset={-60}>My Card</Nav.Link>
+                            <Nav.Link as={Link} spy={true} to='projects' smooth={true} duration={60} offset={-66}>Projects</Nav.Link>
+                        </Nav>
+                        <Nav className="ms-auto nav-btns d-flex flex-row justify-content-center align-items-center mt-3">
+                            <Link spy={true} to='contact' smooth={true} duration={60} offset={115}>
+                                <button className="nav-btn" >Contact me</button>
                             </Link>
                             <a href="/pdf-files/Andrei_Alexandrov_CV.pdf" download>
-                                <button className="navbar-btn">Download CV</button>
+                                <button className="nav-btn">Download CV</button>
                             </a>
-                        </div>
-                    </nav >
-                </Col>
-            </Row>
-        </Container>
-    )
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+    );
 }

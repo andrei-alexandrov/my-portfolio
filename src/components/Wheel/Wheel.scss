@@ -1,0 +1,115 @@
+@import "../../variables";
+
+.skills-right-side {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-circle {
+        position: relative;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 100%;
+        top: 3.5rem;
+        background-color: $black;
+        border: 2px solid $orange;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transition: transform 1s ease;
+            transform: rotate(calc(360deg * var(--random-rotation)));
+        }
+
+        .secondary-circle>* {
+            position: absolute;
+        }
+
+        .secondary-circle>*:nth-child(1) {
+            height: 75px;
+            border-radius: 100%;
+            border: 3px solid $orange;
+            top: -3rem;
+            left: 6.5rem;
+        }
+
+        .secondary-circle>*:nth-child(2) {
+            height: 75px;
+            border-radius: 100%;
+            border: 3px solid $orange;
+            left: -2rem;
+            top: 2rem;
+        }
+
+        .secondary-circle>*:nth-child(3) {
+            height: 90px;
+            border-radius: 100%;
+            border: 3px solid $black;
+            left: 6rem;
+            top: 5.5rem;
+        }
+
+        .secondary-circle>*:nth-child(4) {
+            height: 75px;
+            border-radius: 100%;
+            border: 3px solid $orange;
+            left: 15rem;
+            top: 2rem;
+        }
+
+        .secondary-circle>*:nth-child(5) {
+            height: 75px;
+            border-radius: 100%;
+            border: 3px solid $orange;
+            left: 6.7rem;
+            top: 15.6rem;
+        }
+
+        .secondary-circle>*:nth-child(6) {
+            height: 75px;
+            border-radius: 100%;
+            border: 3px solid $orange;
+            left: -2rem;
+            top: 11rem;
+        }
+
+        .secondary-circle>*:nth-child(7) {
+            height: 75px;
+            border-radius: 100%;
+            border: 3px solid $orange;
+            left: 15rem;
+            top: 11rem;
+        }
+    }
+
+    .rotation {
+        color: $orange;
+        font-weight: bold;
+        top: 22rem;
+        left: 2rem;
+    }
+
+    .rotation-tap {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-right-side {
+        position: relative;
+        right: 4px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .skills-right-side {
+        position: relative;
+        right: 6px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .main-circle {
+        left: 1.9rem;
+    }
+}

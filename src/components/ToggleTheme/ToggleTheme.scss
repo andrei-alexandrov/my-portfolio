@@ -1,16 +1,13 @@
-@import "../../variables";
-@import "../../mixins";
-
 .toggle>* {
     width: 1.3rem;
     height: 1rem;
-    color: $orange;
+    color: orange;
 }
 
 .toggle {
     display: flex;
     justify-content: space-between;
-    border: 3px solid $orange;
+    border: 3px solid orange;
     border-radius: 1rem;
     position: relative;
     padding: 2px;
@@ -18,21 +15,7 @@
 
     .toggle-button {
         border-radius: 100%;
-        background: $orange;
+        background: orange;
         position: absolute;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .toggle {
-        left: -2.9rem;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .toggle>* {
-        width: 2.2rem;
-        height: 2rem;
-        color: $orange;
     }
 }

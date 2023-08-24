@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
-import { themeContext } from "../../Context"
+import { themeContext } from "../..//Contex"
 
-import LetterA from "../../images/letterA.jpg"
+import LetterA from "../../images/aboutMe/letterA.jpg"
 import './ColoredCircle.scss';
 
 export default function ColoredCircle() {
@@ -37,10 +37,8 @@ export default function ColoredCircle() {
             >
                 <div className='drop-card-content'>
                     <h2> <img src={LetterA} alt='LetterA'></img></h2>
-                    <p></p>
                     <button style={{
                         backgroundColor: darkMode ? gradient : '',
-
                     }}
                         onClick={changeColors}>Change colors</button>
                 </div>

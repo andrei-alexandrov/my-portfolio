@@ -1,11 +1,8 @@
-@import "./variables";
-
 @mixin button() {
-    border-radius: 2.1rem;
+    border-radius: 2rem;
     border: none;
     color: white;
     font-size: 0.9rem;
-    padding: 0.7rem 1.6rem;
     background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
     box-shadow: 0px 9px 8px 0px rgba(251, 161, 40, 0.42);
     width: 8.8rem;
@@ -14,7 +11,7 @@
     &:hover {
         background: white;
         cursor: pointer;
-        color: $orange;
-        border: 1px solid $orange;
+        color: orange;
+        border: 1px solid orange;
     }
 }

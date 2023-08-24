@@ -1,15 +1,17 @@
-import NavBar from "./components/NavBar/NavBar"
-import ParticlesAnimation from "./components/Particles/ParticlesAnimation"
-import AboutMe from "./components/AboutMe/AboutMe"
-import Skills from "./components/Skills/Skills"
-import Projects from "./components/Projects/Projects"
-import Contact from "./components/Contact/Contact"
-import Footer from "./components/Footer/Footer"
-import { themeContext } from "./Context"
+import { themeContext } from "./Contex"
 import { useContext } from "react"
 
-import "./App.scss";
-import Card from "./components/Card/Card"
+import ParticlesAnimation from './components/Particles/ParticlesAnimation'
+import Navbar from './components/Navbar/Navbar'
+import AboutMe from './pages/AboutMe/AboutMe'
+import Skills from './pages/Skills/Skills'
+import CardsCollection from './pages/CardsCollection/CardsCollection'
+import Projects from "./pages/Projects/Projects"
+import Contact from "./pages/Contact/Contact"
+import Footer from "./pages/Footer/Footer"
+
+import './App.scss'
+import './index.scss'
 
 function App() {
   const theme = useContext(themeContext);
@@ -19,14 +21,15 @@ function App() {
     <div
       className={`App ${darkMode ? "dark-mode" : ""}`}
       style={{
-        background: darkMode ? 'black' : ''
+        background: darkMode ? "black" : "",
+        // height: "1210vh"
       }}
     >
-      <NavBar />
       <ParticlesAnimation />
+      <Navbar />
       <AboutMe />
       <Skills />
-      <Card />
+      <CardsCollection />
       <Projects />
       <Contact />
       <Footer />

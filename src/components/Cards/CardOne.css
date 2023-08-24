@@ -1,0 +1,145 @@
+.cardOne {
+    width: 22rem;
+    height: 11.2rem;
+    transition: 0.5s;
+    --bs-card-border-width: var(--bs-border-width-1);
+}
+
+.cardOne:hover {
+    height: 26.2rem;
+}
+
+.cardOne .lines {
+    position: absolute;
+    inset: 0;
+    background: rgb(105, 107, 92);
+    overflow: hidden;
+}
+
+.cardOne .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 37.6rem;
+    height: 7.6rem;
+    background: linear-gradient(transparent, #FCA61F, #FCA61F, #FCA61F, transparent);
+    animation: animate 4s linear infinite;
+}
+
+.cardOne:hover .lines::before {
+    animation-play-state: running;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.cardOne .lines::after {
+    content: "";
+    position: absolute;
+    inset: 0.2rem;
+    background: #fafafa;
+}
+
+.dark-mode .cardOne .lines::after {
+    background: #0c0c0c;
+}
+
+.cardOne .imgBx {
+    position: absolute;
+    top: -3.75rem;
+    left: 50%;
+    width: 9.4rem;
+    height: 9.4rem;
+    transform: translateX(-50%);
+    background-color: rgb(245, 242, 242);
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.cardOne:hover .imgBx {
+    top: 1.6rem;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.cardOne:hover .imgBx::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 31.2rem;
+    height: 9.4rem;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(transparent, #fba61e, #000000, #fba61e, transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+
+.cardOne:hover .imgBx::before {
+    animation-play-state: running;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.cardOne .imgBx img {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+}
+
+.cardOne .content {
+    position: absolute;
+    width: 100%;
+    height: 102%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cardOne .content .details {
+    padding: 1.3rem;
+    padding-right: 2.7rem;
+    text-align: center;
+}
+
+.cardOne:hover .content .details h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: orange;
+    line-height: 1.2em;
+}
+
+.textContentTap {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .textContent {
+        display: none;
+    }
+
+    .textContentTap {
+        display: block;
+    }
+}

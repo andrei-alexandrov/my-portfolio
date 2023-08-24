@@ -1,10 +1,8 @@
-@import "../../variables";
-
 .drop-card-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6.1rem;
+    margin-top: 5rem;
 }
 
 .drop-card {
@@ -27,8 +25,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        text-align: center;
-        padding: 2.5rem;
         gap: 0.9rem;
 
         h2 {
@@ -41,7 +37,7 @@
             justify-content: center;
             align-items: center;
             font-size: 2rem;
-            color: $orange;
+            color: orange;
 
             img {
                 width: 8.2rem;
@@ -58,7 +54,7 @@
             border: 1px solid black;
             font-family: "Gumela", sans-serif;
             font-size: 14px;
-            top: 1rem;
+            top: 2.3rem;
 
             &:hover {
                 cursor: pointer;
@@ -72,40 +68,20 @@
 }
 
 @media screen and (max-width: 480px) {
-    .drop-card-container {
-        margin-top: 5rem;
-
-        .drop-card {
-            width: 20rem;
-            height: 20rem;
-        }
-
-        .drop-card {
-
-            &:hover {
-                transform: scale(1.04);
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .drop-card-container {
-        position: relative;
-        left: 0.6rem;
-        margin-top: 3rem;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1199px) {
-    .drop-card-container {
-        margin-top: 3rem;
-    }
-}
-
-@media screen and (min-width: 1600px) {
     .drop-card {
-        width: 32rem;
-        height: 32rem;
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .drop-card-container {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .drop-card-container {
+        margin-top: 4rem;
     }
 }

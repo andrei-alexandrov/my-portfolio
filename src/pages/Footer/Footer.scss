@@ -1,0 +1,90 @@
+@import "../../variables";
+
+.footer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: -4rem;
+
+    .footer-wrapper {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 9rem;
+
+        .footer-text {
+            color: $black;
+        }
+
+        .icons>a>svg {
+            margin-top: 1.5rem;
+            margin-right: 0.5rem;
+            transition: transform 1s;
+            position: relative;
+            left: 2px;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        margin-top: 1rem;
+
+        .footer-wrapper {
+            margin-top: 3.3rem;
+
+            .footer-text {
+                font-size: 0.8rem;
+            }
+
+            .icons>a>svg {
+                display: none;
+            }   
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .footer {
+        margin-top: 0.1rem;
+
+        .footer-wrapper {
+            margin-top: 3.8rem;
+
+            .footer-text {
+                color: $black;
+                font-size: 1rem;
+            }
+
+            .icons>a>svg {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .footer {
+        margin-top: 0.1rem;
+
+        .footer-wrapper {
+            margin-top: 6rem;
+
+            .footer-text {
+                color: $black;
+                font-size: 1rem;
+            }
+
+            .icons>a>svg {
+                display: none;
+            }
+        }
+    }
+}
