@@ -3,7 +3,15 @@ import { Link } from "react-scroll"
 import { themeContext } from "../../Contex"
 import { Container, Row, Col } from "react-bootstrap"
 
+import Lottie from 'lottie-react';
+import reactIcon from "../../animations/reactIcon.json"
+import gitHubIcon from "../../animations/gitHubRound.json"
+import cssIcon from "../../animations/cssLottie.json"
+import htmlIcon from "../../animations/htmlLottie.json"
+import jsIcon from "../../animations/jsLottie.json"
+
 import Wheel from "../../components/Wheel/Wheel"
+// import laptopIcon from "../../animations/laptopLottie.json"
 
 import "./Skills.scss";
 
@@ -17,8 +25,15 @@ export default function Skills() {
                 <Col className="skills-left-side">
                     <div className="skills-details">
                         <span className="" style={{ color: darkMode ? '#edebe8' : '' }}>My <span style={{ color: "#FCA61F" }}>Skills</span></span>
+                        <div className="lottie-wrapper" style={{ display: "flex", position: "relative", right: "5px" }}>
+                            <Lottie style={{ width: "44px" }} animationData={jsIcon} />
+                            <Lottie style={{ width: "55px" }} animationData={reactIcon} />
+                            <Lottie style={{ width: "55px" }} animationData={htmlIcon} />
+                            <Lottie style={{ width: "50px" }} animationData={cssIcon} />
+                            <Lottie style={{ width: "60px" }} animationData={gitHubIcon} />
+                        </div>
                         <span>
-                            JavaScript ES2015+ features <br />React.js <br />
+                            JavaScript ES2015+ features <br /> React.js<br />
                             HTML5, CSS3, SASS, Bootstrap, <br />
                             DOM/BOM, OOP, MVC, HTTP, AJAX - Promises and fetch/axios<br />
                             REST API's, JSON, Error handling <br />
@@ -47,8 +62,9 @@ export default function Skills() {
                         </div>
                     </div>
                 </Col>
-                <Col >
+                <Col className="center-column" >
                     <Wheel />
+                    {/* <Lottie animationData={laptopIcon}></Lottie> */}
                 </Col>
             </Row>
         </Container >

@@ -25,60 +25,61 @@
             position: absolute;
         }
 
+        .smile-lottie>svg {
+            border-radius: 50%;
+            position: relative;
+            left: 10px;
+        }
+
+        .funny-lottie>svg {
+            width: 124px !important;
+            position: relative;
+            left: 203px;
+            top: 4px;
+        }
+
+        .success-lottie>svg {
+            position: relative;
+            width: 204px !important;
+            left: -84px;
+            top: 115px;
+        }
+
+        .slice-lottie>svg {
+            border-radius: 50%;
+        }
+
+        .laptop-lottie>svg {
+            width: 170px !important;
+            position: relative;
+            top: 154px;
+            left: 183px;
+        }
+
         .secondary-circle>*:nth-child(1) {
-            height: 75px;
+            height: 79px;
             border-radius: 100%;
-            border: 3px solid $orange;
+            border: 2px solid $orange;
             top: -3rem;
             left: 6.5rem;
         }
 
         .secondary-circle>*:nth-child(2) {
             height: 75px;
-            border-radius: 100%;
-            border: 3px solid $orange;
             left: -2rem;
             top: 2rem;
         }
 
         .secondary-circle>*:nth-child(3) {
-            height: 90px;
-            border-radius: 100%;
-            border: 3px solid $black;
-            left: 6rem;
-            top: 5.5rem;
-        }
-
-        .secondary-circle>*:nth-child(4) {
-            height: 75px;
-            border-radius: 100%;
-            border: 3px solid $orange;
-            left: 15rem;
-            top: 2rem;
+            width: 170px;
+            top: 3.2rem;
+            left: 3.7rem;
         }
 
         .secondary-circle>*:nth-child(5) {
             height: 75px;
-            border-radius: 100%;
-            border: 3px solid $orange;
             left: 6.7rem;
             top: 15.6rem;
-        }
-
-        .secondary-circle>*:nth-child(6) {
-            height: 75px;
-            border-radius: 100%;
-            border: 3px solid $orange;
-            left: -2rem;
-            top: 11rem;
-        }
-
-        .secondary-circle>*:nth-child(7) {
-            height: 75px;
-            border-radius: 100%;
-            border: 3px solid $orange;
-            left: 15rem;
-            top: 11rem;
         }
     }
 

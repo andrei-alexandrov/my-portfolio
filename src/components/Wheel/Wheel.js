@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import ReactIcon from "../../images/skills/ReactIcon.png"
-import JsIcon from "../../images/skills/JSImage.jpg"
-import CSSIcon from "../../images/skills/CSS.png"
-import HTMLIcon from "../../images/skills/HTML.png"
-import SASSIcon from "../../images/skills/Sass.png"
-import GithubIcon from "../../images/skills/GitHub-Mark.png"
-import BootstrapIcon from "../../images/skills/bootstrap5.jpeg"
+import Lottie from 'lottie-react';
+import bulbIcon from "../../animations/bulbLottie.json"
+import hiIcon from "../../animations/hiLottie.json"
+import smileIcon from "../../animations/smileLotie.json"
+import laptop from "../../animations/laptop.json"
+import success from "../../animations/success.json"
+import funny from "../../animations/funny.json"
+import slice from "../../animations/slice.json"
 
 import "./Wheel.scss"
 
@@ -27,13 +28,14 @@ export default function Wheel() {
                 onMouseEnter={handleMouseEnter}
             >
                 <div className="secondary-circle">
-                    <img src={ReactIcon} alt="React icon" />
-                    <img src={CSSIcon} alt="CSS icon" />
-                    <img src={JsIcon} alt="JS icon" />
-                    <img src={HTMLIcon} alt="HTML icon" />
-                    <img src={SASSIcon} alt="SASS icon" />
-                    <img src={GithubIcon} alt="Github icon" />
-                    <img src={BootstrapIcon} alt="Bootstrap icon" />
+                    <Lottie animationData={bulbIcon} />
+                    <Lottie className='smile-lottie' animationData={smileIcon} />
+                    <Lottie animationData={hiIcon} />
+                    <Lottie className='funny-lottie' animationData={funny} />
+                    <Lottie className='slice-lottie' animationData={slice} />
+                    <Lottie className='success-lottie' animationData={success} />
+                    <Lottie className='laptop-lottie' animationData={laptop} />
+
                     <span className="rotation">Hover for random rotation</span>
                     <span className="rotation-tap">Tap for random rotation</span>
                 </div>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import HumanPic from "../../images/cards/person1.png"
+import Lottie from 'lottie-react';
+import helloEmoji from "../../animations/helloAnimation.json"
 
 import "./CardOne.css"
 
@@ -33,6 +35,8 @@ export default function CardOne() {
             </>
           ) : (
             <>
+              {/* <img width={80} src={Greeting} alt='greeting'/> */}
+              <Lottie style={{ width: "110px", position:"relative", left:"4rem" }} animationData={helloEmoji} />
               <h2 className="title">Nice to meet you!</h2>
               <p className="textContentInside" style={{ color: "orange" }}>
                 Have a nice day {":)"}

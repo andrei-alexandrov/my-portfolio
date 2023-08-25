@@ -9,10 +9,6 @@
         gap: 2rem;
         margin-top: 2.5rem;
 
-        .white-text {
-            color: rgb(255, 255, 255);
-        }
-
         .about-me {
             display: flex;
             flex-direction: column;
@@ -125,6 +121,11 @@
         .btn-message {
             flex-direction: column;
             align-items: center;
+        }
+        .about-me-img-wrapper{
+            position: relative;
+            top: 6.2rem;
+            left: 7px;
         }
     }
 }
