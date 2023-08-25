@@ -22,3 +22,9 @@
         margin-top: 17rem !important;
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .cards-wrapper {
+        top: 2rem;
+    }
+}

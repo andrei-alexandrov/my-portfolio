@@ -11,9 +11,7 @@ export default function CardsCollection() {
                 <Col style={{ marginTop: "9rem" }} className="cards-wrapper">
                     <CardOne />
                 </Col>
-                  
             </Row>
-
         </Container>
     )
 }

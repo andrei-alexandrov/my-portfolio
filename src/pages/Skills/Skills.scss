@@ -3,7 +3,7 @@
 
 .skills-wrapper {
     .skills-left-side {
-        margin-top: 3rem;
+        margin-top: 4.2rem;
 
         .skills-details {
             display: flex;
@@ -91,5 +91,12 @@
     .skills-wrapper {
         position: relative;
         top: 5rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .skills-wrapper {
+        position: relative;
+        top: 8rem;
     }
 }

@@ -28,7 +28,7 @@ export default function CardOne() {
                 Tap on the left
               </p>
               <p className="textContent" style={{ color: "orange" }}>
-                Hover me
+                Hover here
               </p>
             </>
           ) : (

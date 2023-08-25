@@ -128,3 +128,10 @@
         }
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .about-me-wrapper {
+        position: relative;
+        top: 6rem;
+    }
+}
