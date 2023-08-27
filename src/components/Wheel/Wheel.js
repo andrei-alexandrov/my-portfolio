@@ -28,7 +28,7 @@ export default function Wheel() {
                 onMouseEnter={handleMouseEnter}
             >
                 <div className="secondary-circle">
-                    <Lottie animationData={bulbIcon} />
+                    <Lottie className='bulb-lottie' animationData={bulbIcon} />
                     <Lottie className='smile-lottie' animationData={smileIcon} />
                     <Lottie animationData={hiIcon} />
                     <Lottie className='funny-lottie' animationData={funny} />

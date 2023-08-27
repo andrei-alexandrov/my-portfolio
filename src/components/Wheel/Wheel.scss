@@ -25,61 +25,52 @@
             position: absolute;
         }
 
-        .smile-lottie>svg {
+        .bulb-lottie {
+            width: 79px !important;
             border-radius: 50%;
-            position: relative;
-            left: 10px;
+            border: 2px solid $orange;
+            top: -3.2rem;
+            left: 6.5rem;
         }
 
-        .funny-lottie>svg {
-            width: 124px !important;
+        .smile-lottie>svg {
+            width: 75px !important;
+            border-radius: 50%;
             position: relative;
+            left: -22px;
+            top: 2rem;  
+        }
+
+        .funny-lottie {
+            width: 124px !important;
             left: 203px;
             top: 4px;
         }
 
-        .success-lottie>svg {
-            position: relative;
-            width: 204px !important;
-            left: -84px;
-            top: 115px;
+        .success-lottie {
+            width: 203px !important;
+            left: -86px;
+            top: 113px;
         }
 
         .slice-lottie>svg {
+            position: relative;
+            height: 75px !important;
             border-radius: 50%;
+            left: 6.7rem;
+            top: 16rem;
         }
 
-        .laptop-lottie>svg {
-            width: 170px !important;
-            position: relative;
+        .laptop-lottie {
+            width: 175px !important;
             top: 154px;
             left: 183px;
-        }
-
-        .secondary-circle>*:nth-child(1) {
-            height: 79px;
-            border-radius: 100%;
-            border: 2px solid $orange;
-            top: -3rem;
-            left: 6.5rem;
-        }
-
-        .secondary-circle>*:nth-child(2) {
-            height: 75px;
-            left: -2rem;
-            top: 2rem;
         }
 
         .secondary-circle>*:nth-child(3) {
             width: 170px;
             top: 3.2rem;
             left: 3.7rem;
-        }
-
-        .secondary-circle>*:nth-child(5) {
-            height: 75px;
-            left: 6.7rem;
-            top: 15.6rem;
         }
     }
 
