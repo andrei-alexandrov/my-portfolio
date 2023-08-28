@@ -35,8 +35,7 @@ export default function CardOne() {
             </>
           ) : (
             <>
-              {/* <img width={80} src={Greeting} alt='greeting'/> */}
-              <Lottie style={{ width: "110px", position:"relative", left:"4rem" }} animationData={helloEmoji} />
+              <Lottie style={{ width: "110px", position: "relative", left: "4rem" }} animationData={helloEmoji} />
               <h2 className="title">Nice to meet you!</h2>
               <p className="textContentInside" style={{ color: "orange" }}>
                 Have a nice day {":)"}

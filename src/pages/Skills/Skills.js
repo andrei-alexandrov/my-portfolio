@@ -11,7 +11,6 @@ import htmlIcon from "../../animations/htmlLottie.json"
 import jsIcon from "../../animations/jsLottie.json"
 
 import Wheel from "../../components/Wheel/Wheel"
-// import laptopIcon from "../../animations/laptopLottie.json"
 
 import "./Skills.scss";
 
@@ -64,7 +63,6 @@ export default function Skills() {
                 </Col>
                 <Col className="center-column" >
                     <Wheel />
-                    {/* <Lottie animationData={laptopIcon}></Lottie> */}
                 </Col>
             </Row>
         </Container >

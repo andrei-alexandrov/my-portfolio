@@ -34,17 +34,11 @@
             }
         }
     }
-
-    // .center-column {
-    //     display: flex;
-    //     justify-content: center;
-    // }
 }
 
 @media screen and (max-width: 480px) {
     .skills-wrapper {
         text-align: center;
-        // flex-direction: column;
 
         .skills-left-side {
             .lottie-wrapper {
@@ -73,10 +67,6 @@
             top: 22.5rem;
             left: 2.1rem;
         }
-
-        // .center-column {
-        //     margin-top: 3rem;
-        // }
     }
 }
 
