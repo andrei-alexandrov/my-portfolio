@@ -21,8 +21,7 @@ function App() {
     <div
       className={`App ${darkMode ? "dark-mode" : ""}`}
       style={{
-        background: darkMode ? "black" : "",
-        // height: "1210vh"
+        background: darkMode ? "black" : "whiteSmoke",
       }}
     >
       <ParticlesAnimation />

@@ -24,7 +24,6 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 ![sunThemeContactNewLlight](./src/images/gitHubImages/contact-light-new.png)
 ![aboutMe480px](./src/images/gitHubImages/aboutMe480pxOpened.png)
 ![aboutMe480px](./src/images/gitHubImages/aboutMe480pxClosed.png)
-![zoomOut](./src/images/gitHubImages/zoomOut.png)
 
 
 ## Available Scripts
