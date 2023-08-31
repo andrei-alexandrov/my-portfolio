@@ -16,9 +16,11 @@ export default function Footer() {
                 <span className='footer-text'>andrei.alxv@gmail.com</span>
                 <div className='icons'>
                     <a href='https://www.github.com/andrei-alexandrov' target='_blank' rel="noreferrer">
+                        <span className="screen-reader">GitHub Profile</span>
                         <Github color='white' size='3rem' />
                     </a>
                     <a href='https://www.linkedin.com/in/andrei-alexandrov/' target='_blank' rel="noreferrer">
+                        <span className="screen-reader">LinkedIn Profile</span>
                         <LinkedIn color='white' size='3rem' />
                     </a>
                 </div>

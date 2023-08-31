@@ -135,16 +135,16 @@
     line-height: 1.2em;
 }
 
-.textContentTap {
+.text-content-tap {
     display: none;
 }
 
 @media screen and (max-width: 480px) {
-    .textContent {
+    .text-content {
         display: none;
     }
 
-    .textContentTap {
+    .text-content-tap {
         display: block;
     }
 }

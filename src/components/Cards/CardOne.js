@@ -20,16 +20,16 @@ export default function CardOne() {
     <div className="cardOne" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       <div className="lines"></div>
       <div className="imgBx">
-        <img src={HumanPic} alt="Card" />
+        <img src={HumanPic} alt="person-pic" />
       </div>
       <div className="content">
         <div className="details">
           {!hovered ? (
             <>
-              <p className="textContentTap" style={{ color: "orange" }}>
+              <p className="text-content-tap" style={{ color: "#fba61e" }}>
                 Tap on the left
               </p>
-              <p className="textContent" style={{ color: "orange" }}>
+              <p className="text-content" style={{ color: "#fba61e" }}>
                 Hover here
               </p>
             </>
@@ -37,7 +37,7 @@ export default function CardOne() {
             <>
               <Lottie style={{ width: "110px", position: "relative", left: "4rem" }} animationData={helloEmoji} />
               <h2 className="title">Nice to meet you!</h2>
-              <p className="textContentInside" style={{ color: "orange" }}>
+              <p style={{ color: "#fba61e" }}>
                 Have a nice day {":)"}
               </p>
             </>

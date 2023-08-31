@@ -25,11 +25,11 @@ export default function Skills() {
                     <div className="skills-details">
                         <span className="" style={{ color: darkMode ? '#edebe8' : '' }}>My <span style={{ color: "#FCA61F" }}>Skills</span></span>
                         <div className="lottie-wrapper" style={{ display: "flex", position: "relative", right: "5px" }}>
-                            <Lottie style={{ width: "44px" }} animationData={jsIcon} />
-                            <Lottie style={{ width: "55px" }} animationData={reactIcon} />
-                            <Lottie style={{ width: "55px" }} animationData={htmlIcon} />
-                            <Lottie style={{ width: "50px" }} animationData={cssIcon} />
-                            <Lottie style={{ width: "60px" }} animationData={gitHubIcon} />
+                            <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "44px" }} animationData={jsIcon} />
+                            <Lottie role="img" aria-label="React Icon" style={{ width: "55px" }} animationData={reactIcon} />
+                            <Lottie role="img" aria-label="HTML5 Icon" style={{ width: "55px" }} animationData={htmlIcon} />
+                            <Lottie role="img" aria-label="CSS3 Icon" style={{ width: "50px" }} animationData={cssIcon} />
+                            <Lottie role="img" aria-label="Github Icon" style={{ width: "60px" }} animationData={gitHubIcon} />
                         </div>
                         <span>
                             JavaScript ES2015+ features <br /> React.js<br />
