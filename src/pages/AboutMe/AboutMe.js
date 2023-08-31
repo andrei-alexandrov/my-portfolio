@@ -49,7 +49,7 @@ export default function AboutMe() {
                 <Col className="about-me-left-side">
                     <div className="about-me">
                         <span style={{ color: darkMode ? '#edebe8' : '' }} >Hello, I am</span>
-                        <span>Andrei Alexandrov</span>
+                        <span className="special-font">Andrei Alexandrov</span>
                         <span>
                             Front-End developer with JavaScript and React.js, based in Sofia, Bulgaria.<br />
                             <br />

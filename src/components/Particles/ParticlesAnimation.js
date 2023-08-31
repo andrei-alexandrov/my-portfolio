@@ -72,7 +72,7 @@ export default function ParticlesAnimation() {
                                     enable: true,
                                     area: 1000,
                                 },
-                                value: 56,
+                                value: 52,
                             },
                             opacity: {
                                 value: 0.5,

@@ -7,7 +7,10 @@
 
         a.nav-link {
             position: relative;
-            color: orange;
+            display: inline-block;
+            background: linear-gradient(45deg, #fba61e, #fba61e, #fba61e, #777e94, #777e94, #777e94);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-size: $nav-font;
             transition: transform 1s;
 
@@ -25,6 +28,8 @@
         margin-left: 5px;
         width: 7.5rem;
         height: 2.5rem;
+        color: black;
+        background: linear-gradient(45deg, rgba(251, 166, 30, 0.9), rgba(251, 166, 30, 0.9), white, rgba(119, 126, 148, 0.9), rgba(119, 126, 148, 0.9));
     }
 
     .navbar-toggler-icon {

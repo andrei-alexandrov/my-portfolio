@@ -15,3 +15,12 @@
         border: 1px solid orange;
     }
 }
+
+@mixin circleButton() {
+    position: relative;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    top: 2.3rem;
+    font-family: "Gumela", sans-serif;
+}

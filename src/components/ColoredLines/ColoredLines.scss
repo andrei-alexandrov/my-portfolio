@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .lines-container {
     position: relative;
     display: flex;
@@ -15,19 +17,19 @@
 
 .lines-container .ring:nth-child(1) {
     border-bottom-width: 8px;
-    border-color: #e38e05;
+    border-color: $orange;
     animation: rotate1 2s linear infinite;
 }
 
 .lines-container .ring:nth-child(2) {
     border-right-width: 8px;
-    border-color: #033dde;
+    border-color: rgba(30, 115, 251);
     animation: rotate2 2s linear infinite;
 }
 
 .lines-container .ring:nth-child(3) {
     border-top-width: 8px;
-    border-color: rgb(4, 228, 15);
+    border-color: rgba(90, 34, 139);
     animation: rotate3 2s linear infinite;
 }
 

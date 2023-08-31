@@ -1,6 +1,7 @@
-import React, { useState, useRef } from "react"
+import React, { useState, useRef, useContext } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Container, Row, Col } from "react-bootstrap"
+import { themeContext } from "../../Contex"
 import ColoredLines from "../../components/ColoredLines/ColoredLines";
 import Arrows from "../../components/Arrows/Arrows";
 
@@ -32,6 +33,8 @@ export default function Projects() {
     const [enlargedImg, setEnlargedImg] = useState(null);
     const swiperRefProjectOne = useRef(null);
     const swiperRefProjectTwo = useRef(null);
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
 
     const handleImageClick = (img) => {
         setEnlargedImg(img);
@@ -47,7 +50,9 @@ export default function Projects() {
                 <Col>
                     <div className="portfolio" id="projects">
                         <ColoredLines />
-                        <div className="project-header">My Projects</div>
+                        <div className="project-header">
+                            <span style={{ color: darkMode ? "white" : "black" }}>My</span> Projects
+                        </div>
                         <div className="project-title">1. Sports Match</div>
                         <div className="portfolio-project-text">My own idea created with React.js that helps people with common interests in different sports
                             to meet and play together. The website also provides an opportunity to choose the most

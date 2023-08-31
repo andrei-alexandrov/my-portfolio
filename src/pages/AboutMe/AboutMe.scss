@@ -1,29 +1,38 @@
 @import "../../variables";
 @import "../../mixins";
 
+@font-face {
+    font-family: "eyeSome";
+    src: url("../../../public/fonts/Eyesome\ Script.otf");
+}
+
 .about-me-wrapper {
     .about-me-left-side {
         display: flex;
         position: relative;
         flex-direction: column;
         gap: 2rem;
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
 
         .about-me {
             display: flex;
             flex-direction: column;
         }
 
+        .special-font {
+            font-family: "eyeSome", sans-serif;
+        }
+
         .about-me>:nth-child(1) {
             color: black;
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 2.7rem;
         }
 
         .about-me>:nth-child(2) {
             color: orange;
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 2.3rem;
         }
 
         .about-me>:nth-child(3) {
@@ -38,8 +47,8 @@
             gap: 3rem;
 
             img {
-                width: 9.2rem;
-                height: 9.2rem;
+                width: 9rem;
+                height: 9rem;
                 border-radius: 1.6rem;
             }
 
@@ -52,7 +61,7 @@
                 @include button();
                 width: 16rem;
                 height: 2.8rem;
-                background: linear-gradient(45deg, #fd7448, #fca36f, #fca975, #fbd99d, #f1eada, #cfd7ec, #bbc6e4, #8a9ed1, #5a75be, #5773be);
+                background: linear-gradient(45deg, #fba61e, #fba61e, white, white, #777e94, #777e94);
                 // background: linear-gradient(to right, #f7b733, #fc4a1a);
                 color: black;
                 box-shadow: 0px 13px 8px 0px rgba(107, 106, 106, 0.42);
@@ -98,7 +107,6 @@
                 color: $gray;
                 margin-top: 0.6rem;
             }
-
         }
 
         .btn-message {
@@ -122,7 +130,8 @@
             flex-direction: column;
             align-items: center;
         }
-        .about-me-img-wrapper{
+
+        .about-me-img-wrapper {
             position: relative;
             top: 6.2rem;
             left: 7px;
@@ -133,6 +142,6 @@
 @media screen and (min-width: 1600px) {
     .about-me-wrapper {
         position: relative;
-        top: 6rem;
+        top: 1rem;
     }
 }

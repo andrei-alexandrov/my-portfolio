@@ -1,19 +1,19 @@
 import React, { useState, useContext } from 'react';
 import { themeContext } from "../..//Contex"
 
-import LetterA from "../../images/aboutMe/letterA.jpg"
+import logoBlack from "../../images/aboutMe/myLogoBlack.png"
+import logoWhite from "../../images/aboutMe/myLogoWhitesmoke.png"
 import './ColoredCircle.scss';
 
 export default function ColoredCircle() {
     // rgb(191, 21, 168),  rgb(123, 19, 250)
-    // const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251, 0.808)');
-    // const [outerShadowColor, setOuterShadowColor] = useState('rgba(90, 34, 139, 1)');
-    const [insetShadowColor, setInsetShadowColor] = useState('rgba(56, 188, 0)');
-    const [outerShadowColor, setOuterShadowColor] = useState('rgba(140, 250, 239, 0.5)');
+    // const [insetShadowColor, setInsetShadowColor] = useState('rgba(56, 188, 0)');
+    // const [outerShadowColor, setOuterShadowColor] = useState('rgba(140, 250, 239, 0.5)');
+    const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251, 0.808)');
+    const [outerShadowColor, setOuterShadowColor] = useState('rgba(90, 34, 139, 1)');
 
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
-    const gradient = '#fba61e';
 
     const getRandomRGBA = () => {
         const randomR = Math.floor(Math.random() * 256);
@@ -39,13 +39,16 @@ export default function ColoredCircle() {
                 }}
             >
                 <div className='drop-card-content'>
-                    <h2> <img src={LetterA} alt='LetterA'></img></h2>
-                    <button style={{
-                        backgroundColor: darkMode ? gradient : '',
-                    }}
+                    {/* <h2> <img src={LetterA} alt='LetterA'></img></h2> */}
+                    <h2> <img src={darkMode ? logoBlack : logoWhite} alt='LetterA'></img></h2>
+                    <button
+                        // backgroundColor: darkMode ? darkThemeBtnColor : '',
+                        className={`${darkMode ? "darkThemeBtnColor" : "lightThemeBtnColor"}`}
+
+
                         onClick={changeColors}>Change colors</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

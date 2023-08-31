@@ -1,3 +1,5 @@
+@import "../../mixins";
+
 .drop-card-container {
     display: flex;
     align-items: center;
@@ -40,28 +42,38 @@
             color: orange;
 
             img {
-                width: 8.2rem;
+                width: 16rem;
                 border-radius: 50%;
+                bottom: 1.2rem;
+                position: relative;
             }
         }
 
-        button {
-            position: relative;
-            padding: 10px 25px;
+        .lightThemeBtnColor {
+            @include circleButton();
             background: white;
-            color: #000000;
-            border-radius: 25px;
+            color: black;
             border: 1px solid black;
-            font-family: "Gumela", sans-serif;
-            font-size: 14px;
-            top: 2.3rem;
 
             &:hover {
                 cursor: pointer;
                 background-color: rgb(0, 0, 0);
                 color: rgb(255, 255, 255);
                 border-color: black;
+            }
+        }
 
+        .darkThemeBtnColor {
+            @include circleButton();
+            background: black;
+            color: white;
+            border: 1.5px solid white;
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                border-color: white;
             }
         }
     }
@@ -71,6 +83,27 @@
     .drop-card {
         width: 20rem;
         height: 20rem;
+
+        .drop-card-content {
+
+            h2 {
+                img {
+                    width: 13.8rem;
+                    border-radius: 50%;
+                    bottom: 0.8rem;
+                }
+            }
+
+            .lightThemeBtnColor {
+                font-size: 13px;
+                top: 1.6rem;
+            }
+
+            .darkThemeBtnColor {
+                font-size: 13px;
+                top: 1.6rem;
+            }
+        }
     }
 }
 

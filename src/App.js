@@ -19,9 +19,11 @@ function App() {
 
   return (
     <div
-      className={`App ${darkMode ? "dark-mode" : ""}`}
+      className={`App ${darkMode ? "dark-mode" : "light-mode"}`}
       style={{
-        background: darkMode ? "black" : "whiteSmoke",
+        background: darkMode ? "black" : "whitesmoke"
+        // background: darkMode ? "black" : "linear-gradient(to right, #1f1c2c, #928dab)"
+        // background: darkMode ? "black" : "linear-gradient(to left, #bdc3c7, #2c3e50)"
       }}
     >
       <ParticlesAnimation />

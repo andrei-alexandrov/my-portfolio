@@ -52,6 +52,11 @@
     background: #0c0c0c;
 }
 
+.light-mode .cardOne .lines::after {
+    /* background: linear-gradient(to right, #1f1c2c, #928dab); */
+    background: whitesmoke;
+}
+
 .cardOne .imgBx {
     position: absolute;
     top: -3.75rem;
