@@ -59,13 +59,10 @@
 
         img {
             width: 100%;
-            height: auto;
-            /* Allow the height to adjust proportionally */
             max-height: 200px;
-            /* Set a maximum height to maintain consistency */
             border-radius: 20px;
             object-fit: cover;
-
+         
             &:hover {
                 cursor: pointer;
             }
