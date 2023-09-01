@@ -61,7 +61,8 @@ export default function Projects() {
                             ---
                             <br />
                             Used: Javascript, React.js, React Router, SASS, react-bootstrap,
-                            emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. <br />
+                            emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. <br /> 
+                            Possible chat between 2 users in 2 different tabs from the same browser. <br />
                             (Responsive design will be implemented in the near future)
                         </div>
 
@@ -74,9 +75,19 @@ export default function Projects() {
                         <Swiper
                             ref={swiperRefProjectOne}
                             spaceBetween={30}
-                            slidesPerView={3}
+                            slidesPerView={4}
                             grabCursor={true}
                             className="portfolio-slider"
+                            breakpoints={
+                                {
+                                    1: {
+                                        slidesPerView: 2
+                                    },
+                                    768: {
+                                        slidesPerView: 3
+                                    }
+                                }
+                            }
                         >
                             {[
                                 HomeScreen,
@@ -119,6 +130,17 @@ export default function Projects() {
                             slidesPerView={3}
                             grabCursor={true}
                             className="portfolio-slider"
+                            breakpoints={
+                                {
+                                    1: {
+                                        slidesPerView: 2
+                                    },
+                                    768: {
+                                        slidesPerView: 3
+                                    }
+
+                                }
+                            }
                         >
                             {[
                                 LoginAlienPage,
