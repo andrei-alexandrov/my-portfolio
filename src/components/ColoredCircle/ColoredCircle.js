@@ -9,8 +9,8 @@ export default function ColoredCircle() {
     // rgb(191, 21, 168),  rgb(123, 19, 250)
     // const [insetShadowColor, setInsetShadowColor] = useState('rgba(56, 188, 0)');
     // const [outerShadowColor, setOuterShadowColor] = useState('rgba(140, 250, 239, 0.5)');
-    const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251, 0.808)');
-    const [outerShadowColor, setOuterShadowColor] = useState('rgba(90, 34, 139, 1)');
+    const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251)');  
+    const [outerShadowColor, setOuterShadowColor] = useState('rgba(90, 34, 139)');
 
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;

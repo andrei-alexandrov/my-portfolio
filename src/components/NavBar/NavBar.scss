@@ -1,14 +1,14 @@
 @import "../../fonts";
 @import "../../mixins";
+@import "../../variables";
 
 .navbar {
     .nav-links {
-        gap: 10px;
-
+      
         a.nav-link {
             position: relative;
             display: inline-block;
-            background: linear-gradient(45deg, #fba61e, #fba61e, #fba61e, #777e94, #777e94, #777e94);
+            background: linear-gradient(45deg, $orange, $orange, $orange, $gray, $gray, $gray);
             background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: $nav-font;
@@ -16,7 +16,6 @@
 
             &:hover {
                 cursor: pointer;
-                color: orange;
                 transform: scale(1.2);
                 font-weight: bold;
             }

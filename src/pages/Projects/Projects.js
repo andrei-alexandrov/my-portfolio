@@ -61,7 +61,8 @@ export default function Projects() {
                             ---
                             <br />
                             Used: Javascript, React.js, React Router, SASS, react-bootstrap,
-                            emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage.
+                            emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. <br />
+                            (Responsive design will be implemented in the near future)
                         </div>
 
                         <div className="link-content">Source code:
@@ -89,7 +90,7 @@ export default function Projects() {
                                 <SwiperSlide key={index}>
                                     <img
                                         src={img}
-                                        alt="Project"
+                                        alt="project-pic"
                                         onClick={() => handleImageClick(img)}
                                     />
                                 </SwiperSlide>
@@ -129,7 +130,7 @@ export default function Projects() {
                                 <SwiperSlide key={index}>
                                     <img
                                         src={img}
-                                        alt="Project"
+                                        alt="project-pic"
                                         onClick={() => handleImageClick(img)}
                                     />
                                 </SwiperSlide>
@@ -141,7 +142,7 @@ export default function Projects() {
                         <div className="project-title">3. This portfolio</div>
                         <div className="portfolio-project-text">
                             Used: JavaScript, React.js, swiper, react-particles, SASS, emailJS, framer motion, react-scroll,
-                            iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie.
+                            iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie. Fully responsive.
                         </div>
                         <div className="link-content">Source code:
                             <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank' rel="noreferrer">
@@ -152,7 +153,7 @@ export default function Projects() {
                         {enlargedImg && (
                             <div className="enlarged-image-overlay" onClick={handleCloseClick}>
                                 <div className="enlarged-image-container">
-                                    <img src={enlargedImg} alt="" className="enlarged-image" />
+                                    <img src={enlargedImg} alt="pic" className="enlarged-image" />
                                 </div>
                             </div>
                         )}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import ColoredCircle from "../../components/ColoredCircle/ColoredCircle"
 import { themeContext } from "../../Contex"
+import ColoredCircle from "../../components/ColoredCircle/ColoredCircle"
 
 import Github from "../../images/aboutMe/github.png"
 import LinkedIn from "../../images/aboutMe/linkedin.png"
