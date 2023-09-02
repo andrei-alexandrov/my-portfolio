@@ -4,11 +4,11 @@
 
 .navbar {
     .nav-links {
-      
+
         a.nav-link {
             position: relative;
             display: inline-block;
-            background: linear-gradient(45deg, $orange, $orange, $orange, $gray, $gray, $gray);
+            background: linear-gradient(45deg, $main-color, $main-color, $main-color, $secondary-color, $secondary-color, $secondary-color);
             background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: $nav-font;
@@ -28,7 +28,7 @@
         width: 7.5rem;
         height: 2.5rem;
         color: black;
-        background: linear-gradient(45deg, rgba(251, 166, 30, 0.9), rgba(251, 166, 30, 0.9), white, rgba(119, 126, 148, 0.9), rgba(119, 126, 148, 0.9));
+        background: linear-gradient(45deg, $colored-button-left-side, $colored-button-left-side, white, $colored-button-right-side, $colored-button-right-side);
     }
 
     .navbar-toggler-icon {

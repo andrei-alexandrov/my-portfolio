@@ -11,6 +11,15 @@ import "./AboutMe.scss"
 export default function AboutMe() {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
+    const [greetingIndex, setGreetingIndex] = useState(0);
+    const [isFadingOut, setIsFadingOut] = useState(false);
+    const greetings = [
+        "Hello", "Привет", "Hallo", "Bonjour", "Hola", "Hallå", "Bunâ", "Cześć",
+        "Ciao", "Zdravo", "Nǐ hǎo", "Namaste", "Merhaba", "Ahoj", "Xin Chào"];
+
+    const toggleFade = () => {
+        setIsFadingOut((prevIsFadingOut) => !prevIsFadingOut);
+    };
 
     const [cocktail, setCocktail] = useState({
         image: "",
@@ -26,7 +35,7 @@ export default function AboutMe() {
                 if (data.drinks && data.drinks.length > 0) {
                     setCocktail({
                         image: data.drinks[0].strDrinkThumb,
-                        // name: data.drinks[0].strDrink
+                        //name: data.drinks[0].strDrink
                     });
                 } else {
                     console.error("No cocktail data found.");
@@ -41,14 +50,23 @@ export default function AboutMe() {
 
     useEffect(() => {
         handleCocktail();
-    }, []);
+
+        const intervalId = setInterval(() => {
+            toggleFade();
+            setGreetingIndex((prevIndex) => (prevIndex + 1) % greetings.length);
+        }, 2500);
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, [greetings.length]);
 
     return (
         <Container>
             <Row className="about-me-wrapper">
                 <Col className="about-me-left-side">
                     <div className="about-me">
-                        <span style={{ color: darkMode ? '#edebe8' : '' }} >Hello, I am</span>
+                        <span className={`${isFadingOut ? "fade-out" : "fade-in"}`} style={{ color: darkMode ? '#edebe8' : '#232d48' }}>{greetings[greetingIndex]}, I am</span>
                         <span className="special-font">Andrei Alexandrov</span>
                         <span>
                             Front-End developer with JavaScript and React.js, based in Sofia, Bulgaria.<br />

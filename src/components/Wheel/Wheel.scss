@@ -13,7 +13,7 @@
         border-radius: 100%;
         top: 3.5rem;
         background-color: $black;
-        border: 2px solid $orange;
+        border: 2px solid $main-color;
         transition: transform 0.3s ease;
 
         &:hover {
@@ -28,7 +28,7 @@
         .bulb-lottie {
             width: 79px !important;
             border-radius: 50%;
-            border: 2px solid $orange;
+            border: 2px solid $main-color;
             top: -3.2rem;
             left: 6.5rem;
         }
@@ -75,7 +75,7 @@
     }
 
     .rotation {
-        color: $orange;
+        color: $main-color;
         font-weight: bold;
         top: 22rem;
         left: 2rem;

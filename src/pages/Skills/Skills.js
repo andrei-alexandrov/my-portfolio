@@ -23,7 +23,7 @@ export default function Skills() {
             <Row id="skills" className="skills-wrapper">
                 <Col className="skills-left-side">
                     <div className="skills-details">
-                        <span className="" style={{ color: darkMode ? '#edebe8' : '' }}>My <span style={{ color: "#FCA61F" }}>Skills</span></span>
+                        <span className="skills-header" style={{ color: darkMode ? '#edebe8' : '' }}>My <span style={{ color: "#fba61e" }}>Skills</span></span>
                         <div className="lottie-wrapper" style={{ display: "flex", position: "relative", right: "5px" }}>
                             <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "44px" }} animationData={jsIcon} />
                             <Lottie role="img" aria-label="React Icon" style={{ width: "55px" }} animationData={reactIcon} />
@@ -31,7 +31,7 @@ export default function Skills() {
                             <Lottie role="img" aria-label="CSS3 Icon" style={{ width: "50px" }} animationData={cssIcon} />
                             <Lottie role="img" aria-label="Github Icon" style={{ width: "60px" }} animationData={gitHubIcon} />
                         </div>
-                        <span>
+                        <span className="skills-info">
                             JavaScript ES2015+ features <br /> React.js<br />
                             HTML5, CSS3, SASS, Bootstrap, <br />
                             DOM/BOM, OOP, MVC, HTTP, AJAX - Promises and fetch<br />
@@ -39,15 +39,15 @@ export default function Skills() {
                             Responsive design<br />
                             Git/Github</span>
                         <div>
-                            <span style={{ color: "#FCA61F" }}>Education:</span>
-                            <div style={{ color: "#788097" }}>2022- 2023 IT Talents training camp <br />
+                            <span style={{ color: "#fba61e" }}>Education:</span>
+                            <div className="skills-info">2022- 2023 IT Talents training camp <br />
                                 2020 - 2021 Software university  {`(Java basics, 2 months)`} <br />
                                 2014 – 2016	Sofia University {`(Master: European Projects)`} <br />
                                 2008 – 2012	Sofia University  {`(Bachelor: European Studies)`}<br /><br />
-                                <span style={{ color: "#FCA61F" }}>Hobbies: </span>
-                                <div style={{ color: "#788097" }}>Badminton, Tennis/Table tennis <br />
-                                    Movie music composer {`(digital piano)`} </div>
                             </div>
+                            <span style={{ color: "#fba61e" }}>Hobbies: </span>
+                            <div className="skills-info">Badminton, Tennis/Table tennis <br />
+                                Movie music composer {`(digital piano)`} </div>
                         </div>
 
                         <div className="skills-btn-wrapper">

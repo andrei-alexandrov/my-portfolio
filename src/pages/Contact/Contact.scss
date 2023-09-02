@@ -16,7 +16,7 @@
     }
 
     .title>:nth-child(2) {
-        color: $orange;
+        color: $main-color;
         font-weight: bold;
         font-size: 2.5rem;
     }
@@ -48,7 +48,7 @@
         height: 2rem;
         pad: 0.3em;
         outline: none;
-        border: 2px solid $orange;
+        border: 2px solid $main-color;
         border-radius: 8px;
         font-size: 1rem;
         padding-left: 8px;

@@ -10,7 +10,7 @@
     margin-top: 9rem;
 
     .project-header {
-        color: $orange;
+        color: $main-color;
         font-size: 2.5rem;
         font-weight: bold;
         margin-top: 4.2rem;
@@ -18,14 +18,14 @@
     }
 
     .project-title {
-        color: $orange;
+        color: $main-color;
         font-size: 2rem;
         font-weight: bold;
         margin-top: 3rem;
     }
 
     .portfolio-project-text {
-        color: $gray;
+        color: $secondary-color;
         font-size: 1.3rem;
         font-weight: 400;
         text-align: center;
@@ -35,7 +35,7 @@
         display: flex;
         align-items: center;
         font-size: 1.8rem;
-        color: $orange;
+        color: $main-color;
     }
 
     .link-content img {
@@ -95,22 +95,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    .arrows-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .left-arrow,
-        .right-arrow {
-            transition: transform 1s ease;
-
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.3);
-            }
-        }
     }
 }
 

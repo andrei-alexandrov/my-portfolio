@@ -11,17 +11,15 @@
             gap: 1rem;
         }
 
-        .skills-details>:nth-child(1) {
+        .skills-header {
             font-weight: bold;
             font-size: 3rem;
-
         }
 
-        .skills-details>:nth-child(2),
-        .skills-details>:nth-child(3) {
+        .skills-info {
             font-weight: 100;
             font-size: 1.3rem;
-            color: $gray;
+            color: $secondary-color;
         }
 
         .skills-btn-wrapper {
@@ -63,7 +61,7 @@
         .rotation-tap {
             display: block;
             font-size: 22px;
-            color: $orange;
+            color: $main-color;
             top: 22.5rem;
             left: 2.1rem;
         }
@@ -89,7 +87,7 @@
         .rotation-tap {
             display: block;
             font-size: 22px;
-            color: $orange;
+            color: $main-color;
             top: 22.5rem;
             left: 2.1rem;
         }

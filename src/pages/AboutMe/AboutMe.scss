@@ -24,13 +24,22 @@
         }
 
         .about-me>:nth-child(1) {
-            color: black;
             font-weight: bold;
             font-size: 2.7rem;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .about-me> :nth-child(1).fade-in {
+            opacity: 1;
+        }
+
+        .about-me> :nth-child(1).fade-out {
+            opacity: 0;
         }
 
         .about-me>:nth-child(2) {
-            color: $orange;
+            color: $main-color;
             font-weight: bold;
             font-size: 2.3rem;
         }
@@ -38,7 +47,7 @@
         .about-me>:nth-child(3) {
             font-weight: 100;
             font-size: 1.4rem;
-            color: $gray;
+            color: $secondary-color;
             margin-top: 0.6rem;
         }
 
@@ -61,7 +70,7 @@
                 @include button();
                 width: 16rem;
                 height: 2.8rem;
-                background: linear-gradient(45deg, #fba61e, #fba61e, white, white, #777e94, #777e94);
+                background: linear-gradient(45deg, $colored-button-left-side, $colored-button-left-side, white, white, $colored-button-right-side, $colored-button-right-side);
                 // background: linear-gradient(to right, #f7b733, #fc4a1a);
                 color: black;
                 box-shadow: 0px 13px 8px 0px rgba(107, 106, 106, 0.42);
@@ -104,7 +113,7 @@
             .about-me>:nth-child(3) {
                 font-weight: 100;
                 font-size: 1.2rem;
-                color: $gray;
+                color: $secondary-color;
                 margin-top: 0.6rem;
             }
         }

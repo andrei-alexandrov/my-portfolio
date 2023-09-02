@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.arrows-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left-arrow,
+    .right-arrow {
+        transition: transform 1s ease;
+        color: $main-color;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+        }
+    }
+}
