@@ -6,8 +6,8 @@ import ColoredLines from "../../components/ColoredLines/ColoredLines";
 import Arrows from "../../components/Arrows/Arrows";
 
 // Sports match project photos
-import LoginPage from "../../images/projects/sports_match/loginPage.jpg"
-import HomeScreen from "../../images/projects/sports_match/homeScreen.jpg"
+import LoginPage from "../../images/projects/sports_match/loginPage.png"
+import HomeScreen from "../../images/projects/sports_match/homeScreen.png"
 import ProfilePage from "../../images/projects/sports_match/profilePage.jpg"
 import ActivitiesPage from "../../images/projects/sports_match/activitiesPage.jpg"
 import BuddySearch from "../../images/projects/sports_match/buddySearch.jpg"
