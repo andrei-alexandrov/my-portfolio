@@ -1,34 +1,30 @@
 @import "../../variables";
 
 .footer {
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin-top: -2rem;
+    margin-top: 5rem;
+    text-align: center;
+    background: linear-gradient(to right, $main-color, $secondary-color);
+    padding: 20px;
+    // background: linear-gradient(to right, rgba(30, 115, 251),rgba(30, 115, 251),rgba(90, 34, 139), rgba(90, 34, 139));
+    backdrop-filter: blur(10px);
 
-    .footer-wrapper {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10rem;
+    .footer-content {
 
         .footer-text {
-            color: $black;
+            color: $third-color;
+            font-size: 19px;
+            line-height: 30px;
         }
+    }
 
-        .icons>a>svg {
-            margin-top: 1.5rem;
-            margin-right: 0.5rem;
-            transition: transform 1s;
-            position: relative;
-            left: 2px;
+    .footer-icons>a>svg {
+        transition: transform 1s;
+        margin-right: 3px;
+        margin-left: 3px;
 
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.3);
-            }
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
         }
     }
 
@@ -45,58 +41,18 @@
     }
 }
 
-@media screen and (max-width: 480px) {
-    .footer {
-        margin-top: 1rem;
-
-        .footer-wrapper {
-            margin-top: 3.3rem;
-
-            .footer-text {
-                font-size: 0.8rem;
-            }
-
-            .icons>a>svg {
-                display: none;
-            }
-        }
-    }
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,
+            rgba(189, 189, 189, 0.5), transparent);
+    transition: 0.9s;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .footer {
-        margin-top: 0.1rem;
-
-        .footer-wrapper {
-            margin-top: 3.8rem;
-
-            .footer-text {
-                color: $black;
-                font-size: 1rem;
-            }
-
-            .icons>a>svg {
-                display: none;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1199px) {
-    .footer {
-        margin-top: 0.1rem;
-
-        .footer-wrapper {
-            margin-top: 6rem;
-
-            .footer-text {
-                color: $black;
-                font-size: 1rem;
-            }
-
-            .icons>a>svg {
-                display: none;
-            }
-        }
-    }
+.footer:hover::before {
+    left: 100%;
 }

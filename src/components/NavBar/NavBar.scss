@@ -6,8 +6,6 @@
     .nav-links {
 
         a.nav-link {
-            position: relative;
-            display: inline-block;
             background: linear-gradient(45deg, $main-color, $main-color, $main-color, $secondary-color, $secondary-color, $secondary-color);
             background-clip: text;
             -webkit-text-fill-color: transparent;
