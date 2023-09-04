@@ -73,7 +73,7 @@ export default function AboutMe() {
                             <br />
                             Detail-oriented with a creative mind.<br />
                             Mostly attracted to web/app design and UX, <br />
-                            but also have willingness to learn new concepts and technologies. <br />
+                            but I am also willing to learn new concepts and technologies. <br />
                             <br />
                             I am passionate about furthering my IT knowledge <br />
                             and developing my skills and creativity as part of a dynamic team.
