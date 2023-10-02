@@ -1,0 +1,141 @@
+@import "../../mixins";
+@import "../../fonts";
+@import "../../variables";
+
+.rhap_container {
+    width: 130%;
+    padding: 10px 15px;
+    background-color: transparent;
+    box-shadow: none;
+    position: relative;
+    right: 18%;
+
+    svg {
+        color: $colored-button-left-side;
+        height: 92%;
+    }
+
+    .rhap_current-time,
+    .rhap_total-time,
+    .rhap_progress-container {
+        display: none;
+    }
+
+    .rhap_volume-bar,
+    .rhap_volume-indicator {
+        background: $colored-button-left-side;
+    }
+
+    .rhap_additional-controls,
+    .rhap_volume-container {
+        flex: 0.9;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rhap_container {
+        width: 130%;
+
+        svg {
+            color: $colored-button-left-side;
+            height: 95%;
+        }
+
+        .rhap_main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rhap_additional-controls {
+            position: relative;
+            left: 34rem;
+        }
+
+        .rhap_volume-bar,
+        .rhap_volume-indicator {
+            display: none;
+        }
+
+        .rhap_volume-button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .rhap_container {
+        width: 130%;
+
+        svg {
+            color: $colored-button-left-side;
+            height: 95%;
+        }
+
+        .rhap_main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rhap_additional-controls {
+            position: relative;
+            left: 34rem;
+        }
+
+        .rhap_volume-bar,
+        .rhap_volume-indicator {
+            display: none;
+        }
+
+        .rhap_volume-button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .rhap_container {
+        width: 130%;
+
+        svg {
+            color: $colored-button-left-side;
+            height: 95%;
+        }
+
+        .rhap_additional-controls {
+            position: relative;
+            left: 34rem;
+        }
+
+        .rhap_volume-bar,
+        .rhap_volume-indicator {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .rhap_container {
+        width: 130%;
+
+        svg {
+            height: 85%;
+        }
+
+        .rhap_additional-controls {
+            position: relative;
+            left: 5%;
+        }
+
+        .rhap_volume-bar,
+        .rhap_volume-indicator {
+            background: $colored-button-left-side;
+            flex: 0.9;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {}
+
+@media screen and (min-width: 1600px) {}

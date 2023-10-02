@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import Music from "../Music/Music";
 
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
 
@@ -20,6 +21,7 @@ export default function CustomNavbar() {
                         <Nav.Link as={Link} spy={true} to='cards-collection' smooth={true} duration={60} offset={-60}>My Card</Nav.Link>
                         <Nav.Link as={Link} spy={true} to='projects' smooth={true} duration={60} offset={42}>Projects</Nav.Link>
                     </Nav>
+                    <Music />
                     <Nav className="ms-auto nav-btns d-flex flex-row justify-content-center align-items-center mt-3">
                         <Link spy={true} to='contact' smooth={true} duration={60} offset={115}>
                             <button className="nav-btn" aria-label="Contact me">Contact me</button>
