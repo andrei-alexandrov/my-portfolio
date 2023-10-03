@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import lunarDreamsTrack from "../../tracks/lunarDreams.mp3"
-import impendentTrack from "../../tracks/Impendent.mp3"
+import flowOfTime from "../../tracks/flowOfTime.m4a"
 import AudioPlayer from 'react-h5-audio-player'
 
 import "react-h5-audio-player/lib/styles.css"
@@ -12,7 +12,7 @@ const tracks = [
         url: lunarDreamsTrack,
     },
     {
-        url: impendentTrack,
+        url: flowOfTime,
     }
 ];
 
@@ -34,15 +34,16 @@ export default function Music() {
     return (
         <div>
             <AudioPlayer
-                autoPlay={true}
-                autoPlayAfterSrcChange={true}
                 src={currentTrack.url}
+                autoPlay
+                autoPlayAfterSrcChange={true}
                 onClickNext={handleNextTrack}
                 onClickPrevious={handlePreviousTrack}
                 showSkipControls={true}
                 showJumpControls={false}
                 showFilledVolume={false}
-                volume={0.8}
+                volume={0.7}
+                loop={true}
             />
         </div>
     )

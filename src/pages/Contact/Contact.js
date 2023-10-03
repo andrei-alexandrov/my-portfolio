@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import heathEmoji from "../../images/contact/hearthEmoji.png"
 import SackMeditate from "../../images/contact/sackMeditate.gif"
 import SackHappy from "../../images/contact/sackHappy.gif"
+import ScrollToTopBtn from "../../components/ScrollToTopBtn/ScrollToTopBtn";
 import "./Contact.scss";
 
 export default function Contact() {
@@ -61,6 +62,7 @@ export default function Contact() {
                                 </div>
                             )}
                         </span>
+                        <ScrollToTopBtn />
                     </form>
                 </div>
             </Row>
