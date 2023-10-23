@@ -50,7 +50,10 @@ export default function AboutMe() {
 
     useEffect(() => {
         handleCocktail();
+    }, []);
 
+
+    useEffect(() => {
         const intervalId = setInterval(() => {
             toggleFade();
             setGreetingIndex((prevIndex) => (prevIndex + 1) % greetings.length);
@@ -59,7 +62,7 @@ export default function AboutMe() {
         return () => {
             clearInterval(intervalId);
         };
-    }, [greetings.length]);
+    })
 
     return (
         <Container>
