@@ -37,7 +37,7 @@ export default function ColoredCircle() {
                 style={{
                     boxShadow: `25px 35px 20px rgba(0, 0, 0, 0.5),
                                 inset -20px -20px 25px ${insetShadowColor},
-                                0 0 70px ${outerShadowColor}`
+                                0 0 30px ${outerShadowColor}`
                 }}
             >
                 <div className='drop-card-content'>

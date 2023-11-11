@@ -27,8 +27,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
-
 export default function Projects() {
     const [enlargedImg, setEnlargedImg] = useState(null);
     const swiperRefProjectOne = useRef(null);

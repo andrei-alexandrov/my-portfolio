@@ -1,0 +1,62 @@
+@import "../../variables";
+
+body {
+	background-color: black !important;
+}
+
+.button-enter {
+	display: block;
+	border: 0;
+	width: $dim-button;
+	height: $dim-button;
+	position: absolute;
+	left: calc(50% - $dim-button / 2);
+	top: calc(50% - $dim-button / 2);
+	background-color: $main-color;
+	border-radius: 50%;
+
+	&-btn-text {
+		position: relative;
+	}
+}
+
+.circles {
+	position: fixed;
+	--dim: 110vmin;
+	width: var(--dim);
+	height: var(--dim);
+	top: calc(50% - var(--dim) / 2);
+	left: calc(50% - var(--dim) / 2);
+
+	&__text {
+		text-transform: uppercase;
+	}
+
+	&__text-1 {
+		font-size: clamp(110px, 25vmin, 120px);
+		font-family: $font-circle-1;
+		font-weight: $font-weight-circle-1;
+		fill: $main-color;
+	}
+
+	&__text-2 {
+		font-size: clamp(90px, 17vmin, 100px);
+		font-family: $font-circle-2;
+		font-weight: $font-weight-circle-2;
+		fill: $secondary-color;
+	}
+
+	&__text-3 {
+		font-size: clamp(65px, 13.5vmin, 75px);
+		font-family: $font-circle-3;
+		font-weight: $font-weight-circle-3;
+		fill: rgba(30, 115, 251);
+	}
+
+	&__text-4 {
+		font-size: clamp(40px, 9.5vmin, 50px);
+		font-family: $font-circle-4;
+		font-weight: $font-weight-circle-4;
+		fill: rgba(90, 34, 139);
+	}
+}
