@@ -60,3 +60,11 @@ body {
 		fill: rgba(90, 34, 139);
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.circles {
+		&__text-4 {
+			display: none;
+		}
+	}
+}
