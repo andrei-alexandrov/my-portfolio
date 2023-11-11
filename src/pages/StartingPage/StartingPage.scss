@@ -28,43 +28,40 @@ body {
 	top: calc(50% - var(--dim) / 2);
 	left: calc(50% - var(--dim) / 2);
 
-	&__text {
+	&-text {
 		text-transform: uppercase;
 	}
 
-	&__text-1 {
+	&-text-1 {
 		font-size: clamp(110px, 25vmin, 120px);
 		font-family: $font-circle-1;
 		font-weight: $font-weight-circle-1;
 		fill: $main-color;
 	}
 
-	&__text-2 {
+	&-text-2 {
 		font-size: clamp(90px, 17vmin, 100px);
 		font-family: $font-circle-2;
 		font-weight: $font-weight-circle-2;
-		fill: $secondary-color;
+		fill: rgba(90, 34, 139);
 	}
 
-	&__text-3 {
+	&-text-3 {
 		font-size: clamp(65px, 13.5vmin, 75px);
 		font-family: $font-circle-3;
 		font-weight: $font-weight-circle-3;
 		fill: rgba(30, 115, 251);
 	}
 
-	&__text-4 {
-		font-size: clamp(40px, 9.5vmin, 50px);
-		font-family: $font-circle-4;
-		font-weight: $font-weight-circle-4;
-		fill: rgba(90, 34, 139);
+	&-text-4 {
+		display: none;
 	}
 }
 
-@media screen and (max-width: 480px) {
-	.circles {
-		&__text-4 {
-			display: none;
-		}
-	}
-}
+// @media screen and (max-width: 480px) {
+//     .circles {
+//         &-text-4 {
+//             display: none;
+//         }
+//     }
+// }

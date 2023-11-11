@@ -11,7 +11,7 @@ const StartingPage = ({ onEnter }) => {
             enterCtrl: introRef.current.querySelector('.button-enter'),
         };
 
-        const circleText = [...introRef.current.querySelectorAll('text.circles__text')];
+        const circleText = [...introRef.current.querySelectorAll('text.circles-text')];
 
         const initEvents = () => {
             DOM.enterCtrl.addEventListener('mouseenter', onMouseEnter);
@@ -22,7 +22,6 @@ const StartingPage = ({ onEnter }) => {
             gsap.set(circleText, { transformOrigin: '50% 50%' });
             initEvents();
         };
-
 
         const onMouseEnter = () => {
             const enterBackground = introRef.current.querySelector('.circles');
@@ -48,10 +47,10 @@ const StartingPage = ({ onEnter }) => {
                 scale: 1
             });
             gsap.to(circleText, {
-                duration: 1,
+                duration: 5,
                 ease: 'expo',
                 scale: 1,
-                rotation: i => i % 2 ? '+=100' : '-=100',
+                rotation: i => i % 2 ? '+=110' : '-=110',
                 opacity: 1,
                 stagger: {
                     amount: -0.2
@@ -69,7 +68,7 @@ const StartingPage = ({ onEnter }) => {
                         amount: 0.4
                     }
                 }, 'start')
-                .to([circleText, DOM.enterCtrl], {
+                .to(circleText, {
                     duration: 1.8,
                     startAt: { opacity: 0, scale: 0.8 },
                     scale: 1,
@@ -78,9 +77,6 @@ const StartingPage = ({ onEnter }) => {
                         amount: 0.4
                     }
                 }, 'start')
-                .add(() => {
-                    gsap.set(DOM.enterCtrl, { pointerEvents: 'auto' });
-                }, 'start+=2');
         };
 
         start();
@@ -97,17 +93,17 @@ const StartingPage = ({ onEnter }) => {
                         <path id="circle-3" d="M487,700.5A213.5,213.5 0 1 1914,700.5A213.5,213.5 0 1 1487,700.5" />
                         <path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5" />
                     </defs>
-                    <text className="circles__text circles__text-1">
+                    <text className="circles-text circles-text-1">
                         <textPath xlinkHref="#circle-1" textLength="2830">Welcome▸to my▸portfolio▸</textPath>
                     </text>
-                    <text className="circles__text circles__text-2">
-                        <textPath xlinkHref="#circle-2" textLength="2001">React▸JAVASCRIPT▸Sass▸</textPath>
+                    <text className="circles-text circles-text-2">
+                        <textPath xlinkHref="#circle-2" textLength="2001">React▸JS▸Sass▸</textPath>
                     </text>
-                    <text className="circles__text circles__text-3">
+                    <text className="circles-text circles-text-3">
                         <textPath xlinkHref="#circle-3" textLength="1341">Html▸css▸git▸&nbsp;</textPath>
                     </text>
-                    <text className="circles__text circles__text-4">
-                        <textPath xlinkHref="#circle-4" textLength="836">Andrei▸Alexandrov▸&nbsp;</textPath>
+                    <text className="circles-text circles-text-4">
+                        <textPath xlinkHref="#circle-4" textLength="836"></textPath>
                     </text>
                 </svg>
 
@@ -116,6 +112,7 @@ const StartingPage = ({ onEnter }) => {
                 </button>
             </main>
         </div>
+
     );
 };
 
