@@ -12,26 +12,32 @@ const StartingPage = ({ onEnter }) => {
         };
 
         const circleText = [...introRef.current.querySelectorAll('text.circles-text')];
+        const enterBackground = introRef.current.querySelector('.circles');
 
         const initEvents = () => {
             DOM.enterCtrl.addEventListener('mouseenter', onMouseEnter);
             DOM.enterCtrl.addEventListener('mouseleave', onMouseLeave);
+            gsap.set(circleText, { transformOrigin: '50% 50%' });
         };
 
-        const setup = () => {
-            gsap.set(circleText, { transformOrigin: '50% 50%' });
-            initEvents();
+        const start = () => {
+            gsap.timeline()
+                .to(circleText, {
+                    duration: 1.8,
+                    startAt: { opacity: 0, scale: 1.4 },
+                    scale: 1,
+                    opacity: 1,
+                })
         };
 
         const onMouseEnter = () => {
-            const enterBackground = introRef.current.querySelector('.circles');
             gsap.to(enterBackground, {
-                duration: 1,
+                duration: 5,
                 ease: 'expo',
                 scale: 1.1
             });
             gsap.to(circleText, {
-                duration: 1,
+                duration: 5,
                 ease: 'expo',
                 scale: 1.15,
                 rotation: i => i % 2 ? '-=90' : '+=90',
@@ -40,9 +46,8 @@ const StartingPage = ({ onEnter }) => {
         };
 
         const onMouseLeave = () => {
-            const enterBackground = introRef.current.querySelector('.circles');
             gsap.to(enterBackground, {
-                duration: 1,
+                duration: 5,
                 ease: 'expo',
                 scale: 1
             });
@@ -58,29 +63,8 @@ const StartingPage = ({ onEnter }) => {
             });
         };
 
-        const start = () => {
-            gsap.timeline()
-                .to(circleText, {
-                    duration: 3.2,
-                    ease: 'expo.inOut',
-                    rotation: i => i % 2 ? 90 : -90,
-                    stagger: {
-                        amount: 0.4
-                    }
-                }, 'start')
-                .to(circleText, {
-                    duration: 1.8,
-                    startAt: { opacity: 0, scale: 0.8 },
-                    scale: 1,
-                    opacity: 1,
-                    stagger: {
-                        amount: 0.4
-                    }
-                }, 'start')
-        };
-
         start();
-        setup();
+        initEvents();
     }, []);
 
     return (
@@ -112,7 +96,6 @@ const StartingPage = ({ onEnter }) => {
                 </button>
             </main>
         </div>
-
     );
 };
 
