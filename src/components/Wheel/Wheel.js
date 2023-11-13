@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 
 import Lottie from 'lottie-react';
@@ -13,9 +13,20 @@ import slice from "../../animations/slice.json"
 import "./Wheel.scss"
 
 export default function Wheel() {
+    const [rotationCompleted, setRotationCompleted] = useState(true);
+
     const handleMouseEnter = () => {
+        if (!rotationCompleted) {
+            return; 
+        }
+
         const randomRotation = Math.random();
         document.querySelector('.main-circle').style.setProperty('--random-rotation', randomRotation);
+        setRotationCompleted(false);
+
+        setTimeout(() => {
+            setRotationCompleted(true);
+        }, 1500);
     };
 
     return (

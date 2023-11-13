@@ -162,7 +162,7 @@ export default function Projects() {
                         <div className="project-title">3. This portfolio</div>
                         <div className="portfolio-project-text">
                             Used: JavaScript, React.js, swiper, react-particles, SASS, emailJS, framer motion, react-scroll,
-                            iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie. Fully responsive.
+                            iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie, gsap. Fully responsive.
                         </div>
                         <div className="link-content">Source code:
                             <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank' rel="noreferrer">
