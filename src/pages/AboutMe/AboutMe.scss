@@ -44,10 +44,17 @@
             font-size: 2.3rem;
         }
 
-        .about-me>:nth-child(3) {
+        .about-me-text {
             font-weight: 100;
             font-size: 1.4rem;
             color: $secondary-color;
+            margin-top: 0.6rem;
+        }
+
+        .about-me-text-light-theme {
+            font-weight: 100;
+            font-size: 1.4rem;
+            color: $third-color;
             margin-top: 0.6rem;
         }
 
@@ -56,8 +63,8 @@
             gap: 3rem;
 
             img {
-                width: 9rem;
-                height: 9rem;
+                width: 8.1rem;
+                height: 8.1rem;
                 border-radius: 1.6rem;
             }
 

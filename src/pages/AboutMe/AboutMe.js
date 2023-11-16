@@ -69,9 +69,10 @@ export default function AboutMe() {
             <Row className="about-me-wrapper">
                 <Col className="about-me-left-side">
                     <div className="about-me">
-                        <span className={`${isFadingOut ? "fade-out" : "fade-in"}`} style={{ color: darkMode ? '#edebe8' : '#232d48' }}>{greetings[greetingIndex]}, I am</span>
+                        <span className={`${isFadingOut ? "fade-out" : "fade-in"}`} style={{ color: darkMode ? 'whitesmoke' : '#232d48' }}>{greetings[greetingIndex]}, I am</span>
                         <span className="special-font">Andrei Alexandrov</span>
-                        <span>
+
+                        <span className={darkMode ? "about-me-text" : "about-me-text-light-theme"}>
                             Front-End developer with JavaScript and React.js, based in Sofia, Bulgaria.<br />
                             <br />
                             Detail-oriented with a creative mind.<br />

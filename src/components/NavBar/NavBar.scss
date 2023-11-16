@@ -20,6 +20,13 @@
                 font-weight: bold;
             }
         }
+
+        a.nav-light-mode {
+            background: linear-gradient(45deg,
+                    $main-color, $main-color, $main-color,
+                    $third-color, $third-color, $third-color);
+            background-clip: text;
+        }
     }
 
     .nav-btn {

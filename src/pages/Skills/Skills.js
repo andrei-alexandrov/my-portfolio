@@ -31,7 +31,7 @@ export default function Skills() {
                             <Lottie role="img" aria-label="CSS3 Icon" style={{ width: "50px" }} animationData={cssIcon} />
                             <Lottie role="img" aria-label="Github Icon" style={{ width: "60px" }} animationData={gitHubIcon} />
                         </div>
-                        <span className="skills-info">
+                        <span className={darkMode ? "skills-info" : "skills-info-light"}>
                             JavaScript ES2015+ features <br /> React.js<br />
                             HTML5, CSS3, SASS, Bootstrap, <br />
                             DOM/BOM, OOP, MVC, HTTP, AJAX - Promises and fetch<br />
@@ -40,13 +40,13 @@ export default function Skills() {
                             Git/Github</span>
                         <div>
                             <span style={{ color: "#fba61e" }}>Education:</span>
-                            <div className="skills-info">2022- 2023 IT Talents training camp <br />
+                            <div className={darkMode ? "skills-info" : "skills-info-light"}>2022- 2023 IT Talents training camp <br />
                                 2020 - 2021 Software university  {`(Java basics, 2 months)`} <br />
                                 2014 – 2016	Sofia University {`(Master: European Projects)`} <br />
                                 2008 – 2012	Sofia University  {`(Bachelor: European Studies)`}<br /><br />
                             </div>
                             <span style={{ color: "#fba61e" }}>Hobbies: </span>
-                            <div className="skills-info">Badminton, Tennis/Table tennis <br />
+                            <div className={darkMode ? "skills-info" : "skills-info-light"}>Badminton, Tennis/Table tennis <br />
                                 Movie music composer {`(digital piano)`} </div>
                         </div>
 

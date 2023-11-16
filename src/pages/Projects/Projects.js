@@ -52,7 +52,8 @@ export default function Projects() {
                             <span style={{ color: darkMode ? "white" : "black" }}>My</span> Projects
                         </div>
                         <div className="project-title">1. Sports Match</div>
-                        <div className="portfolio-project-text">My own idea created with React.js that helps people with common interests in different sports
+                        <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
+                            My own idea created with React.js that helps people with common interests in different sports
                             to meet and play together. The website also provides an opportunity to choose the most
                             convenient places for practicing the desired sport in the respective city/neighborhood.
                             <br />
@@ -61,7 +62,6 @@ export default function Projects() {
                             Used: Javascript, React.js, React Router, SASS, react-bootstrap,
                             emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. <br /> 
                             Possible chat between 2 users in 2 different tabs from the same browser. <br />
-                            (Responsive design will be implemented in the near future)
                         </div>
 
                         <div className="link-content">Source code:
@@ -109,7 +109,8 @@ export default function Projects() {
                         <Arrows swiperRef={swiperRefProjectOne} />
 
                         <div className="project-title">2. Adopt Alien Creatures</div>
-                        <div className="portfolio-project-text">A small project for adopting alien creatures. You can adopt/leave an alien, or
+                        <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
+                            A small project for adopting alien creatures. You can adopt/leave an alien, or
                             donate to support it. Animated background on most pages.
                             <br />
                             ---
@@ -160,7 +161,7 @@ export default function Projects() {
                         <Arrows swiperRef={swiperRefProjectTwo} />
 
                         <div className="project-title">3. This portfolio</div>
-                        <div className="portfolio-project-text">
+                        <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
                             Used: JavaScript, React.js, swiper, react-particles, SASS, emailJS, framer motion, react-scroll,
                             iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie, gsap. Fully responsive.
                         </div>
