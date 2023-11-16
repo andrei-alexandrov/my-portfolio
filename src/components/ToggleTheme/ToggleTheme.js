@@ -16,7 +16,7 @@ export default function ToggleTheme() {
     return (
         <div>
             <div>
-                <div className='toggle' onClick={handleClick}>
+                <div className={`toggle ${darkMode ? "dark-mode" : "light-mode"} `} onClick={handleClick}>
                     <Moon />
                     <Sun />
                     <div

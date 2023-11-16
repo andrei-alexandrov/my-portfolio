@@ -13,6 +13,15 @@
     padding: 2px;
     cursor: pointer;
 
+    &.dark-mode {
+        box-shadow: 0 0 0px white;
+    }
+
+    &.light-mode {
+        box-shadow: 0 0 6px orange;
+    }
+
+
     .toggle-button {
         border-radius: 100%;
         background: orange;

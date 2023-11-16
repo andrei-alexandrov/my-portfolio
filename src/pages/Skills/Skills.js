@@ -6,9 +6,10 @@ import { Container, Row, Col } from "react-bootstrap"
 import Lottie from 'lottie-react';
 import reactIcon from "../../animations/reactIcon.json"
 import gitHubIcon from "../../animations/gitHubRound.json"
-import cssIcon from "../../animations/cssLottie.json"
 import htmlIcon from "../../animations/htmlLottie.json"
 import jsIcon from "../../animations/jsLottie.json"
+import sassIconTwo from "../../images/skills/sass-icon-2.png"
+import cssIcontwo from "../../images/skills/css-icon-two.png"
 
 import Wheel from "../../components/Wheel/Wheel"
 
@@ -25,11 +26,12 @@ export default function Skills() {
                     <div className="skills-details">
                         <span className="skills-header" style={{ color: darkMode ? '#edebe8' : '' }}>My <span style={{ color: "#fba61e" }}>Skills</span></span>
                         <div className="lottie-wrapper" style={{ display: "flex", position: "relative", right: "5px" }}>
-                            <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "44px" }} animationData={jsIcon} />
-                            <Lottie role="img" aria-label="React Icon" style={{ width: "55px" }} animationData={reactIcon} />
-                            <Lottie role="img" aria-label="HTML5 Icon" style={{ width: "55px" }} animationData={htmlIcon} />
-                            <Lottie role="img" aria-label="CSS3 Icon" style={{ width: "50px" }} animationData={cssIcon} />
-                            <Lottie role="img" aria-label="Github Icon" style={{ width: "60px" }} animationData={gitHubIcon} />
+                            <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "45px" }} animationData={jsIcon} />
+                            <Lottie role="img" aria-label="React Icon" style={{ width: "56px" }} animationData={reactIcon} />
+                            <Lottie role="img" aria-label="HTML5 Icon" style={{ width: "54px" }} animationData={htmlIcon} />
+                            <img style={{marginLeft: "6px"}} className="sass-image" src={cssIcontwo} alt="Css-icon" />
+                            <Lottie role="img" aria-label="Github Icon" style={{ width: "64px" }} animationData={gitHubIcon} />
+                            <img className="sass-image" src={sassIconTwo} alt="Sass-icon" />
                         </div>
                         <span className={darkMode ? "skills-info" : "skills-info-light"}>
                             JavaScript ES2015+ features <br /> React.js<br />

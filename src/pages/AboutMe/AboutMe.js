@@ -34,8 +34,7 @@ export default function AboutMe() {
                 console.log(data);
                 if (data.drinks && data.drinks.length > 0) {
                     setCocktail({
-                        image: data.drinks[0].strDrinkThumb,
-                        //name: data.drinks[0].strDrink
+                        image: data.drinks[0].strDrinkThumb
                     });
                 } else {
                     console.error("No cocktail data found.");
@@ -89,7 +88,6 @@ export default function AboutMe() {
                         {cocktail && (
                             <div className="cocktail-info">
                                 <img src={cocktail.image} alt="Cocktail" />
-                                {/* <div className="cocktail-text" style={{ color: darkMode ? '#edebe8' : '' }}>{cocktail.name}</div> */}
                             </div>
                         )}
                     </div>

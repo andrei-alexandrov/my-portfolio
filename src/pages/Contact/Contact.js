@@ -4,8 +4,6 @@ import { Container, Row } from "react-bootstrap"
 
 import emailjs from "@emailjs/browser";
 import heathEmoji from "../../images/contact/hearthEmoji.png"
-// import SackMeditate from "../../images/contact/sackMeditate.gif"
-// import SackHappy from "../../images/contact/sackHappy.gif"
 import ScrollToTopBtn from "../../components/ScrollToTopBtn/ScrollToTopBtn";
 import Lottie from "lottie-react";
 import sendMessage from "../../animations/send-message.json";
@@ -45,7 +43,6 @@ export default function Contact() {
                 <div className='title'>
                     <div style={{ color: darkMode ? '#edebe8' : '' }}>Let's connect</div>
                     <div>Contact me</div>
-                    {/* <img src={isInputClicked ? SackHappy : SackMeditate} className='sackboy-meditate' alt="animated-pic" /> */}
                     <Lottie
                         style={{ width: "120px" }}
                         animationData={!isInputClicked ? sendMeesageThree : sendMessage}
