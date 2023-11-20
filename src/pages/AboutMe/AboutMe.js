@@ -102,7 +102,7 @@ export default function AboutMe() {
                     </div>
                 </Col>
 
-                <Col className="about-me-right-side">
+                <Col className="">
                     <ColoredCircle />
                 </Col>
             </Row>

@@ -1,15 +1,15 @@
 import React, { useState, useContext } from 'react';
 import { themeContext } from "../..//Contex"
 
-import logoBlack from "../../images/aboutMe/myLogoBlack.png"
-import logoWhite from "../../images/aboutMe/myLogoWhitesmoke.png"
+import logoOne from "../../images/aboutMe/myLogo-1.png"
+import logoTwo from "../../images/aboutMe/myLogo-2.png"
 import './ColoredCircle.scss';
 
 export default function ColoredCircle() {
     // rgb(191, 21, 168),  rgb(123, 19, 250)
     // const [insetShadowColor, setInsetShadowColor] = useState('rgba(56, 188, 0)');
     // const [outerShadowColor, setOuterShadowColor] = useState('rgba(140, 250, 239, 0.5)');
-    const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251)');  
+    const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251)');
     const [outerShadowColor, setOuterShadowColor] = useState('rgba(90, 34, 139)');
     // const [insetShadowColor, setInsetShadowColor] = useState('#fba61e');
     // const [outerShadowColor, setOuterShadowColor] = useState('#777e94');
@@ -41,14 +41,14 @@ export default function ColoredCircle() {
                 }}
             >
                 <div className='drop-card-content'>
-                    {/* <h2> <img src={LetterA} alt='LetterA'></img></h2> */}
-                    <h2> <img src={darkMode ? logoBlack : logoWhite} alt='LetterA'></img></h2>
+                    <div className='image-wrapper-logo'>
+                        <img src={darkMode ? logoOne : logoTwo} alt='LetterA' />
+                    </div>
                     <button
-                        // backgroundColor: darkMode ? darkThemeBtnColor : '',
                         className={`${darkMode ? "darkThemeBtnColor" : "lightThemeBtnColor"}`}
-
-
-                        onClick={changeColors}>Change colors</button>
+                        onClick={changeColors}>
+                        Change colors
+                    </button>
                 </div>
             </div>
         </div >

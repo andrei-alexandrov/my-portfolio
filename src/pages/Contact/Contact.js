@@ -6,8 +6,9 @@ import emailjs from "@emailjs/browser";
 import heathEmoji from "../../images/contact/hearthEmoji.png"
 import ScrollToTopBtn from "../../components/ScrollToTopBtn/ScrollToTopBtn";
 import Lottie from "lottie-react";
-import sendMessage from "../../animations/send-message.json";
-import sendMeesageThree from "../../animations/send-message-three.json";
+import sendMessage from "../../animations/send-message-three.json";
+// import earth from "../../animations/earth-lottie.json"
+
 import "./Contact.scss";
 
 export default function Contact() {
@@ -30,11 +31,21 @@ export default function Contact() {
                 form.current.reset();
                 setTimeout(() => {
                     setDone(false);
-                }, 10000);
+                }, 3000);
             })
             .catch((error) => {
                 console.log("Error sending email:", error.text);
             });
+    };
+
+    const earthStyles = { //Временно дублиране
+        width: "120px",
+        // width: "100px",
+        // marginBottom: "5px"
+    };
+
+    const sendMeesageStyles = { //Временно дублиране
+        width: "120px",
     };
 
     return (
@@ -44,8 +55,8 @@ export default function Contact() {
                     <div style={{ color: darkMode ? '#edebe8' : '' }}>Let's connect</div>
                     <div>Contact me</div>
                     <Lottie
-                        style={{ width: "120px" }}
-                        animationData={!isInputClicked ? sendMeesageThree : sendMessage}
+                        style={!isInputClicked ? sendMeesageStyles : earthStyles} //Временно дублиране
+                        animationData={!isInputClicked ? sendMessage : sendMessage} //Временно дублиране
                     ></Lottie>
                 </div>
 
@@ -61,8 +72,8 @@ export default function Contact() {
                         <span style={{ color: "#242D49", fontWeight: "bold", fontSize: "26px" }}>
                             {done && (
                                 <div className="sent-message-text" >
-                                    <span style={{ color: "#fba61e", fontSize: "1.4rem" }}>Thanks for contacting me.</span>
-                                    <img src={heathEmoji} alt="thanks-pic" style={{ width: "70px", height: "80px" }} />
+                                    <span >Thanks for contacting me.</span>
+                                    <img src={heathEmoji} alt="thanks-icon" />
                                 </div>
                             )}
                         </span>

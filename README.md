@@ -28,12 +28,10 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run (using Git Bash):
 
 ### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
 Open this link [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.

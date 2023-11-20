@@ -3,6 +3,8 @@ import { Link } from "react-scroll"
 import { themeContext } from "../../Contex"
 import { Container, Row, Col } from "react-bootstrap"
 
+import Wheel from "../../components/Wheel/Wheel"
+
 import Lottie from 'lottie-react';
 import reactIcon from "../../animations/reactIcon.json"
 import gitHubIcon from "../../animations/gitHubRound.json"
@@ -10,8 +12,6 @@ import htmlIcon from "../../animations/htmlLottie.json"
 import jsIcon from "../../animations/jsLottie.json"
 import sassIconTwo from "../../images/skills/sass-icon-2.png"
 import cssIcontwo from "../../images/skills/css-icon-two.png"
-
-import Wheel from "../../components/Wheel/Wheel"
 
 import "./Skills.scss";
 

@@ -70,9 +70,9 @@ export default function ParticlesAnimation() {
                             number: {
                                 density: {
                                     enable: true,
-                                    area: 1100,
+                                    area: 1140,
                                 },
-                                value: 48,
+                                value: 46,
                             },
                             opacity: {
                                 value: 0.5,
@@ -81,7 +81,7 @@ export default function ParticlesAnimation() {
                                 type: "circle",
                             },
                             size: {
-                                value: { min: 1, max: 5 },
+                                value: { min: 1, max: 4 },
                             },
                         },
                         detectRetina: true,

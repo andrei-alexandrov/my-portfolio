@@ -29,18 +29,13 @@
         flex-direction: column;
         gap: 0.9rem;
 
-        h2 {
-            position: relative;
+        .image-wrapper-logo {
             width: 5rem;
             height: 5rem;
-            background: #eff0f4;
-            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 2rem;
-            color: orange;
-
+      
             img {
                 width: 16rem;
                 border-radius: 50%;

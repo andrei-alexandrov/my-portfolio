@@ -61,6 +61,21 @@
     .button {
         @include button();
     }
+
+    .sent-message-text {
+        position: relative;
+        bottom: 14rem;
+
+        span {
+            color: #fba61e;
+            font-size: 1.2rem;
+        }
+
+        img {
+            width: 60px;
+            height: 70px;
+        }
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 111111px) {
@@ -71,7 +86,7 @@
 }
 
 @media screen and (min-width: 1600px) {
-    .contact-form{
+    .contact-form {
         position: relative;
         top: 3rem;
     }
