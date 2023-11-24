@@ -1,25 +1,5 @@
 @import "../../variables";
 
-body {
-	background-color: black !important;
-}
-
-.button-enter {
-	display: block;
-	border: 0;
-	width: $dim-button;
-	height: $dim-button;
-	position: absolute;
-	left: calc(50% - $dim-button / 2);
-	top: calc(50% - $dim-button / 2);
-	background-color: $main-color;
-	border-radius: 50%;
-
-	&-btn-text {
-		position: relative;
-	}
-}
-
 .circles {
 	position: fixed;
 	--dim: 110vmin;
@@ -56,12 +36,35 @@ body {
 	&-text-4 {
 		display: none;
 	}
+
+	.button-enter {
+		display: block;
+		border: 0;
+		width: 90px;
+		height: 90px;
+		position: absolute;
+		left: calc(50% - $dim-button / 2);
+		top: calc(50% - $dim-button / 2);
+		background-color: $main-color;
+		border-radius: 50%;
+
+		&-btn-text {
+			position: relative;
+		}
+	}
 }
 
-// @media screen and (max-width: 480px) {
-//     .circles {
-//         &-text-4 {
-//             display: none;
-//         }
-//     }
-// }
+@media screen and (max-width: 480px) {
+	.circles {
+		.button-enter {
+			width: 64px;
+			height: 64px;
+			left: calc(53% - $dim-button / 2);
+			top: calc(53% - $dim-button / 2);
+
+			&-btn-text {
+				font-size: 16px;
+			}
+		}
+	}
+}

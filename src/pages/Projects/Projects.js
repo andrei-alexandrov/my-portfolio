@@ -1,9 +1,9 @@
 import React, { useState, useRef, useContext } from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
 import { Container, Row, Col } from "react-bootstrap"
 import { themeContext } from "../../Contex"
 import ColoredLines from "../../components/ColoredLines/ColoredLines";
 import Arrows from "../../components/Arrows/Arrows";
+import SwiperComponent from "../../components/ImageSlider/ImageSlider";
 
 // Sports match project photos
 import LoginPage from "../../images/projects/sports_match/loginPage.png"
@@ -26,11 +26,6 @@ import Github from "../../images/projects/github.png"
 import CountdownGame from "../../images/projects/countdown_game/countdownGame.png"
 import CountdownGameWin from "../../images/projects/countdown_game/countdown-game-win.png"
 import CountdownGameLoss from "../../images/projects/countdown_game/countdown-game-loss.png"
-
-//Technologies used
-// import ReactIcon from "../../images/skills/ReactIcon.png"
-// import JsIcon from "../../images/skills/JSImage.jpg"
-// import SassIcon from "../../images/skills/sass-icon-2.png"
 
 import "./Projects.scss";
 import "swiper/css";
@@ -71,12 +66,12 @@ export default function Projects() {
                             <br />
                             ---
                             <br />
-                            Used:
+                            <span style={{ color: "white" }}>Used:</span>
                             <span style={{ color: "#fba51e" }}> Javascript</span>,
                             <span style={{ color: "#129dca" }}> React.js</span>,
                             <span style={{ color: "#ce6b9c" }}> Sass</span>
                             <br />
-                            Additional: react-bootstrap, react router,
+                            <span style={{ color: "white" }}>Additional:</span> react-bootstrap, react router,
                             emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. <br />
                             Possible chat between 2 users in 2 different tabs from the same browser. <br />
                         </div>
@@ -87,42 +82,18 @@ export default function Projects() {
                             </a>
                         </div>
 
-                        <Swiper
-                            ref={swiperRefProjectOne}
-                            spaceBetween={30}
-                            slidesPerView={4}
-                            grabCursor={true}
-                            className="portfolio-slider"
-                            breakpoints={
-                                {
-                                    1: {
-                                        slidesPerView: 2
-                                    },
-                                    768: {
-                                        slidesPerView: 3
-                                    }
-                                }
-                            }
-                        >
-                            {[
+                        <SwiperComponent
+                            images={[
                                 HomeScreen,
                                 BuddySearch,
                                 ChatPage,
                                 LoginPage,
                                 ProfilePage,
                                 ActivitiesPage,
-                                PlacesPage
-                            ].map((img, index) => (
-                                <SwiperSlide key={index}>
-                                    <img
-                                        src={img}
-                                        alt="project-pic"
-                                        onClick={() => handleImageClick(img)}
-                                    />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-
+                                PlacesPage]}
+                            swiperRef={swiperRefProjectOne}
+                            enlargeImage={handleImageClick}
+                        />
                         <Arrows swiperRef={swiperRefProjectOne} />
 
                         {/* Project 2 */}
@@ -133,7 +104,7 @@ export default function Projects() {
                             <br />
                             ---
                             <br />
-                            Used:  <span style={{ color: "#fba51e" }}> Javascript</span>, MVC pattern</div>
+                            Used: <span style={{ color: "#fba51e" }}> Javascript</span>, MVC pattern</div>
 
                         <div className="link-content">Source code:
                             <a href="https://www.github.com/andrei-alexandrov/adopt-aliens" target='_blank' rel="noreferrer">
@@ -141,41 +112,17 @@ export default function Projects() {
                             </a>
                         </div>
 
-                        <Swiper
-                            ref={swiperRefProjectTwo}
-                            spaceBetween={30}
-                            slidesPerView={3}
-                            grabCursor={true}
-                            className="portfolio-slider"
-                            breakpoints={
-                                {
-                                    1: {
-                                        slidesPerView: 2
-                                    },
-                                    768: {
-                                        slidesPerView: 3
-                                    }
-
-                                }
-                            }
-                        >
-                            {[
+                        <SwiperComponent
+                            images={[
                                 LoginAlienPage,
                                 HomeAlienPage,
                                 AdoptedAlienPage,
                                 DonateAlienPage,
                                 LoginAlienPageTwo
-                            ].map((img, index) => (
-                                <SwiperSlide key={index}>
-                                    <img
-                                        src={img}
-                                        alt="project-pic"
-                                        onClick={() => handleImageClick(img)}
-                                    />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-
+                            ]}
+                            swiperRef={swiperRefProjectTwo}
+                            enlargeImage={handleImageClick}
+                        />
                         <Arrows swiperRef={swiperRefProjectTwo} />
 
                         {/* Project 3 */}
@@ -197,39 +144,15 @@ export default function Projects() {
                             </a>
                         </div>
 
-                        <Swiper
-                            ref={swiperRefProjectThree}
-                            spaceBetween={30}
-                            slidesPerView={3}
-                            grabCursor={true}
-                            className="portfolio-slider"
-                            breakpoints={
-                                {
-                                    1: {
-                                        slidesPerView: 2
-                                    },
-                                    768: {
-                                        slidesPerView: 3
-                                    }
-
-                                }
-                            }
-                        >
-                            {[
+                        <SwiperComponent
+                            images={[
                                 CountdownGame,
                                 CountdownGameWin,
                                 CountdownGameLoss,
-                            ].map((img, index) => (
-                                <SwiperSlide key={index}>
-                                    <img
-                                        src={img}
-                                        alt="project-pic"
-                                        onClick={() => handleImageClick(img)}
-                                    />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-
+                            ]}
+                            swiperRef={swiperRefProjectThree}
+                            enlargeImage={handleImageClick}
+                        />
                         <Arrows swiperRef={swiperRefProjectThree} />
 
                         {/* Project 4 */}
@@ -237,13 +160,15 @@ export default function Projects() {
                         <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
                             ---
                             <br />
-                            Used:
+                            <span style={{ color: "white" }}>Used:</span>
                             <span style={{ color: "#fba51e" }}> Javascript</span>,
                             <span style={{ color: "#129dca" }}> React.js</span>,
                             <span style={{ color: "#ce6b9c" }}> Sass</span>
                             <br />
-                            Additional: swiper, react-particles, emailJS, framer motion, react-scroll,
-                            iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie, gsap. Fully responsive.
+                            <span style={{ color: "white" }}>Additional:</span>
+                            swiper, react-particles, emailJS, framer motion, react-scroll,
+                            iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie, gsap.
+                            Fully responsive.
                         </div>
                         <div className="link-content">Source code:
                             <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank' rel="noreferrer">

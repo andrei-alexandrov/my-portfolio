@@ -21,13 +21,13 @@ const StartingPage = ({ onEnter }) => {
         };
 
         const start = () => {
-            gsap.timeline()
-                .to(circleText, {
-                    duration: 1.8,
-                    startAt: { opacity: 0, scale: 1.4 },
-                    scale: 1,
-                    opacity: 1,
-                })
+            gsap.to(circleText, {
+                duration: 8,
+                ease: 'expo',
+                scale: 1.12,
+                rotation: i => i % 2 ? '-=90' : '+=90',
+                opacity: 0.9,
+            });
         };
 
         const onMouseEnter = () => {
