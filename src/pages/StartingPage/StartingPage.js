@@ -24,7 +24,7 @@ const StartingPage = ({ onEnter }) => {
             gsap.to(circleText, {
                 duration: 8,
                 ease: 'expo',
-                scale: 1.12,
+                scale: 1,
                 rotation: i => i % 2 ? '-=90' : '+=90',
                 opacity: 0.9,
             });
