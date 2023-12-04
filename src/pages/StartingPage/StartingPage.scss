@@ -38,8 +38,6 @@
 	}
 
 	.button-enter {
-		display: block;
-		border: 0;
 		width: 90px;
 		height: 90px;
 		position: absolute;
@@ -49,12 +47,13 @@
 		border-radius: 50%;
 
 		&-btn-text {
-			position: relative;
+			color: black;
+
 		}
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
 	.circles {
 		.button-enter {
 			width: 64px;
@@ -64,6 +63,9 @@
 
 			&-btn-text {
 				font-size: 16px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 		}
 	}

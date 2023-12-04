@@ -1,5 +1,5 @@
-I created my portfolio using React.js + some external libraries like swiper, react-particles, SASS, emailJS, react-scroll, iconscout/react-unicorns and others. It is also responsive.
-Hamburger navbar menu for smaller screens. 
+I created my portfolio using React.js + some external libraries like swiper, react-particles, SASS, emailJS, react-scroll, iconscout/react-unicorns and others. It is also fully responsive.
+Hamburger navbar menu for smaller screens.
 
 Added various motion effects using framer-motion, Lottie and SASS styling. Added light/dark theme.
 
@@ -33,5 +33,4 @@ In the project directory, you can run (using Git Bash):
 ### `npm install`
 ### `npm start`
 
-Runs the app in the development mode.\
 Open this link [http://localhost:3000](http://localhost:3000) to view it in your browser.

@@ -29,7 +29,6 @@ function App() {
       className={`App ${darkMode ? "dark-mode" : "light-mode"}`}
       style={{
         background: darkMode ? "black" : "whitesmoke"
-        // background: darkMode ? "linear-gradient(to right,rgb(15, 25, 55), rgb(15, 25, 55))" : "whitesmoke",
       }}
     >
       {showContent ? (

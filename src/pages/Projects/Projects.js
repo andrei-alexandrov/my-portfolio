@@ -71,7 +71,7 @@ export default function Projects() {
                             <span style={{ color: "#129dca" }}> React.js</span>,
                             <span style={{ color: "#ce6b9c" }}> Sass</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional:</span> react-bootstrap, react router,
+                            <span style={{ color: "white" }}>Additional: </span> react-bootstrap, react router,
                             emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. <br />
                             Possible chat between 2 users in 2 different tabs from the same browser. <br />
                         </div>
@@ -165,7 +165,7 @@ export default function Projects() {
                             <span style={{ color: "#129dca" }}> React.js</span>,
                             <span style={{ color: "#ce6b9c" }}> Sass</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional:</span>
+                            <span style={{ color: "white" }}>Additional: </span>
                             swiper, react-particles, emailJS, framer motion, react-scroll,
                             iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie, gsap.
                             Fully responsive.

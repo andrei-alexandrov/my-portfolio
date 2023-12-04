@@ -22,7 +22,7 @@ const StartingPage = ({ onEnter }) => {
 
         const start = () => {
             gsap.to(circleText, {
-                duration: 8,
+                duration: 9,
                 ease: 'expo',
                 scale: 1,
                 rotation: i => i % 2 ? '-=90' : '+=90',
@@ -32,12 +32,12 @@ const StartingPage = ({ onEnter }) => {
 
         const onMouseEnter = () => {
             gsap.to(enterBackground, {
-                duration: 5,
+                duration: 6,
                 ease: 'expo',
                 scale: 1.1
             });
             gsap.to(circleText, {
-                duration: 5,
+                duration: 6,
                 ease: 'expo',
                 scale: 1.15,
                 rotation: i => i % 2 ? '-=90' : '+=90',
@@ -47,12 +47,12 @@ const StartingPage = ({ onEnter }) => {
 
         const onMouseLeave = () => {
             gsap.to(enterBackground, {
-                duration: 5,
+                duration: 6,
                 ease: 'expo',
                 scale: 1
             });
             gsap.to(circleText, {
-                duration: 5,
+                duration: 10,
                 ease: 'expo',
                 scale: 1,
                 rotation: i => i % 2 ? '+=110' : '-=110',
