@@ -38,11 +38,29 @@
             }
         }
 
-        .sass-image{
+        .css-image {
             position: relative;
             top: 11px;
             width: 45px;
             height: 45px;
+            margin-left: 6px;
+        }
+
+        .sass-image {
+            position: relative;
+            top: 9px;
+            width: 46px;
+            height: 46px;
+            margin-left: 3px;
+        }
+
+        .bootstrap-image {
+            position: relative;
+            top: 0.9rem;
+            width: 36px;
+            height: 36px;
+            border-radius: 10%;
+            margin-left: 15px;
         }
     }
 }
@@ -53,8 +71,18 @@
 
         .skills-left-side {
             .lottie-wrapper {
-                left: 5px;
                 justify-content: center;
+            }
+
+            .css-image {
+                width: 42px;
+                height: 42px;
+                top: 10px;
+            }
+
+            .bootstrap-image {
+                width: 34px;
+                height: 34px;
             }
 
             .skills-details>:nth-child(1) {
@@ -89,7 +117,6 @@
         text-align: center;
 
         .lottie-wrapper {
-            left: 5px;
             justify-content: center;
         }
 

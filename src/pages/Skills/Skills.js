@@ -12,6 +12,7 @@ import htmlIcon from "../../animations/htmlLottie.json"
 import jsIcon from "../../animations/jsLottie.json"
 import sassIconTwo from "../../images/skills/sass-icon-2.png"
 import cssIcontwo from "../../images/skills/css-icon-two.png"
+import bootstrapIcon from "../../images/skills/bootstrap5.jpeg";
 
 import "./Skills.scss";
 
@@ -29,17 +30,20 @@ export default function Skills() {
                             <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "45px" }} animationData={jsIcon} />
                             <Lottie role="img" aria-label="React Icon" style={{ width: "56px" }} animationData={reactIcon} />
                             <Lottie role="img" aria-label="HTML5 Icon" style={{ width: "54px" }} animationData={htmlIcon} />
-                            <img style={{marginLeft: "6px"}} className="sass-image" src={cssIcontwo} alt="Css-icon" />
-                            <Lottie role="img" aria-label="Github Icon" style={{ width: "64px" }} animationData={gitHubIcon} />
+                            <img className="css-image" src={cssIcontwo} alt="Css-icon" />
+                            <Lottie role="img" aria-label="Github Icon" style={{ width: "67px" }} animationData={gitHubIcon} />
                             <img className="sass-image" src={sassIconTwo} alt="Sass-icon" />
+                            <img className="bootstrap-image" src={bootstrapIcon} alt="Sass-icon" />
                         </div>
                         <span className={darkMode ? "skills-info" : "skills-info-light"}>
-                            JavaScript ES2015+ features <br /> React.js<br />
-                            HTML5, CSS3, SASS, Bootstrap, <br />
-                            DOM/BOM, OOP, MVC, HTTP, AJAX - Promises and fetch<br />
+                            DOM/BOM - storage and timers <br />
+                            OOP, MVC, HTTP, AJAX - Promises and fetch<br />
                             REST API's, JSON, Error handling <br />
+                            {/* Bootstrap <br /> */}
                             Responsive design<br />
-                            Git/Github</span>
+                            Git/Github <br />
+                            Currently learning: Redux, TypeScript
+                        </span>
                         <div>
                             <span style={{ color: "#fba61e" }}>Education:</span>
                             <div className={darkMode ? "skills-info" : "skills-info-light"}>2022- 2023 IT Talents training camp <br />

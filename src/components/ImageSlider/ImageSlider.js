@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const SwiperComponent = ({ images, swiperRef, enlargeImage }) => {
+const ImageSlider = ({ images, swiperRef, enlargeImage }) => {
     return (
         <Swiper
             ref={swiperRef}
@@ -30,4 +30,4 @@ const SwiperComponent = ({ images, swiperRef, enlargeImage }) => {
     );
 };
 
-export default SwiperComponent;
+export default ImageSlider;

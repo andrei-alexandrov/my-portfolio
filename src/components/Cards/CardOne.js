@@ -38,7 +38,7 @@ export default function CardOne() {
               <Lottie style={{ width: "110px", position: "relative", left: "4rem" }} animationData={helloEmoji} />
               <h2 className="title">Nice to meet you!</h2>
               <p style={{ color: "#fba61e" }}>
-                Have a nice day {":)"}
+                {/* Have a nice day {":)"} */}
               </p>
             </>
           )}
