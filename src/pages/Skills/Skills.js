@@ -27,22 +27,22 @@ export default function Skills() {
                     <div className="skills-details">
                         <span className="skills-header" style={{ color: darkMode ? '#edebe8' : '' }}>My <span style={{ color: "#fba61e" }}>Skills</span></span>
                         <div className="lottie-wrapper" style={{ display: "flex", position: "relative", right: "5px" }}>
-                            <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "45px" }} animationData={jsIcon} />
-                            <Lottie role="img" aria-label="React Icon" style={{ width: "56px" }} animationData={reactIcon} />
-                            <Lottie role="img" aria-label="HTML5 Icon" style={{ width: "54px" }} animationData={htmlIcon} />
+                            <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "46px" }} animationData={jsIcon} />
+                            <Lottie role="img" aria-label="React Icon" style={{ width: "57px" }} animationData={reactIcon} />
+                            <Lottie role="img" aria-label="HTML5 Icon" style={{ width: "55px" }} animationData={htmlIcon} />
                             <img className="css-image" src={cssIcontwo} alt="Css-icon" />
                             <Lottie role="img" aria-label="Github Icon" style={{ width: "67px" }} animationData={gitHubIcon} />
                             <img className="sass-image" src={sassIconTwo} alt="Sass-icon" />
-                            <img className="bootstrap-image" src={bootstrapIcon} alt="Sass-icon" />
+                            <img className="bootstrap-image" src={bootstrapIcon} alt="Bootstrap-icon" />
                         </div>
                         <span className={darkMode ? "skills-info" : "skills-info-light"}>
                             DOM/BOM - storage and timers <br />
                             OOP, MVC, HTTP, AJAX - Promises and fetch<br />
                             REST API's, JSON, Error handling <br />
-                            {/* Bootstrap <br /> */}
                             Responsive design<br />
                             Git/Github <br />
-                            Currently learning: Redux, TypeScript
+                            <br />
+                            Currently learning: Redux, TypeScript with React.js
                         </span>
                         <div>
                             <span style={{ color: "#fba61e" }}>Education:</span>

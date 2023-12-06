@@ -3,12 +3,32 @@
 @mixin button() {
     border-radius: 2rem;
     border: none;
-    color: white;
     font-size: 0.9rem;
-    background: linear-gradient(180deg, $main-color 26.71%, $main-color 99.36%);
+    color: white;
+    background: linear-gradient(180deg, $main-color, $main-color);
     width: 8.8rem;
     height: 2.7rem;
-   
+
+    &:hover {
+        background: white;
+        cursor: pointer;
+        color: $main-color;
+        border: 1px solid $main-color;
+    }
+}
+
+@mixin coloredButton() {
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    color: black;
+    background: linear-gradient(45deg,
+            $colored-button-left-side,
+            $colored-button-left-side, white, $colored-button-right-side,
+            $colored-button-right-side);
+
     &:hover {
         background: white;
         cursor: pointer;

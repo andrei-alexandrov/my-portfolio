@@ -129,6 +129,11 @@ export default function Projects() {
                         <div className="project-title">3. Countdown game</div>
                         <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
                             Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.
+                            <a href="https://countdown-timer-game.netlify.app/" target='_blank' rel="noreferrer">
+                                <div>
+                                    <button className="project-3-play-btn">Play here</button>
+                                </div>
+                            </a>
                             <br />
                             ---
                             <br />

@@ -30,15 +30,9 @@
     }
 
     .nav-btn {
-        @include button();
-        margin-left: 5px;
-        width: 7.5rem;
-        height: 2.5rem;
-        color: black;
-        background: linear-gradient(45deg,
-                $colored-button-left-side,
-                $colored-button-left-side, white, $colored-button-right-side,
-                $colored-button-right-side);
+        @include coloredButton();
+        font-size: 0.9rem;
+        margin-left: 7px;
     }
 
     .navbar-toggler-icon {

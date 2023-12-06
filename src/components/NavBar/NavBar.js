@@ -24,7 +24,7 @@ export default function CustomNavbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto nav-links d-flex flex-row justify-content-center align-items-center gap-3">
             <Nav.Link className={darkMode ? "nav-link" : "nav-light-mode"}
-              as={Link} spy={true} to="skills" smooth={true} duration={60} offset={54}>
+              as={Link} spy={true} to="skills" smooth={true} duration={60} offset={28}>
               Skills
             </Nav.Link>
             <Nav.Link className={darkMode ? "nav-link" : "nav-light-mode"}
