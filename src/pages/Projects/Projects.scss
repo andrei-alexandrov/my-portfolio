@@ -40,7 +40,8 @@
 
     .project-3-play-btn {
         @include coloredButton();
-        margin-top: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 0.4rem;
     }
 
     .link-content {

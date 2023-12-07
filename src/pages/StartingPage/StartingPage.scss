@@ -45,6 +45,7 @@
 		top: calc(50% - $dim-button / 2);
 		background-color: $main-color;
 		border-radius: 50%;
+		border: 1px solid black;
 
 		&-btn-text {
 			color: black;
