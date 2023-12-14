@@ -119,8 +119,14 @@ export default function Projects() {
                             <span style={{ color: "#7a50be" }}>&nbsp;Redux</span>,
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional:&nbsp;</span>Redux thunk, react-router, gsap, react-boostrap, lottie-react.<br />
+                            <span style={{ color: "white" }}>Additional:&nbsp;</span>
+                            Redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.<br />
                         </div>
+
+                        <a href="https://cocktail-site-andrei.netlify.app/" target='_blank' rel="noreferrer">
+                            <button className="project-3-play-btn">Visit here</button>
+                        </a>
+
                         <br></br>
                         <div className="link-content">Source code:
                             <a href="https://github.com/andrei-alexandrov/cocktails-site" target='_blank' rel="noreferrer">
