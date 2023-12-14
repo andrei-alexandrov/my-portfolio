@@ -78,13 +78,14 @@ const StartingPage = ({ onEnter }) => {
                         <path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5" />
                     </defs>
                     <text className="circles-text circles-text-1">
-                        <textPath xlinkHref="#circle-1" textLength="2830">Welcome▸to my▸portfolio▸</textPath>
+                        <textPath xlinkHref="#circle-1" textLength="2830">Welcome▸to my▸portfolio▸&#x200B;</textPath>
                     </text>
                     <text className="circles-text circles-text-2">
-                        <textPath xlinkHref="#circle-2" textLength="2001">React▸JS▸Sass▸</textPath>
+                        <textPath xlinkHref="#circle-2" textLength="2001">React▸JS▸Sass▸&#x200B;</textPath>
+
                     </text>
                     <text className="circles-text circles-text-3">
-                        <textPath xlinkHref="#circle-3" textLength="1341">Html▸css▸git▸&nbsp;</textPath>
+                        <textPath xlinkHref="#circle-3" textLength="1341">Html▸css▸git▸&#x200B;</textPath>
                     </text>
                     <text className="circles-text circles-text-4">
                         <textPath xlinkHref="#circle-4" textLength="836"></textPath>

@@ -9,10 +9,16 @@ import LinkedIn from "../../images/aboutMe/linkedin.png"
 import "./AboutMe.scss"
 
 export default function AboutMe() {
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
     const [greetingIndex, setGreetingIndex] = useState(0);
     const [isFadingOut, setIsFadingOut] = useState(false);
+    const [cocktail, setCocktail] = useState({
+        image: "",
+        name: ""
+    });
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     const greetings = [
         "Hello", "Привет", "Hallo", "Bonjour", "Hola", "Hallå", "Bunâ", "Cześć",
         "Ciao", "Zdravo", "Nǐ hǎo", "Namaste", "Merhaba", "Ahoj", "Xin Chào"];
@@ -20,11 +26,6 @@ export default function AboutMe() {
     const toggleFade = () => {
         setIsFadingOut((prevIsFadingOut) => !prevIsFadingOut);
     };
-
-    const [cocktail, setCocktail] = useState({
-        image: "",
-        name: ""
-    });
 
     const handleCocktail = async () => {
         try {
