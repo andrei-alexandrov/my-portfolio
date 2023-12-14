@@ -17,6 +17,7 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 ![darkThemeHome](./src/images/gitHubImages/portfolio-aboutMe-dark.png)
 ![darkThemeSkills](./src/images/gitHubImages/portfolio-skills-dark.png)
 ![darkThemeProjects](./src/images/gitHubImages/portfolio-projects-dark.png)
+![darkThemeContact](./src/images/gitHubImages/portfolio-contact-dark.png)
 ![card](./src/images/gitHubImages/portfolio-solo-card.png)
 ![aboutMe480px](./src/images/gitHubImages/aboutMe480pxOpened.png)
 
