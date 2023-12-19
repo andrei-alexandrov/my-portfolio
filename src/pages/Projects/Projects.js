@@ -120,7 +120,7 @@ export default function Projects() {
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
                             <br />
                             <span style={{ color: "white" }}>Additional:&nbsp;</span>
-                            Redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.<br />
+                            redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.<br />
                         </div>
 
                         <a href="https://cocktail-site-andrei.netlify.app/" target='_blank' rel="noreferrer">
@@ -181,7 +181,7 @@ export default function Projects() {
                         <Arrows swiperRef={swiperRefProjectThree} />
 
                         {/* Project 4 */}
-                        <div className="project-title">2. Adopt Alien Creatures</div>
+                        <div className="project-title">4. Adopt Alien Creatures</div>
                         <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
                             A small project for adopting alien creatures. You can adopt/leave an alien, or
                             donate to support it. Animated background on most pages.
@@ -211,7 +211,7 @@ export default function Projects() {
                         <Arrows swiperRef={swiperRefProjectFour} />
 
                         {/* Project 5 */}
-                        <div className="project-title">4. This portfolio</div>
+                        <div className="project-title">5. This portfolio</div>
                         <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
                             ---
                             <br />
@@ -222,7 +222,7 @@ export default function Projects() {
                             <br />
                             <span style={{ color: "white" }}>Additional: </span>
                             swiper, react-particles, emailJS, framer motion, react-scroll,
-                            iconscout/react-unicorns, tsparticles, thecocktaildb API, react-lottie, gsap.
+                            iconscout/react-unicorns, tsparticles, TheCocktailDb API, react-lottie, gsap.
                             Fully responsive.
                         </div>
                         <br></br>

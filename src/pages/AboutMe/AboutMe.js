@@ -75,10 +75,10 @@ export default function AboutMe() {
                         <span className={darkMode ? "about-me-text" : "about-me-text-light-theme"}>
                             Front-End developer with JavaScript and React.js, based in Sofia, Bulgaria.<br />
                             <br />
-                            Detail-oriented with a creative mind.<br />
-                            Mostly attracted to web/app design and UX, <br />
-                            but I am also willing to learn new concepts and technologies. <br />
+                            I pay close attention to details and enjoy using my creative
+                            skills to make attractive and interactive web applications. <br />
                             <br />
+
                             I am passionate about furthering my IT knowledge <br />
                             and developing my skills and creativity as part of a dynamic team.
                         </span>

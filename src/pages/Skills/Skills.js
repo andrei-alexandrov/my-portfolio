@@ -37,12 +37,14 @@ export default function Skills() {
                         </div>
                         <span className={darkMode ? "skills-info" : "skills-info-light"}>
                             DOM/BOM - storage and timers <br />
-                            OOP, MVC, HTTP, AJAX - Promises and fetch<br />
-                            REST API's, JSON, Error handling <br />
+                            MVC, HTTP, AJAX - Promises and fetch<br />
+                            REST API's, JSON<br />
                             Responsive design<br />
                             Git/Github <br />
                             <br />
-                            Currently learning: Redux, TypeScript with React.js
+                            Currently learning:
+                            <span style={{ color: "#7a50be" }}>&nbsp;Redux</span>,
+                            <span style={{ color: "#3078c6" }}>&nbsp;TypeScript</span> with React.js    
                         </span>
                         <div>
                             <span style={{ color: "#fba61e" }}>Education:</span>
@@ -52,7 +54,7 @@ export default function Skills() {
                                 2008 – 2012	Sofia University  {`(Bachelor: European Studies)`}<br /><br />
                             </div>
                             <span style={{ color: "#fba61e" }}>Hobbies: </span>
-                            <div className={darkMode ? "skills-info" : "skills-info-light"}>Badminton, Tennis/Table tennis <br />
+                            <div className={darkMode ? "skills-info" : "skills-info-light"}>Badminton, Tennis <br />
                                 Movie music composer {`(digital piano)`} </div>
                         </div>
 
