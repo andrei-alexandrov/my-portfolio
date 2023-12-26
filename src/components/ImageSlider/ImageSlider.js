@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const ImageSlider = ({ images, swiperRef, enlargeImage }) => {
     return (
         <Swiper
+            className="portfolio-slider"
             ref={swiperRef}
             spaceBetween={30}
             slidesPerView={4}
             grabCursor={true}
-            className="portfolio-slider"
             breakpoints={{
                 1: {
                     slidesPerView: 2,

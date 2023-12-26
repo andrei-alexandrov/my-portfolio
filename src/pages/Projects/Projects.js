@@ -25,14 +25,12 @@ import CountdownGame from "../../images/projects/countdown_game/countdownGame.pn
 import CountdownGameWin from "../../images/projects/countdown_game/countdown-game-win.png"
 import CountdownGameLoss from "../../images/projects/countdown_game/countdown-game-loss.png"
 
-//Adopt aliens project photos
-import LoginAlienPage from "../../images/projects/adopt_aliens/login.jpg"
-import HomeAlienPage from "../../images/projects/adopt_aliens/home.jpg"
-import AdoptedAlienPage from "../../images/projects/adopt_aliens/adopted.jpg"
-import DonateAlienPage from "../../images/projects/adopt_aliens/donate.jpg"
-import LoginAlienPageTwo from "../../images/projects/adopt_aliens/login2.jpg"
-import Github from "../../images/projects/github.png"
+//Taskify project photos
+import TaskifyHome from "../../images/projects/taskify/daily-tasks-app.png"
+import TaskifyEdit from "../../images/projects/taskify/taskify-edit.png"
+import TaskifyCompleted from "../../images/projects/taskify/taskify-completed.png"
 
+import Github from "../../images/projects/github.png"
 
 import "./Projects.scss";
 import "swiper/css";
@@ -81,9 +79,11 @@ export default function Projects() {
                             <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional:&nbsp; </span> react-bootstrap, react router,
-                            emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. <br />
-                            Possible chat between 2 users in 2 different tabs from the same browser. <br />
+                            <span style={{ color: "white" }}>Additional:&nbsp; </span>
+                            <span>react-bootstrap, react router, emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. </span>
+                            <br />
+                            <span>Possible chat between 2 users in 2 different tabs from the same browser. </span>
+                            <br />
                         </div>
                         <br></br>
                         <div className="link-content">Source code:
@@ -120,14 +120,15 @@ export default function Projects() {
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
                             <br />
                             <span style={{ color: "white" }}>Additional:&nbsp;</span>
-                            redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.<br />
+                            <span>redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.</span>
+                            <br />
                         </div>
 
                         <a href="https://cocktail-site-andrei.netlify.app/" target='_blank' rel="noreferrer">
-                            <button className="project-3-play-btn">Visit here</button>
+                            <button className="project-play-btn">Visit here</button>
                         </a>
 
-                        <br></br>
+                        <br />
                         <div className="link-content">Source code:
                             <a href="https://github.com/andrei-alexandrov/cocktails-site" target='_blank' rel="noreferrer">
                                 <img src={Github} alt="Github" />
@@ -160,7 +161,7 @@ export default function Projects() {
                         </div>
 
                         <a href="https://countdown-timer-game.netlify.app/" target='_blank' rel="noreferrer">
-                            <button className="project-3-play-btn">Play here</button>
+                            <button className="project-play-btn">Play here</button>
                         </a>
                         <br></br>
                         <div className="link-content">Source code:
@@ -181,29 +182,37 @@ export default function Projects() {
                         <Arrows swiperRef={swiperRefProjectThree} />
 
                         {/* Project 4 */}
-                        <div className="project-title">4. Adopt Alien Creatures</div>
+                        <div className="project-title">4. Taskify</div>
                         <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
-                            A small project for adopting alien creatures. You can adopt/leave an alien, or
-                            donate to support it. Animated background on most pages.
-                            <br />
+                            Add/delete/edit one or more tasks. <br />
                             ---
                             <br />
                             <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>Javascript</span>,&nbsp;MVC pattern</div>
-                        <br></br>
+                            <span style={{ color: "#3078c6" }}>TypeScript,</span>
+                            <span style={{ color: "#129dca" }}>&nbsp;React.js,</span>
+                            <span style={{ color: "#018dd6" }}>&nbsp;CSS</span>
+                            <br />
+                            <span style={{ color: "white" }}>Additional: </span>
+                            <span>&nbsp;Fully responsive. This is my first project where I am learning to use TypeScript with React.js.
+                                I will implement redux toolkit and add new feautures soon.</span>
+                        </div>
+
+                        <a href="https://todo-app-typescript-andrei.vercel.app/" target='_blank' rel="noreferrer">
+                            <button className="project-play-btn">Visit here</button>
+                        </a>
+                        <br />
+
                         <div className="link-content">Source code:
-                            <a href="https://www.github.com/andrei-alexandrov/adopt-aliens" target='_blank' rel="noreferrer">
+                            <a href="https://github.com/andrei-alexandrov/todo-app-typescript" target='_blank' rel="noreferrer">
                                 <img src={Github} alt="Github" />
                             </a>
                         </div>
 
                         <SwiperComponent
                             images={[
-                                LoginAlienPage,
-                                HomeAlienPage,
-                                AdoptedAlienPage,
-                                DonateAlienPage,
-                                LoginAlienPageTwo
+                                TaskifyHome,
+                                TaskifyEdit,
+                                TaskifyCompleted
                             ]}
                             swiperRef={swiperRefProjectFour}
                             enlargeImage={handleImageClick}
@@ -225,7 +234,7 @@ export default function Projects() {
                             iconscout/react-unicorns, tsparticles, TheCocktailDb API, react-lottie, gsap.
                             Fully responsive.
                         </div>
-                        <br></br>
+                        <br />
                         <div className="link-content">Source code:
                             <a href="https://github.com/andrei-alexandrov/my-portfolio" target='_blank' rel="noreferrer">
                                 <img src={Github} alt="Github" />
