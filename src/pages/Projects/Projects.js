@@ -26,9 +26,9 @@ import CountdownGameWin from "../../images/projects/countdown_game/countdown-gam
 import CountdownGameLoss from "../../images/projects/countdown_game/countdown-game-loss.png"
 
 //Taskify project photos
-import TaskifyHome from "../../images/projects/taskify/daily-tasks-app.png"
-import TaskifyEdit from "../../images/projects/taskify/taskify-edit.png"
 import TaskifyCompleted from "../../images/projects/taskify/taskify-completed.png"
+import TaskifyDelete from "../../images/projects/taskify/daily-tasks-app.png"
+import TaskifyEdit from "../../images/projects/taskify/taskify-edit.png"
 
 import Github from "../../images/projects/github.png"
 
@@ -107,9 +107,9 @@ export default function Projects() {
                         <Arrows swiperRef={swiperRefProjectOne} />
 
                         {/* Project 2 */}
-                        <div className="project-title">2. Cocktail site</div>
+                        <div className="project-title">2. Cocktails site</div>
                         <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
-                            Find interesting cocktails and get their recipes. If you like a specific one, add it to favorites.
+                            <span>Find interesting cocktails and get their recipes. If you like a specific one, add it to favorites.</span>
                             <br />
                             ---
                             <br />
@@ -158,6 +158,9 @@ export default function Projects() {
                             <span style={{ color: "#fba51e" }}>Javascript</span>,
                             <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
+                            <br />
+                            <span style={{ color: "white" }}>Additional: </span>
+                            <span>&nbsp;Fully responsive.</span>
                         </div>
 
                         <a href="https://countdown-timer-game.netlify.app/" target='_blank' rel="noreferrer">
@@ -210,9 +213,9 @@ export default function Projects() {
 
                         <SwiperComponent
                             images={[
-                                TaskifyHome,
-                                TaskifyEdit,
-                                TaskifyCompleted
+                                TaskifyCompleted,
+                                TaskifyDelete,
+                                TaskifyEdit
                             ]}
                             swiperRef={swiperRefProjectFour}
                             enlargeImage={handleImageClick}

@@ -6,6 +6,7 @@ Added various motion effects using framer-motion, Lottie and SASS styling. Added
 Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei-alexandrov-portfolio.netlify.app/) to view it.
 
 ## Summary
+0. Starting Page
 1. About me section
 2. Skills section
 3. My Card section
