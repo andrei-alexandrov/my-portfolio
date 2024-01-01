@@ -2,18 +2,17 @@ import React, { useState, useEffect, useContext } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { themeContext } from "../../Contex"
 import ColoredCircle from "../../components/ColoredCircle/ColoredCircle"
+import Button from "../../components/Button/Button"
 
 import Github from "../../images/aboutMe/github.png"
 import LinkedIn from "../../images/aboutMe/linkedin.png"
-
 import "./AboutMe.scss"
 
 export default function AboutMe() {
     const [greetingIndex, setGreetingIndex] = useState(0);
     const [isFadingOut, setIsFadingOut] = useState(false);
     const [cocktail, setCocktail] = useState({
-        image: "",
-        name: ""
+        image: ""
     });
 
     const theme = useContext(themeContext);
@@ -84,7 +83,13 @@ export default function AboutMe() {
                     </div>
 
                     <div className="btn-message">
-                        <button className="cocktail-btn" onClick={handleCocktail}>Click for a random cocktail</button>
+                        <Button
+                            styleBtn="cocktail-btn"
+                            handleAction={handleCocktail}
+                            hasOnClick={true}>
+                            Click for a random cocktail
+                        </Button>
+
                         {cocktail && (
                             <div className="cocktail-info">
                                 <img src={cocktail.image} alt="Cocktail" />

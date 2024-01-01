@@ -1,9 +1,10 @@
-import React, { useState, useContext } from "react";
-import { Link } from "react-scroll";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import React, { useState, useContext } from "react"
+import { Container, Navbar, Nav } from "react-bootstrap"
 import { themeContext } from "../../Contex"
-import ToggleTheme from "../ToggleTheme/ToggleTheme";
-import Music from "../Music/Music";
+import { Link } from "react-scroll"
+import ToggleTheme from "../ToggleTheme/ToggleTheme"
+import Music from "../Music/Music"
+import Button from "../Button/Button"
 
 import "./Navbar.scss";
 
@@ -39,12 +40,10 @@ export default function CustomNavbar() {
           <Music />
           <Nav className="ms-auto nav-btns d-flex flex-row justify-content-center align-items-center mt-3">
             <Link spy={true} to="contact" smooth={true} duration={60} offset={115}>
-              <button className="nav-btn" aria-label="Contact me">
-                Contact me
-              </button>
+              <Button styleBtn="nav-btn" hasOnClick={false}>Contact me</Button>
             </Link>
             <a href="/pdf-files/Andrei_Alexandrov_CV.pdf" download aria-label="Download CV">
-              <button className="nav-btn">Download CV</button>
+              <Button styleBtn="nav-btn" hasOnClick={false}>Dowload CV</Button>
             </a>
           </Nav>
         </Navbar.Collapse>

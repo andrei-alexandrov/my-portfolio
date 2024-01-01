@@ -28,16 +28,6 @@
             color: $third-color;
         }
 
-        .skills-btn-wrapper {
-
-            .contact-btn {
-                @include button();
-                font-size: 14px;
-                margin-top: 1rem;
-                margin-right: 5px;
-            }
-        }
-
         .css-image {
             position: relative;
             top: 11px;

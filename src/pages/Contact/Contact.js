@@ -4,9 +4,9 @@ import { Container, Row } from "react-bootstrap"
 
 import emailjs from "@emailjs/browser";
 import heathEmoji from "../../images/contact/hearthEmoji.png"
-import ScrollToTopBtn from "../../components/ScrollToTopBtn/ScrollToTopBtn";
-import Lottie from "lottie-react";
-import sendMessage from "../../animations/send-message-three.json";
+import ScrollToTopBtn from "../../components/ScrollToTopBtn/ScrollToTopBtn"
+import Lottie from "lottie-react"
+import sendMessage from "../../animations/send-message-three.json"
 // import earth from "../../animations/earth-lottie.json"
 
 import "./Contact.scss";
@@ -50,9 +50,9 @@ export default function Contact() {
 
     return (
         <Container>
-            <Row className='contact-form' id='contact'>
-                <div className='title'>
-                    <div style={{ color: darkMode ? '#edebe8' : '' }}>Let's connect</div>
+            <Row className="contact-form" id="contact">
+                <div className="title">
+                    <div style={{ color: darkMode ? "#edebe8" : "" }}>Let's connect</div>
                     <div>Contact me</div>
                     <Lottie
                         style={!isInputClicked ? sendMeesageStyles : earthStyles} //Временно дублиране
@@ -60,7 +60,7 @@ export default function Contact() {
                     ></Lottie>
                 </div>
 
-                <div className='form'>
+                <div className="form">
                     <form ref={form} onSubmit={sendEmail}>
                         <input type='text' name='user_name' className='user' placeholder='Name' required pattern=".{2,}"
                             title="Name must be at least 2 characters long" onClick={() => setInputClicked(true)} />
@@ -68,7 +68,7 @@ export default function Contact() {
                         <textarea name='message' className='user' placeholder='Message' required minLength={10}
                             title="Message must be at least 10 characters long" onClick={() => setInputClicked(true)}
                         />
-                        <input type='submit' value="Let's talk" className='button' />
+                        <input type="submit" value="Let's talk" className="button" />
                         <span style={{ color: "#242D49", fontWeight: "bold", fontSize: "26px" }}>
                             {done && (
                                 <div className="sent-message-text" >

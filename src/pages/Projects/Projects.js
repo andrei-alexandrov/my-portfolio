@@ -1,9 +1,10 @@
 import React, { useState, useRef, useContext } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { themeContext } from "../../Contex"
-import ColoredLines from "../../components/ColoredLines/ColoredLines";
-import Arrows from "../../components/Arrows/Arrows";
-import SwiperComponent from "../../components/ImageSlider/ImageSlider";
+import ColoredLines from "../../components/ColoredLines/ColoredLines"
+import Arrows from "../../components/Arrows/Arrows"
+import SwiperComponent from "../../components/ImageSlider/ImageSlider"
+import Button from "../../components/Button/Button"
 
 // Sports match project photos
 import LoginPage from "../../images/projects/sports_match/loginPage.png"
@@ -32,10 +33,10 @@ import TaskifyEdit from "../../images/projects/taskify/taskify-edit.png"
 
 import Github from "../../images/projects/github.png"
 
-import "./Projects.scss";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "./Projects.scss"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
 
 export default function Projects() {
     const [enlargedImg, setEnlargedImg] = useState(null);
@@ -75,7 +76,7 @@ export default function Projects() {
                             ---
                             <br />
                             <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>Javascript</span>,
+                            <span style={{ color: "#fba51e" }}>JavaScript</span>,
                             <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
                             <br />
@@ -114,7 +115,7 @@ export default function Projects() {
                             ---
                             <br />
                             <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>Javascript</span>,
+                            <span style={{ color: "#fba51e" }}>JavaScript</span>,
                             <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
                             <span style={{ color: "#7a50be" }}>&nbsp;Redux</span>,
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
@@ -125,7 +126,12 @@ export default function Projects() {
                         </div>
 
                         <a href="https://cocktail-site-andrei.netlify.app/" target='_blank' rel="noreferrer">
-                            <button className="project-play-btn">Visit here</button>
+                            <Button
+                                styleBtn="project-play-btn"
+                                hasOnClick={false}
+                            >
+                                Visit here
+                            </Button>
                         </a>
 
                         <br />
@@ -155,7 +161,7 @@ export default function Projects() {
                             ---
                             <br />
                             <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>Javascript</span>,
+                            <span style={{ color: "#fba51e" }}>JavaScript</span>,
                             <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
                             <br />
@@ -164,7 +170,12 @@ export default function Projects() {
                         </div>
 
                         <a href="https://countdown-timer-game.netlify.app/" target='_blank' rel="noreferrer">
-                            <button className="project-play-btn">Play here</button>
+                            <Button
+                                styleBtn="project-play-btn"
+                                hasOnClick={false}
+                            >
+                                Play here
+                            </Button>
                         </a>
                         <br></br>
                         <div className="link-content">Source code:
@@ -201,7 +212,12 @@ export default function Projects() {
                         </div>
 
                         <a href="https://todo-app-typescript-andrei.vercel.app/" target='_blank' rel="noreferrer">
-                            <button className="project-play-btn">Visit here</button>
+                            <Button
+                                styleBtn="project-play-btn"
+                                hasOnClick={false}
+                            >
+                                Visit here
+                            </Button>
                         </a>
                         <br />
 
@@ -228,7 +244,7 @@ export default function Projects() {
                             ---
                             <br />
                             <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>Javascript</span>,
+                            <span style={{ color: "#fba51e" }}>JavaScript</span>,
                             <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
                             <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
                             <br />

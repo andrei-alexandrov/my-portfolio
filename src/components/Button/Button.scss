@@ -1,0 +1,28 @@
+@import "../../mixins";
+
+.nav-btn {
+    @include coloredButton();
+    font-size: 0.9rem;
+    margin-left: 7px;
+}
+
+.cocktail-btn {
+    @include coloredButton();
+    width: 16rem;
+    height: 2.8rem;
+    color: black;
+    font-family: "Gumela", sans-serif;
+}
+
+.contact-btn {
+    @include button();
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-right: 5px;
+}
+
+.project-play-btn {
+    @include coloredButton();
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}

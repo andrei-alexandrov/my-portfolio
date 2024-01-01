@@ -72,16 +72,6 @@
                 display: flex;
                 flex-direction: column;
             }
-
-            .cocktail-btn {
-                @include button();
-                width: 16rem;
-                height: 2.8rem;
-                background: linear-gradient(45deg, $colored-button-left-side, $colored-button-left-side,
-                        white, white, $colored-button-right-side, $colored-button-right-side);
-                color: black;
-                font-family: "Gumela", sans-serif;
-            }
         }
 
         .about-me-img-wrapper>a>img {

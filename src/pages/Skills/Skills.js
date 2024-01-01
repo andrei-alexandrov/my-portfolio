@@ -4,6 +4,7 @@ import { themeContext } from "../../Contex"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Wheel from "../../components/Wheel/Wheel"
+import Button from "../../components/Button/Button"
 
 import Lottie from 'lottie-react';
 import reactIcon from "../../animations/reactIcon.json"
@@ -12,9 +13,9 @@ import htmlIcon from "../../animations/htmlLottie.json"
 import jsIcon from "../../animations/jsLottie.json"
 import sassIconTwo from "../../images/skills/sass-icon-2.png"
 import cssIcontwo from "../../images/skills/css-icon-two.png"
-import bootstrapIcon from "../../images/skills/bootstrap5.jpeg";
+import bootstrapIcon from "../../images/skills/bootstrap5.jpeg"
 
-import "./Skills.scss";
+import "./Skills.scss"
 
 export default function Skills() {
     const theme = useContext(themeContext);
@@ -44,7 +45,7 @@ export default function Skills() {
                             <br />
                             Currently learning:
                             <span style={{ color: "#7a50be" }}>&nbsp;Redux</span>,
-                            <span style={{ color: "#3078c6" }}>&nbsp;TypeScript</span> with React.js    
+                            <span style={{ color: "#3078c6" }}>&nbsp;TypeScript</span> with React.js
                         </span>
                         <div>
                             <span style={{ color: "#fba61e" }}>Education:</span>
@@ -60,11 +61,19 @@ export default function Skills() {
 
                         <div className="skills-btn-wrapper">
                             <Link spy={true} to='contact' smooth={true} duration={60} offset={115}>
-                                <button className="contact-btn">Contact me</button>
+                                <Button
+                                    styleBtn="contact-btn"
+                                    hasOnClick={false}
+                                >Contact me
+                                </Button>
                             </Link>
 
                             <a href="/pdf-files/Andrei_Alexandrov_CV.pdf" download>
-                                <button className="contact-btn">Download CV</button>
+                                <Button
+                                    styleBtn="contact-btn"
+                                    hasOnClick={false}
+                                >Download CV
+                                </Button>
                             </a>
                         </div>
                     </div>

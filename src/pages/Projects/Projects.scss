@@ -38,12 +38,6 @@
         text-align: center;
     }
 
-    .project-play-btn {
-        @include coloredButton();
-        margin-top: 1rem;
-        margin-bottom: 0.4rem;
-    }
-
     .link-content {
         display: flex;
         align-items: center;
