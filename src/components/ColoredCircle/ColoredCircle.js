@@ -6,11 +6,11 @@ import logoTwo from "../../images/aboutMe/myLogo-2.png"
 import './ColoredCircle.scss';
 
 export default function ColoredCircle() {
+    const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251)');
+    const [outerShadowColor, setOuterShadowColor] = useState('rgba(90, 34, 139)');
     // rgb(191, 21, 168),  rgb(123, 19, 250)
     // const [insetShadowColor, setInsetShadowColor] = useState('rgba(56, 188, 0)');
     // const [outerShadowColor, setOuterShadowColor] = useState('rgba(140, 250, 239, 0.5)');
-    const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251)');
-    const [outerShadowColor, setOuterShadowColor] = useState('rgba(90, 34, 139)');
     // const [insetShadowColor, setInsetShadowColor] = useState('#fba61e');
     // const [outerShadowColor, setOuterShadowColor] = useState('#777e94');
 

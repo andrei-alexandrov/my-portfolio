@@ -70,9 +70,9 @@ export default function ParticlesAnimation() {
                             number: {
                                 density: {
                                     enable: true,
-                                    area: 1600,
+                                    area: 1750,
                                 },
-                                value: 40,
+                                value: 39,
                             },
                             opacity: {
                                 value: 0.5,

@@ -76,14 +76,14 @@ export default function Projects() {
                             ---
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="javascript">JavaScript</span>,
-                            <span className="react">&nbsp;React.js</span>,
+                            <span className="javascript">JavaScript,</span>
+                            <span className="react">&nbsp;React.js,</span>
                             <span className="sass">&nbsp;Sass</span>
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional:&nbsp; </span>
                             <span>react-bootstrap, react router, emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. </span>
                             <br />
-                            <span>Possible chat between 2 users in 2 different tabs from the same browser. </span>
+                            <span>Possible chat between 2 users in 2 different tabs from the same browser.</span>
                             <br />
                         </div>
                         <br />
@@ -115,9 +115,9 @@ export default function Projects() {
                             ---
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="javascript">JavaScript</span>,
-                            <span className="react">&nbsp;React.js</span>,
-                            <span className="redux">&nbsp;Redux</span>,
+                            <span className="javascript">JavaScript,</span>
+                            <span className="react">&nbsp;React.js,</span>
+                            <span className="redux">&nbsp;Redux,</span>
                             <span className="sass">&nbsp;Sass</span>
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional:&nbsp;</span>
@@ -161,8 +161,8 @@ export default function Projects() {
                             ---
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="javascript">JavaScript</span>,
-                            <span className="react">&nbsp;React.js</span>,
+                            <span className="javascript">JavaScript,</span>
+                            <span className="react">&nbsp;React.js,</span>
                             <span className="sass">&nbsp;Sass</span>
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
@@ -202,7 +202,7 @@ export default function Projects() {
                             ---
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="typescript">&nbsp;TypeScript</span>
+                            <span className="typescript">TypeScript,</span>
                             <span className="react">&nbsp;React.js,</span>
                             <span className="css">&nbsp;CSS</span>
                             <br />
@@ -244,9 +244,10 @@ export default function Projects() {
                             ---
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="javascript">JavaScript</span>,
-                            <span className="react">&nbsp;React.js</span>,
-                            <span className="sass">&nbsp;Sass</span>
+                            <span className="javascript">JavaScript,</span>
+                            <span className="react">&nbsp;React.js,</span>
+                            <span className="sass">&nbsp;Sass,</span>
+                            <span className="three-js">&nbsp;Three.js</span>
                             <br />
                             <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
                             swiper, react-particles, emailJS, framer motion, react-scroll,

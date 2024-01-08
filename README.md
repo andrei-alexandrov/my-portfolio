@@ -14,7 +14,7 @@ Open this link [https://andrei-alexandrov-portfolio.netlify.app/](https://andrei
 5. Contact section
 
 ## Portfolio images
-![portfolioStartingPage](./src/images/gitHubImages/startingPage-portfolio.png)
+![portfolioStartingPage](./src/images/gitHubImages/starting-page-animation.gif)
 ![darkThemeHome](./src/images/gitHubImages/portfolio-aboutMe-dark.png)
 ![darkThemeSkills](./src/images/gitHubImages/portfolio-skills-dark.png)
 ![darkThemeProjectsCocktail](./src/images/gitHubImages/dark-portfolio-cocktail-project.png)

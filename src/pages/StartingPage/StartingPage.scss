@@ -1,72 +1,103 @@
 @import "../../variables";
+@import "../../mixins";
 
-.circles {
-	position: fixed;
-	--dim: 110vmin;
-	width: var(--dim);
-	height: var(--dim);
-	top: calc(50% - var(--dim) / 2);
-	left: calc(50% - var(--dim) / 2);
+.my-logo {
+	position: absolute;
+	width: 105px;
+	height: 105px;
+	top: 9%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
-	&-text {
-		text-transform: uppercase;
+.top-content-wrapper {
+	@include coloredWords();
+	position: absolute;
+	top: 21%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bottom-content-wrapper {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+	.sphere-desc {
+		@include coloredWords();
+		margin-bottom: 40px;
 	}
 
-	&-text-1 {
-		font-size: clamp(110px, 25vmin, 120px);
-		font-family: $font-circle-1;
-		font-weight: $font-weight-circle-1;
-		fill: $main-color;
-	}
+	.custom-btn {
+		color: #000000;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
 
-	&-text-2 {
-		font-size: clamp(90px, 17vmin, 100px);
-		font-family: $font-circle-2;
-		font-weight: $font-weight-circle-2;
-		fill: rgba(90, 34, 139);
-	}
+		&.btn-starting-page {
+			width: 130px;
+			height: 40px;
+			border: none;
+			background: linear-gradient(45deg, #bdc3c7, #2c3e50);
 
-	&-text-3 {
-		font-size: clamp(65px, 13.5vmin, 75px);
-		font-family: $font-circle-3;
-		font-weight: $font-weight-circle-3;
-		fill: rgba(30, 115, 251);
-	}
+			&:hover {
+				color: #ffffff;
+				background: transparent;
 
-	&-text-4 {
-		display: none;
-	}
+				&:before,
+				&:after {
+					width: 100%;
+					transition: 800ms ease all;
+				}
+			}
 
-	.button-enter {
-		width: 90px;
-		height: 90px;
-		position: absolute;
-		left: calc(50% - $dim-button / 2);
-		top: calc(50% - $dim-button / 2);
-		background-color: $main-color;
-		border-radius: 50%;
-		border: 1px solid black;
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 2px;
+				width: 0;
+				background: #fafbfb;
+				box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+				transition: 400ms ease all;
 
-		&-btn-text {
-			color: black;
+				&:after {
+					right: inherit;
+					top: inherit;
+					left: 0;
+					bottom: 0;
+				}
+			}
 		}
 	}
 }
 
-@media screen and (max-width: 580px) {
-	.circles {
-		.button-enter {
-			width: 64px;
-			height: 64px;
-			left: calc(53% - $dim-button / 2);
-			top: calc(53% - $dim-button / 2);
+.canvas-style {
+	width: 100%;
+	height: 100%;
+	display: block;
 
-			&-btn-text {
-				font-size: 16px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.bottom-content-wrapper {
+		.sphere-desc {
+			font-size: 16px;
 		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.my-logo {
+		width: 80px;
+		height: 80px;
 	}
 }

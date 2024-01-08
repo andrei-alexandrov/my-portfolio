@@ -1,102 +1,120 @@
-import React, { useEffect, useRef } from 'react';
+import * as THREE from "three";
+import { useRef, useEffect } from "react";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { gsap } from 'gsap';
 
+import myLogo from "../../images/aboutMe/myLogo-1.png";
 import "./StartingPage.scss";
 
 const StartingPage = ({ onEnter }) => {
-    const introRef = useRef(null);
+    const canvasRef = useRef(null);
 
     useEffect(() => {
-        const DOM = {
-            enterCtrl: introRef.current.querySelector('.button-enter'),
-        };
+        const scene = new THREE.Scene();
+        const geometry = new THREE.SphereGeometry(3, 64, 64);
+        const material = new THREE.MeshStandardMaterial({ color: "#00ff83", roughness: 0.5 });
+        const mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
 
-        const circleText = [...introRef.current.querySelectorAll('text.circles-text')];
-        const enterBackground = introRef.current.querySelector('.circles');
+        const sizes = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        }
 
-        const initEvents = () => {
-            DOM.enterCtrl.addEventListener('mouseenter', onMouseEnter);
-            DOM.enterCtrl.addEventListener('mouseleave', onMouseLeave);
-            gsap.set(circleText, { transformOrigin: '50% 50%' });
-        };
+        const light = new THREE.PointLight(0xffffff, 70, 100, 1.7);
+        light.position.set(0, 10, 10);
+        scene.add(light);
 
-        const start = () => {
-            gsap.to(circleText, {
-                duration: 10,
-                ease: 'expo',
-                scale: 1,
-                rotation: i => i % 2 ? '-=90' : '+=90',
-                opacity: 0.9,
-            });
-        };
+        const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 100);
+        camera.position.z = 20;
+        scene.add(camera);
 
-        const onMouseEnter = () => {
-            gsap.to(enterBackground, {
-                duration: 7,
-                ease: 'expo',
-                scale: 1.1
-            });
-            gsap.to(circleText, {
-                duration: 7,
-                ease: 'expo',
-                scale: 1.15,
-                rotation: i => i % 2 ? '-=90' : '+=90',
-                opacity: 0.4,
-            });
-        };
+        const canvas = canvasRef.current;
+        const renderer = new THREE.WebGLRenderer({ canvas });
+        renderer.setSize(sizes.width, sizes.height);
+        renderer.setPixelRatio(2);
+        renderer.render(scene, camera);
 
-        const onMouseLeave = () => {
-            gsap.to(enterBackground, {
-                duration: 7,
-                ease: 'expo',
-                scale: 1
-            });
-            gsap.to(circleText, {
-                duration: 11,
-                ease: 'expo',
-                scale: 1,
-                rotation: i => i % 2 ? '+=110' : '-=110',
-                opacity: 1,
-                stagger: {
-                    amount: -0.2
-                }
-            });
-        };
+        const controls = new OrbitControls(camera, canvas);
+        controls.enableDamping = true;
+        controls.autoRotate = true;
+        controls.enablePan = false;
+        controls.enableZoom = false;
+        controls.autoRotateSpeed = sizes.width < 860 ? 4 : 13;
 
-        start();
-        initEvents();
+        window.addEventListener("resize", () => {
+            sizes.width = window.innerWidth;
+            sizes.height = window.innerHeight;
+            camera.aspect = sizes.width / sizes.height;
+            camera.updateProjectionMatrix();
+            renderer.setSize(sizes.width, sizes.height);
+            controls.autoRotateSpeed = sizes.width < 860 ? 4 : 13;
+        });
+
+        const loop = () => {
+            controls.update();
+            renderer.render(scene, camera);
+            window.requestAnimationFrame(loop);
+        }
+        loop();
+
+        const timeline = gsap.timeline({ defaults: { duration: 2 } });
+        const timelineTwo = gsap.timeline({ defaults: { duration: 1.7 } })
+        timeline.fromTo(mesh.scale, { z: 0, x: 0, y: 0 }, { z: 1, x: 1, y: 1 });
+        timelineTwo.fromTo(".top-content-wrapper", {
+            y: "-300%",
+            duration: 1.5
+        }, {
+            y: "0%",
+            duration: 1.5
+        });
+        // timeline.fromTo(".sphere-desc", { opacity: 0 }, { opacity: 1 });
+
+        const colors = [
+            new THREE.Color('red'),
+            new THREE.Color('green'),
+            new THREE.Color('purple'),
+            new THREE.Color('orange'),
+            new THREE.Color('yellow'),
+            new THREE.Color('blue'),
+        ];
+
+        //Първоначална анимация на цветовете
+        gsap.to(mesh.material.color, {
+            r: colors[1].r,
+            g: colors[1].g,
+            b: colors[1].b,
+            duration: 2,
+            ease: 'power1.inOut',
+            repeat: -1,
+            yoyo: true,
+            onRepeat: () => {
+                const nextColor = colors[Math.floor(Math.random() * colors.length)];
+                gsap.to(mesh.material.color, {
+                    r: nextColor.r,
+                    g: nextColor.g,
+                    b: nextColor.b,
+                    duration: 2,
+                    ease: 'power1.inOut',
+                });
+            },
+        });
     }, []);
 
     return (
-        <div ref={introRef} className="circles">
-            <main>
-                <svg className="circles" viewBox="0 0 1400 1400">
-                    <defs>
-                        <path id="circle-1" d="M250,700.5A450.5,450.5 0 1 11151,700.5A450.5,450.5 0 1 1250,700.5" />
-                        <path id="circle-2" d="M382,700.5A318.5,318.5 0 1 11019,700.5A318.5,318.5 0 1 1382,700.5" />
-                        <path id="circle-3" d="M487,700.5A213.5,213.5 0 1 1914,700.5A213.5,213.5 0 1 1487,700.5" />
-                        <path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5" />
-                    </defs>
-                    <text className="circles-text circles-text-1">
-                        <textPath xlinkHref="#circle-1" textLength="2830">Welcome▸to my▸portfolio▸&#x200B;</textPath>
-                    </text>
-                    <text className="circles-text circles-text-2">
-                        <textPath xlinkHref="#circle-2" textLength="2001">React▸JS▸Sass▸&#x200B;</textPath>
-
-                    </text>
-                    <text className="circles-text circles-text-3">
-                        <textPath xlinkHref="#circle-3" textLength="1341">Html▸css▸git▸&#x200B;</textPath>
-                    </text>
-                    <text className="circles-text circles-text-4">
-                        <textPath xlinkHref="#circle-4" textLength="836"></textPath>
-                    </text>
-                </svg>
-
-                <button className="button-enter" onClick={onEnter}>
+        <>
+            <img className="my-logo" src={myLogo} alt="my-logo" />
+            <div className="top-content-wrapper">
+                <h1 className="">Welcome</h1>
+            </div>
+            <div className="bottom-content-wrapper">
+                <h4 className="sphere-desc">Drag anywhere to interact with the sphere</h4>
+                <button className="custom-btn btn-starting-page" onClick={onEnter}>
                     <span className="button-enter-btn-text">Enter</span>
                 </button>
-            </main>
-        </div>
+            </div>
+            <canvas ref={canvasRef} className="canvas-style"></canvas>
+        </>
     );
 };
 
