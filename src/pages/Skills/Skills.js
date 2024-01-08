@@ -44,8 +44,8 @@ export default function Skills() {
                             Git/Github <br />
                             <br />
                             Currently learning:
-                            <span style={{ color: "#7a50be" }}>&nbsp;Redux</span>,
-                            <span style={{ color: "#3078c6" }}>&nbsp;TypeScript</span> with React.js
+                            <span className="redux">&nbsp;Redux</span>,
+                            <span className="typescript">&nbsp;TypeScript</span> with React.js
                         </span>
                         <div>
                             <span style={{ color: "#fba61e" }}>Education:</span>

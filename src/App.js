@@ -1,18 +1,18 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState } from "react"
 import { themeContext } from "./Contex"
 
-import ParticlesAnimation from './components/Particles/ParticlesAnimation'
-import Navbar from './components/Navbar/Navbar'
-import AboutMe from './pages/AboutMe/AboutMe'
-import Skills from './pages/Skills/Skills'
-import CardsCollection from './pages/CardsCollection/CardsCollection'
+import ParticlesAnimation from "./components/Particles/ParticlesAnimation"
+import Navbar from "./components/Navbar/Navbar"
+import AboutMe from "./pages/AboutMe/AboutMe"
+import Skills from "./pages/Skills/Skills"
+import CardsCollection from "./pages/CardsCollection/CardsCollection"
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
 import Footer from "./pages/Footer/Footer"
 import StartingPage from "./pages/StartingPage/StartingPage"
 
-import './App.scss'
-import './index.scss'
+import "./App.scss"
+import "./index.scss"
 
 function App() {
   const theme = useContext(themeContext);
@@ -32,7 +32,7 @@ function App() {
       }}
     >
       {showContent ? (
-        <div className='fade-in'>
+        <div className="fade-in">
           <ParticlesAnimation />
           <Navbar />
           <AboutMe />

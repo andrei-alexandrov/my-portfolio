@@ -75,18 +75,18 @@ export default function Projects() {
                             <br />
                             ---
                             <br />
-                            <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>JavaScript</span>,
-                            <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
-                            <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                            <span className="javascript">JavaScript</span>,
+                            <span className="react">&nbsp;React.js</span>,
+                            <span className="sass">&nbsp;Sass</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional:&nbsp; </span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional:&nbsp; </span>
                             <span>react-bootstrap, react router, emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. </span>
                             <br />
                             <span>Possible chat between 2 users in 2 different tabs from the same browser. </span>
                             <br />
                         </div>
-                        <br></br>
+                        <br />
                         <div className="link-content">Source code:
                             <a href="https://www.github.com/andrei-alexandrov/sports-match" target='_blank' rel="noreferrer">
                                 <img src={Github} alt="Github" />
@@ -114,13 +114,13 @@ export default function Projects() {
                             <br />
                             ---
                             <br />
-                            <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>JavaScript</span>,
-                            <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
-                            <span style={{ color: "#7a50be" }}>&nbsp;Redux</span>,
-                            <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                            <span className="javascript">JavaScript</span>,
+                            <span className="react">&nbsp;React.js</span>,
+                            <span className="redux">&nbsp;Redux</span>,
+                            <span className="sass">&nbsp;Sass</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional:&nbsp;</span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional:&nbsp;</span>
                             <span>redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.</span>
                             <br />
                         </div>
@@ -160,12 +160,12 @@ export default function Projects() {
                             <br />
                             ---
                             <br />
-                            <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>JavaScript</span>,
-                            <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
-                            <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                            <span className="javascript">JavaScript</span>,
+                            <span className="react">&nbsp;React.js</span>,
+                            <span className="sass">&nbsp;Sass</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional: </span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
                             <span>&nbsp;Fully responsive.</span>
                         </div>
 
@@ -177,7 +177,7 @@ export default function Projects() {
                                 Play here
                             </Button>
                         </a>
-                        <br></br>
+                        <br />
                         <div className="link-content">Source code:
                             <a href="https://github.com/andrei-alexandrov/countdown-game" target='_blank' rel="noreferrer">
                                 <img src={Github} alt="Github" />
@@ -201,12 +201,12 @@ export default function Projects() {
                             Add/delete/edit one or more tasks. <br />
                             ---
                             <br />
-                            <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#3078c6" }}>TypeScript,</span>
-                            <span style={{ color: "#129dca" }}>&nbsp;React.js,</span>
-                            <span style={{ color: "#018dd6" }}>&nbsp;CSS</span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                            <span className="typescript">&nbsp;TypeScript</span>
+                            <span className="react">&nbsp;React.js,</span>
+                            <span className="css">&nbsp;CSS</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional: </span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
                             <span>&nbsp;Fully responsive. This is my first project where I am learning to use TypeScript with React.js.
                                 I will implement redux toolkit and add new feautures soon.</span>
                         </div>
@@ -243,12 +243,12 @@ export default function Projects() {
                         <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
                             ---
                             <br />
-                            <span style={{ color: "white" }}>Used:&nbsp;</span>
-                            <span style={{ color: "#fba51e" }}>JavaScript</span>,
-                            <span style={{ color: "#129dca" }}>&nbsp;React.js</span>,
-                            <span style={{ color: "#ce6b9c" }}>&nbsp;Sass</span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                            <span className="javascript">JavaScript</span>,
+                            <span className="react">&nbsp;React.js</span>,
+                            <span className="sass">&nbsp;Sass</span>
                             <br />
-                            <span style={{ color: "white" }}>Additional: </span>
+                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
                             swiper, react-particles, emailJS, framer motion, react-scroll,
                             iconscout/react-unicorns, tsparticles, TheCocktailDb API, react-lottie, gsap.
                             Fully responsive.
