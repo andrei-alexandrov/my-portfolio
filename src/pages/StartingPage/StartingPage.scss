@@ -3,8 +3,8 @@
 
 .my-logo {
 	position: absolute;
-	width: 105px;
-	height: 105px;
+	width: 130px;
+	height: 130px;
 	top: 9%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -87,17 +87,28 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
+	.my-logo {
+		width: 110px;
+		height: 110px;
+	}
+
 	.bottom-content-wrapper {
 		.sphere-desc {
-			font-size: 16px;
+			font-size: 17px;
 		}
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-height: 480px) {
 	.my-logo {
 		width: 80px;
 		height: 80px;
+	}
+
+	.bottom-content-wrapper {
+		.sphere-desc {
+			font-size: 17px;
+		}
 	}
 }

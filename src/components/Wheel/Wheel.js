@@ -47,8 +47,8 @@ export default function Wheel() {
                     <Lottie className='success-lottie' animationData={success} />
                     <Lottie className='laptop-lottie' animationData={laptop} />
 
-                    <span className="rotation">Hover for random rotation</span>
-                    <span className="rotation-tap">Tap for random rotation</span>
+                    {/* <span className="rotation">Hover for random rotation</span>
+                    <span className="rotation-tap">Tap for random rotation</span> */}
                 </div>
             </motion.div>
         </div>

@@ -70,7 +70,7 @@ export default function ParticlesAnimation() {
                             number: {
                                 density: {
                                     enable: true,
-                                    area: 1750,
+                                    area: 1780,
                                 },
                                 value: 39,
                             },
