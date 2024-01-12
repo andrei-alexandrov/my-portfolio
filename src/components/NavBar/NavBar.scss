@@ -4,14 +4,13 @@
 
 .navbar {
     .nav-links {
-
         a.nav-link {
             background: linear-gradient(45deg,
                     $main-color, $main-color, $main-color,
                     $secondary-color, $secondary-color, $secondary-color);
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: $nav-font;
+            font-size: $nav-font;   
             transition: transform 1s;
 
             &:hover {

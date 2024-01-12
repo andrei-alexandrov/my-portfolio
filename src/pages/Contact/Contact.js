@@ -1,5 +1,4 @@
-import React, { useRef, useState, useContext } from "react"
-import { themeContext } from "../../Contex"
+import React, { useRef, useState } from "react"
 import { Container, Row } from "react-bootstrap"
 
 import emailjs from "@emailjs/browser";
@@ -7,13 +6,12 @@ import heathEmoji from "../../images/contact/hearthEmoji.png"
 import ScrollToTopBtn from "../../components/ScrollToTopBtn/ScrollToTopBtn"
 import Lottie from "lottie-react"
 import sendMessage from "../../animations/send-message-three.json"
-// import earth from "../../animations/earth-lottie.json"
 
 import "./Contact.scss";
+import { useSelector } from "react-redux";
 
 export default function Contact() {
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
+    const { mode } = useSelector(state => state.darkMode);
 
     const form = useRef();
     const [done, setDone] = useState(false);
@@ -52,7 +50,7 @@ export default function Contact() {
         <Container>
             <Row className="contact-form" id="contact">
                 <div className="title">
-                    <div style={{ color: darkMode ? "#edebe8" : "" }}>Let's connect</div>
+                    <div style={{ color: mode ? "#edebe8" : "" }}>Let's connect</div>
                     <div>Contact me</div>
                     <Lottie
                         style={!isInputClicked ? sendMeesageStyles : earthStyles} //Временно дублиране

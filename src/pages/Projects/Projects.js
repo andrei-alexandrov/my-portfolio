@@ -1,6 +1,7 @@
-import React, { useState, useRef, useContext } from "react"
+import React, { useState, useRef } from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { themeContext } from "../../Contex"
+import { useSelector } from "react-redux"
+
 import ColoredLines from "../../components/ColoredLines/ColoredLines"
 import Arrows from "../../components/Arrows/Arrows"
 import SwiperComponent from "../../components/ImageSlider/ImageSlider"
@@ -45,8 +46,7 @@ export default function Projects() {
     const swiperRefProjectThree = useRef(null);
     const swiperRefProjectFour = useRef(null);
 
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
+    const { mode } = useSelector(state => state.darkMode);
 
     const handleImageClick = (img) => {
         setEnlargedImg(img);
@@ -63,28 +63,31 @@ export default function Projects() {
                     <div className="portfolio" id="projects">
                         <ColoredLines />
                         <div className="project-header">
-                            <span style={{ color: darkMode ? "white" : "black" }}>My</span> Projects
+                            <span style={{ color: mode ? "white" : "black" }}>My</span> Projects
                         </div>
 
                         {/* Project 1 */}
                         <div className="project-title">1. Sports Match</div>
-                        <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
-                            My own idea created with React.js that helps people with common interests in different sports
-                            to meet and play together. The website also provides an opportunity to choose the most
-                            convenient places for practicing the desired sport in the respective city/neighborhood.
-                            <br />
-                            ---
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="javascript">JavaScript,</span>
-                            <span className="react">&nbsp;React.js,</span>
-                            <span className="sass">&nbsp;Sass</span>
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional:&nbsp; </span>
-                            <span>react-bootstrap, react router, emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. </span>
-                            <br />
-                            <span>Possible chat between 2 users in 2 different tabs from the same browser.</span>
-                            <br />
+                        <div className={mode ? "portfolio-project-text" : "portfolio-project-text-light"}>
+                            <div >
+                                My own idea for a website that helps people with shared interests to interact
+                                and participate together in different sports. The website also provides an opportunity
+                                to choose the most convenient place for the desired activity in the respective city and neighborhood.
+                                <br />
+                                ---
+                                <br />
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                                <span className="javascript">JavaScript,</span>
+                                <span className="react">&nbsp;React.js,</span>
+                                <span className="sass">&nbsp;Sass</span>
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Additional:&nbsp; </span>
+                                <span>react-bootstrap, react router, emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage. </span>
+                                <br />
+                                <span>Possible chat between 2 users in 2 different tabs from the same browser.</span>
+                                <br />
+                            </div>
                         </div>
                         <br />
                         <div className="link-content">Source code:
@@ -109,20 +112,23 @@ export default function Projects() {
 
                         {/* Project 2 */}
                         <div className="project-title">2. Cocktails site</div>
-                        <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
-                            <span>Find interesting cocktails and get their recipes. If you like a specific one, add it to favorites.</span>
-                            <br />
-                            ---
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="javascript">JavaScript,</span>
-                            <span className="react">&nbsp;React.js,</span>
-                            <span className="redux">&nbsp;Redux,</span>
-                            <span className="sass">&nbsp;Sass</span>
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional:&nbsp;</span>
-                            <span>redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.</span>
-                            <br />
+                        <div className={mode ? "portfolio-project-text" : "portfolio-project-text-light"}>
+                            <div>
+                                <span>Find interesting cocktails and get their recipes. If you like a specific one, add it to favorites.</span>
+                                <br />
+                                ---
+                                <br />
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                                <span className="javascript">JavaScript,</span>
+                                <span className="react">&nbsp;React.js,</span>
+                                <span className="redux">&nbsp;Redux,</span>
+                                <span className="sass">&nbsp;Sass</span>
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Additional:&nbsp;</span>
+                                <span>redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.</span>
+                                <br />
+                            </div>
                         </div>
 
                         <a href="https://cocktail-site-andrei.netlify.app/" target='_blank' rel="noreferrer">
@@ -155,18 +161,21 @@ export default function Projects() {
 
                         {/* Project 3 */}
                         <div className="project-title">3. Countdown game</div>
-                        <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
-                            Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.
-                            <br />
-                            ---
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="javascript">JavaScript,</span>
-                            <span className="react">&nbsp;React.js,</span>
-                            <span className="sass">&nbsp;Sass</span>
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
-                            <span>&nbsp;Fully responsive.</span>
+                        <div className={mode ? "portfolio-project-text" : "portfolio-project-text-light"}>
+                            <div>
+                                Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.
+                                <br />
+                                ---
+                                <br />
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                                <span className="javascript">JavaScript,</span>
+                                <span className="react">&nbsp;React.js,</span>
+                                <span className="sass">&nbsp;Sass</span>
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
+                                <span>&nbsp; Fully responsive.</span>
+                            </div>
                         </div>
 
                         <a href="https://countdown-timer-game.netlify.app/" target='_blank' rel="noreferrer">
@@ -197,18 +206,21 @@ export default function Projects() {
 
                         {/* Project 4 */}
                         <div className="project-title">4. Taskify</div>
-                        <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
-                            Add/delete/edit one or more tasks. <br />
-                            ---
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="typescript">TypeScript,</span>
-                            <span className="react">&nbsp;React.js,</span>
-                            <span className="css">&nbsp;CSS</span>
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
-                            <span>&nbsp;Fully responsive. This is my first project where I am learning to use TypeScript with React.js.
-                                I will implement redux toolkit and add new feautures soon.</span>
+                        <div className={mode ? "portfolio-project-text" : "portfolio-project-text-light"}>
+                            <div >
+                                Add/delete/edit one or more tasks. <br />
+                                ---
+                                <br />
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                                <span className="typescript">TypeScript,</span>
+                                <span className="react">&nbsp;React.js,</span>
+                                <span className="css">&nbsp;CSS</span>
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
+                                <span>&nbsp;Fully responsive. This is my first project where I am learning to use TypeScript with React.js.
+                                    I will implement redux toolkit and add new feautures soon.</span>
+                            </div>
                         </div>
 
                         <a href="https://todo-app-typescript-andrei.vercel.app/" target='_blank' rel="noreferrer">
@@ -240,19 +252,25 @@ export default function Projects() {
 
                         {/* Project 5 */}
                         <div className="project-title">5. This portfolio</div>
-                        <div className={darkMode ? "portfolio-project-text" : "portfolio-project-text-light"}>
-                            ---
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
-                            <span className="javascript">JavaScript,</span>
-                            <span className="react">&nbsp;React.js,</span>
-                            <span className="sass">&nbsp;Sass,</span>
-                            <span className="three-js">&nbsp;Three.js</span>
-                            <br />
-                            <span className={darkMode ? "used-additional-white" : "used-additional-black"}>Additional: </span>
-                            swiper, react-particles, emailJS, framer motion, react-scroll,
-                            iconscout/react-unicorns, tsparticles, TheCocktailDb API, react-lottie, gsap.
-                            Fully responsive.
+                        <div className={mode ? "portfolio-project-text" : "portfolio-project-text-light"}>
+                            <div >
+                                ---
+                                <br />
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Used:&nbsp;</span>
+                                <span className="javascript">JavaScript,</span>
+                                <span className="react">&nbsp;React.js,</span>
+                                <span className="redux">&nbsp;Redux,</span>
+                                <span className="sass">&nbsp;Sass,</span>
+                             
+                                <br />
+                                <span className={mode ? "used-additional-white" : "used-additional-black"}>Additional:</span>
+                                <span>&nbsp;<span className="three-js">Three.js, </span>
+                                swiper, react-particles, emailJS, framer motion, react-scroll,
+                                    iconscout/react-unicorns, tsparticles, TheCocktailDb API, react-lottie, gsap.
+                                    Fully responsive.
+                                </span>
+                            </div>
                         </div>
                         <br />
                         <div className="link-content">Source code:
@@ -271,6 +289,6 @@ export default function Projects() {
                     </div>
                 </Col>
             </Row>
-        </Container>
+        </Container >
     );
 }

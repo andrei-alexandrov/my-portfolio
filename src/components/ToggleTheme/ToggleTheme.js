@@ -1,27 +1,36 @@
-import React, { useContext } from 'react'
-import { themeContext } from '../../Contex'
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { toggleDarkMode } from '../../store/themeSlice'
 
 import Sun from '@iconscout/react-unicons/icons/uil-sun'
 import Moon from '@iconscout/react-unicons/icons/uil-moon'
 import './ToggleTheme.scss'
 
 export default function ToggleTheme() {
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
+    const { mode } = useSelector(state => state.darkMode);
+    const dispatch = useDispatch();
+
+    // const theme = useContext(themeContext);
+    // const darkMode = theme.state.darkMode;
 
     const handleClick = () => {
-        theme.dispatch({ type: 'toggle' });
+        // theme.dispatch({ type: 'toggle' });
+        dispatch(toggleDarkMode());
+        console.log(mode);
     }
 
     return (
         <div>
             <div>
-                <div className={`toggle ${darkMode ? "dark-mode" : "light-mode"}`} onClick={handleClick}>
+                <div
+                    className={`toggle ${mode ? "dark-mode" : "light-mode"}`}
+                    onClick={handleClick}>
                     <Moon />
                     <Sun />
                     <div
                         className='toggle-button'
-                        style={darkMode ? { left: '2px' } : { right: '2px' }}>
+                        style={mode ? { left: '2px' } : { right: '2px' }}
+                    >
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react"
-import { themeContext } from "./Contex"
+import React, { useState } from "react"
+import { useSelector } from "react-redux"
 
 import ParticlesAnimation from "./components/Particles/ParticlesAnimation"
 import Navbar from "./components/Navbar/Navbar"
@@ -15,9 +15,7 @@ import "./App.scss"
 import "./index.scss"
 
 function App() {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-
+  const mode = useSelector(state => state.darkMode.mode);
   const [showContent, setShowContent] = useState(false);
 
   const handleEnterComplete = () => {
@@ -26,9 +24,9 @@ function App() {
 
   return (
     <div
-      className={`App ${darkMode ? "dark-mode" : "light-mode"}`}
+      className="App"
       style={{
-        background: darkMode ? "black" : "whitesmoke"
+        background: mode ? "black" : "whitesmoke"
       }}
     >
       {showContent ? (

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
+
 import HumanPic from "../../images/cards/me1.png"
 import Lottie from 'lottie-react';
 import helloEmoji from "../../animations/helloAnimation.json"
@@ -6,6 +8,7 @@ import helloEmoji from "../../animations/helloAnimation.json"
 import "./CardOne.css"
 
 export default function CardOne() {
+  const {mode} = useSelector(state => state.darkMode);
   const [hovered, setHovered] = useState(false);
 
   const handleMouseOver = () => {
@@ -17,7 +20,10 @@ export default function CardOne() {
   }
 
   return (
-    <div className="cardOne" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+    <div
+      className={`${mode ? "dark-mode cardOne lines" : "light-mode cardOne lines"}`}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}>
       <div className="lines"></div>
       <div className="imgBx">
         <img src={HumanPic} alt="person-pic" />

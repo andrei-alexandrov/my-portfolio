@@ -1,5 +1,5 @@
-import React, { useState, useContext } from 'react';
-import { themeContext } from "../..//Contex"
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import logoOne from "../../images/aboutMe/myLogo-1.png"
 import logoTwo from "../../images/aboutMe/myLogo-2.png"
@@ -8,14 +8,8 @@ import './ColoredCircle.scss';
 export default function ColoredCircle() {
     const [insetShadowColor, setInsetShadowColor] = useState('rgba(30, 115, 251)');
     const [outerShadowColor, setOuterShadowColor] = useState('rgba(90, 34, 139)');
-    // rgb(191, 21, 168),  rgb(123, 19, 250)
-    // const [insetShadowColor, setInsetShadowColor] = useState('rgba(56, 188, 0)');
-    // const [outerShadowColor, setOuterShadowColor] = useState('rgba(140, 250, 239, 0.5)');
-    // const [insetShadowColor, setInsetShadowColor] = useState('#fba61e');
-    // const [outerShadowColor, setOuterShadowColor] = useState('#777e94');
 
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
+    const { mode } = useSelector(state => state.darkMode);
 
     const getRandomRGBA = () => {
         const randomR = Math.floor(Math.random() * 256);
@@ -42,10 +36,10 @@ export default function ColoredCircle() {
             >
                 <div className='drop-card-content'>
                     <div className='image-wrapper-logo'>
-                        <img src={darkMode ? logoOne : logoTwo} alt='LetterA' />
+                        <img src={mode ? logoOne : logoTwo} alt='LetterA' />
                     </div>
                     <button
-                        className={`${darkMode ? "darkThemeBtnColor" : "lightThemeBtnColor"}`}
+                        className={`${mode ? "darkThemeBtnColor" : "lightThemeBtnColor"}`}
                         onClick={changeColors}>
                         Change colors
                     </button>

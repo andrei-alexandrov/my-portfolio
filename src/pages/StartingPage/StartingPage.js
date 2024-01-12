@@ -21,7 +21,7 @@ const StartingPage = ({ onEnter }) => {
             height: window.innerHeight
         }
 
-        const light = new THREE.PointLight(0xffffff, 70, 100, 1.7);
+        const light = new THREE.PointLight(0xffffff, 70, 100, 1.6);
         light.position.set(0, 10, 10);
         scene.add(light);
 

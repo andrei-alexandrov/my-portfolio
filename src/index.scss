@@ -11,12 +11,8 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: var(--bs-body-line-height-1);
-    // background: url("./images/golden-glitter-two.png") center/cover fixed no-repeat;
     background-color: black;
     overflow-x: hidden;   
-    // @media screen and (max-width: 553px) {
-    //     background: url("./images/golden-glitter-mobile-two.png") center/cover fixed no-repeat;
-    // }
 }
 
 ::-webkit-scrollbar {
@@ -39,3 +35,19 @@ body {
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.1);
 }
+
+// ::-webkit-scrollbar {
+//     width: 0.6em;
+//     overflow-x: none;
+//   }
+//   ::-webkit-scrollbar-track {
+//     background-color: #242942;
+//     margin-block: 0.15em;
+//     border-radius: 0.1em;
+//   }
+//   ::-webkit-scrollbar-thumb {
+//     background: $main-color;
+//     background: -webkit-linear-gradient(to right, $main-color, #0072ff);
+//     background: linear-gradient(to right, $main-color, #0072ff);
+//     border-radius: 0.1em;
+//   }

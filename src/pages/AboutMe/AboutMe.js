@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useContext } from "react"
+import React, { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { themeContext } from "../../Contex"
+import { useSelector } from "react-redux"
+
 import ColoredCircle from "../../components/ColoredCircle/ColoredCircle"
 import Button from "../../components/Button/Button"
 
@@ -15,8 +16,7 @@ export default function AboutMe() {
         image: ""
     });
 
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
+    const { mode } = useSelector(state => state.darkMode);
 
     const greetings = [
         "Hello", "Привет", "Hallo", "Bonjour", "Hola", "Hallå", "Bunâ", "Cześć",
@@ -51,7 +51,6 @@ export default function AboutMe() {
         handleCocktail();
     }, []);
 
-
     useEffect(() => {
         const intervalId = setInterval(() => {
             toggleFade();
@@ -68,17 +67,26 @@ export default function AboutMe() {
             <Row className="about-me-wrapper">
                 <Col className="about-me-left-side">
                     <div className="about-me">
-                        <span className={`${isFadingOut ? "fade-out" : "fade-in"}`} style={{ color: darkMode ? 'whitesmoke' : '#232d48' }}>{greetings[greetingIndex]}, I am</span>
+                        <span
+                            className={`${isFadingOut ? "fade-out" : "fade-in"}`}
+                            style={{ color: mode ? 'whitesmoke' : '#232d48' }}>
+                            {greetings[greetingIndex]}, I am
+                        </span>
                         <span className="special-font">Andrei Alexandrov</span>
 
-                        <span className={darkMode ? "about-me-text" : "about-me-text-light-theme"}>
+                        <span className={mode ? "about-me-text" : "about-me-text-light-theme"}>
+                                   <br />   
                             Front-End developer with JavaScript and React.js, based in Sofia, Bulgaria.<br />
                             <br />
                             I pay close attention to details and enjoy creating visually appealing and
                             interactive web applications.<br />
                             <br />
-                            I am passionate about furthering my IT knowledge and<br />
-                            developing my skills and creativity as part of a dynamic team.
+                            {/* I am passionate about furthering my IT knowledge and<br />
+                            developing my skills and creativity as part of a dynamic team. */}
+                            I am eager to further my IT knowledge, develop my skills and <br />
+                            use my creativity as a part of a dynamic team.
+                            <br />
+                            <br />
                         </span>
                     </div>
 

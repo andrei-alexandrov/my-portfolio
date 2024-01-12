@@ -2,7 +2,6 @@
     width: 22rem;
     height: 11.2rem;
     transition: 0.5s;
-    --bs-card-border-width: var(--bs-border-width-1);
 }
 
 .cardOne:hover {
@@ -48,12 +47,11 @@
     background: #fafafa;
 }
 
-.dark-mode .cardOne .lines::after {
+.dark-mode .lines::after {
     background: #0c0c0c;
 }
 
-.light-mode .cardOne .lines::after {
-    /* background: linear-gradient(to right, #1f1c2c, #928dab); */
+.light-mode .lines::after {
     background: whitesmoke;
 }
 
