@@ -13,7 +13,7 @@ import htmlIcon from "../../animations/htmlLottie.json"
 import jsIcon from "../../animations/jsLottie.json"
 import sassIconTwo from "../../images/skills/sass-icon-2.png"
 import cssIcontwo from "../../images/skills/css-icon-two.png"
-import bootstrapIcon from "../../images/skills/bootstrap5.jpeg"
+import reduxIcon from "../../images/skills/redux.png"
 
 import "./Skills.scss"
 
@@ -29,26 +29,28 @@ export default function Skills() {
                         <div className="lottie-wrapper" style={{ display: "flex", position: "relative", right: "5px" }}>
                             <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "46px" }} animationData={jsIcon} />
                             <Lottie role="img" aria-label="React Icon" style={{ width: "57px" }} animationData={reactIcon} />
+                            <img className="redux-image" src={reduxIcon} alt="Bootstrap-icon" />
                             <Lottie role="img" aria-label="HTML5 Icon" style={{ width: "55px" }} animationData={htmlIcon} />
                             <img className="css-image" src={cssIcontwo} alt="Css-icon" />
                             <Lottie role="img" aria-label="Github Icon" style={{ width: "67px" }} animationData={gitHubIcon} />
                             <img className="sass-image" src={sassIconTwo} alt="Sass-icon" />
-                            <img className="bootstrap-image" src={bootstrapIcon} alt="Bootstrap-icon" />
                         </div>
                         <span className={mode ? "skills-info" : "skills-info-light"}>
                             DOM/BOM - storage and timers <br />
                             MVC, HTTP, AJAX - Promises and fetch<br />
                             REST API's, JSON<br />
                             Responsive design<br />
+                            Bootstrap <br />
                             Git/Github <br />
                             <br />
                             Currently learning:
-                            <span className="redux">&nbsp;Redux</span>,
+                            {/* <span className="redux">&nbsp;Redux</span>, */}
                             <span className="typescript">&nbsp;TypeScript</span> with React.js
                         </span>
                         <div>
                             <span style={{ color: "#fba61e" }}>Education:</span>
-                            <div className={mode ? "skills-info" : "skills-info-light"}>2022- 2023 IT Talents training camp <br />
+                            <div
+                                className={mode ? "skills-info" : "skills-info-light"}>
                                 2022- 2023 IT Talents training camp <br />
                                 2020 - 2021 Software university  {`(Java basics, 2 months)`} <br />
                                 2014 – 2016	Sofia University {`(Master: European Projects)`} <br />

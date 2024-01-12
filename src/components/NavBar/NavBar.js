@@ -23,7 +23,7 @@ export default function CustomNavbar() {
         <ToggleTheme />
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto nav-links d-flex flex-row justify-content-center align-items-center gap-3 mt-4">
+          <Nav className="mx-auto nav-links d-flex flex-row justify-content-center align-items-center gap-3 navigation-bar">
             <Nav.Link className={mode ? "nav-link" : "nav-light-mode"}
               as={Link} spy={true} to="skills" smooth={true} duration={60} offset={28}>
               Skills

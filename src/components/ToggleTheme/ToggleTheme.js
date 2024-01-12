@@ -10,11 +10,7 @@ export default function ToggleTheme() {
     const { mode } = useSelector(state => state.darkMode);
     const dispatch = useDispatch();
 
-    // const theme = useContext(themeContext);
-    // const darkMode = theme.state.darkMode;
-
     const handleClick = () => {
-        // theme.dispatch({ type: 'toggle' });
         dispatch(toggleDarkMode());
         console.log(mode);
     }
