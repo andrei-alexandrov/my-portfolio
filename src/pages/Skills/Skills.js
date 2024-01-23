@@ -37,14 +37,14 @@ export default function Skills() {
                         </div>
                         <span className={mode ? "skills-info" : "skills-info-light"}>
                             DOM/BOM - storage and timers <br />
-                            MVC, HTTP, AJAX - Promises and fetch<br />
+                            HTTP, AJAX - Promises and fetch<br />
                             REST API's, JSON<br />
                             Responsive design<br />
                             Bootstrap <br />
                             Git/Github <br />
                             <br />
                             Currently learning:
-                            {/* <span className="redux">&nbsp;Redux</span>, */}
+                            <span className="next-js">&nbsp;Next.js 14</span>,
                             <span className="typescript">&nbsp;TypeScript</span> with React.js
                         </span>
                         <div>
