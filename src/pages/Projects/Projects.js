@@ -50,6 +50,7 @@ export default function Projects() {
   const swiperRefProjectTwo = useRef(null);
   const swiperRefProjectThree = useRef(null);
   const swiperRefProjectFour = useRef(null);
+  const swiperRefProjectFive = useRef(null);
 
   const { mode } = useSelector((state) => state.darkMode);
 
@@ -250,6 +251,15 @@ export default function Projects() {
                 <span className="next-js">&nbsp;Next.js,</span>
                 <span className="sass">&nbsp;Tailwind css</span>
                 <br />
+                <span
+                  className={
+                    mode ? "used-additional-white" : "used-additional-black"
+                  }
+                >
+                  Additional:&nbsp;
+                </span>
+                <span>Fully responsive</span>
+                <br />
               </div>
             </div>
 
@@ -276,11 +286,8 @@ export default function Projects() {
             </div>
 
             <SwiperComponent
-              images={[
-               imdbImageOne,
-               imdbImageTwo,
-               imdbImageThree
-              ]}
+              images={[imdbImageOne, imdbImageTwo, imdbImageThree]}
+              swiperRef={swiperRefProjectThree}
               enlargeImage={handleImageClick}
             />
             <Arrows swiperRef={swiperRefProjectThree} />
@@ -344,10 +351,10 @@ export default function Projects() {
 
             <SwiperComponent
               images={[CountdownGame, CountdownGameWin, CountdownGameLoss]}
-              swiperRef={swiperRefProjectThree}
+              swiperRef={swiperRefProjectFour}
               enlargeImage={handleImageClick}
             />
-            <Arrows swiperRef={swiperRefProjectThree} />
+            <Arrows swiperRef={swiperRefProjectFour} />
 
             {/* Project 5 */}
             <div className="project-title">5. Taskify</div>
@@ -411,10 +418,10 @@ export default function Projects() {
 
             <SwiperComponent
               images={[TaskifyCompleted, TaskifyDelete, TaskifyEdit]}
-              swiperRef={swiperRefProjectFour}
+              swiperRef={swiperRefProjectFive}
               enlargeImage={handleImageClick}
             />
-            <Arrows swiperRef={swiperRefProjectFour} />
+            <Arrows swiperRef={swiperRefProjectFive} />
 
             {/* Project 6 */}
             <div className="project-title">6. This portfolio</div>
