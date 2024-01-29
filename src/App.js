@@ -26,7 +26,7 @@ function App() {
     <div
       className="App"
       style={{
-        background: mode ? "black" : "whitesmoke"
+        background: mode ? "black" : "#EAEAEA"
       }}
     >
       {showContent ? (

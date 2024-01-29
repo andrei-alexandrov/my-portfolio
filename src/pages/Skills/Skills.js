@@ -1,19 +1,24 @@
 import React from "react"
-import { Link } from "react-scroll"
 import { Container, Row, Col } from "react-bootstrap"
 import { useSelector } from "react-redux"
+import { Link } from "react-scroll"
 
 import Wheel from "../../components/Wheel/Wheel"
 import Button from "../../components/Button/Button"
 
-import Lottie from 'lottie-react';
-import reactIcon from "../../animations/reactIcon.json"
-import gitHubIcon from "../../animations/gitHubRound.json"
-import htmlIcon from "../../animations/htmlLottie.json"
-import jsIcon from "../../animations/jsLottie.json"
+//Skills icons
 import sassIconTwo from "../../images/skills/sass-icon-2.png"
-import cssIcontwo from "../../images/skills/css-icon-two.png"
 import reduxIcon from "../../images/skills/redux.png"
+import tsIcon from "../../images/skills/typescript.png";
+import jsIconTwo from "../../images/skills/javascript.png"
+import html from "../../images/skills/html_1051277.png";
+import css from "../../images/skills/social_11516361.png";
+import bootstrap from "../../images/skills/bootstrap5.jpeg";
+import tailwind from "../../images/skills/tailwind.png";
+import nextJsWhite from "../../images/skills/nextjs-white-bg.jpg";
+import nextJsBlack from "../../images/skills/next-js-black-bg.jpg";
+import reactImage from "../../images/skills/reactjs.png";
+import github from "../../images/skills/github.png";
 
 import "./Skills.scss"
 
@@ -26,41 +31,60 @@ export default function Skills() {
                 <Col className="skills-left-side">
                     <div className="skills-details">
                         <span className="skills-header" style={{ color: mode ? '#edebe8' : '' }}>My <span style={{ color: "#fba61e" }}>Skills</span></span>
-                        <div className="lottie-wrapper" style={{ display: "flex", position: "relative", right: "5px" }}>
-                            <Lottie role="img" aria-label="JavaScript Icon" style={{ width: "46px" }} animationData={jsIcon} />
-                            <Lottie role="img" aria-label="React Icon" style={{ width: "57px" }} animationData={reactIcon} />
-                            <img className="redux-image" src={reduxIcon} alt="Bootstrap-icon" />
-                            <Lottie role="img" aria-label="HTML5 Icon" style={{ width: "55px" }} animationData={htmlIcon} />
-                            <img className="css-image" src={cssIcontwo} alt="Css-icon" />
-                            <Lottie role="img" aria-label="Github Icon" style={{ width: "67px" }} animationData={gitHubIcon} />
-                            <img className="sass-image" src={sassIconTwo} alt="Sass-icon" />
+                        <span className="skills-icons-categories" style={{ color: mode ? '#edebe8' : 'black' }}>Base:</span>
+                       
+                        <div className="skills-icons" style={{gap:"1px", position: "relative", right: "6px"}}>
+                            <img src={jsIconTwo} alt="JavaScript icon" width={49} height={49}/>
+                            <img src={tsIcon} alt="TypeScript icon" width={50} height={50}/>
+                            <img className="github-image" src={github} alt="Github icon" />                     
                         </div>
+
                         <span className={mode ? "skills-info" : "skills-info-light"}>
-                            DOM/BOM - storage and timers <br />
+                            DOM, BOM - storage and timers <br />
                             HTTP, AJAX - Promises and fetch<br />
                             REST API's, JSON<br />
-                            Responsive design<br />
-                            Bootstrap <br />
-                            Git/Github <br />
-                            <br />
-                            Currently learning:
-                            <span className="next-js">&nbsp;Next.js 14</span>,
-                            <span className="typescript">&nbsp;TypeScript</span> with React.js
+                            Git <br />
                         </span>
+
+                        <span className="skills-icons-categories" style={{ color: mode ? '#edebe8' : 'black' }}>Design:</span>
+
+                        <div className="skills-icons" style={{gap:"11px"}}>
+                            <img className="html-image" src={html} alt="html-icon" width={40} height={40} />
+                            <img className="" src={css} alt="css-icon" width={41} height={41} />
+                            <img className="sass-image" src={sassIconTwo} alt="sass-icon" />
+                            <img className="" src={bootstrap} alt="bootstrap-icon" width={39} height={39} />
+                            <img className="sass-image" src={tailwind} alt="taiwlind-icon" />
+                        </div>
+
+                        <span className={mode ? "skills-info" : "skills-info-light"}>
+                              Responsive design<br />
+                        </span>
+                      
+                        <span className="skills-icons-categories" style={{ color: mode ? '#edebe8' : 'black'}}>Frameworks/Libraries:</span>
+
+                        <div className="skills-icons" style={{gap:"11px"}}>
+                             <img className="react-image" src={reactImage} alt="react-icon" width={41} height={41} />
+                             <img className="nextJs-image" src={mode ? nextJsBlack : nextJsWhite} alt="nextJs-icon" width={138} />
+                             <img className="redux-image" src={reduxIcon} alt="Bootstrap-icon" />
+                          </div>
+
                         <div>
                             <span style={{ color: "#fba61e" }}>Education:</span>
                             <div
                                 className={mode ? "skills-info" : "skills-info-light"}>
-                                2022- 2023 IT Talents training camp <br />
+                                2024 - React & TypeScript - The Practical Guide (Maximilian Schwarzmüller Udemy)<br />
+                                2022 - 2023 IT Talents training camp <br />
                                 2020 - 2021 Software university  {`(Java basics, 2 months)`} <br />
                                 2014 – 2016	Sofia University {`(Master: European Projects)`} <br />
-                                2008 – 2012	Sofia University  {`(Bachelor: European Studies)`}<br /><br />
+                                2008 – 2012	Sofia University  {`(Bachelor: European Studies)`}
                             </div>
+                            <br />
                             <span style={{ color: "#fba61e" }}>Hobbies: </span>
                             <div className={mode ? "skills-info" : "skills-info-light"}>
+                            Movie music composer {`(digital piano)`}<br />
                                 Badminton, Tennis <br />
-                                Chess <br />
-                                Movie music composer {`(digital piano)`} </div>
+                                Chess 
+                                </div>
                         </div>
 
                         <div className="skills-btn-wrapper">
