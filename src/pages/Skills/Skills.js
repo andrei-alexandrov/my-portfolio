@@ -41,7 +41,7 @@ export default function Skills() {
 
                         <span className={mode ? "skills-info" : "skills-info-light"}>
                             DOM, BOM - storage and timers <br />
-                            HTTP, AJAX - Promises and fetch<br />
+                            HTTP, AJAX - promises and fetch<br />
                             REST API's, JSON<br />
                             Git <br />
                         </span>
@@ -72,19 +72,19 @@ export default function Skills() {
                             <span style={{ color: "#fba61e" }}>Education:</span>
                             <div
                                 className={mode ? "skills-info" : "skills-info-light"}>
-                                2024 - React & TypeScript - The Practical Guide (Maximilian Schwarzmüller Udemy)<br />
-                                2022 - 2023 IT Talents training camp <br />
-                                2020 - 2021 Software university  {`(Java basics, 2 months)`} <br />
-                                2014 – 2016	Sofia University {`(Master: European Projects)`} <br />
-                                2008 – 2012	Sofia University  {`(Bachelor: European Studies)`}
+                                2024: React & TypeScript - The Practical Guide (Maximilian Schwarzmüller Udemy)<br />
+                                2022 - 2023: IT Talents training camp <br />
+                                2020 - 2021: Software university  {`(Java basics, 2 months)`} <br />
+                                2014 - 2016: Sofia University {`(Master: European Projects)`} <br />
+                                2008 - 2012: Sofia University  {`(Bachelor: European Studies)`}
                             </div>
                             <br />
                             <span style={{ color: "#fba61e" }}>Hobbies: </span>
                             <div className={mode ? "skills-info" : "skills-info-light"}>
-                            Movie music composer {`(digital piano)`}<br />
-                                Badminton, Tennis <br />
+                                Movie music composer {`(digital piano)`}<br />
+                                Badminton, Table tennis <br />
                                 Chess 
-                                </div>
+                            </div>
                         </div>
 
                         <div className="skills-btn-wrapper">
