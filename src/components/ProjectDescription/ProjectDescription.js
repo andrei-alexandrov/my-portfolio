@@ -54,12 +54,7 @@ const ProjectCard = ({
 
       {buttonLink && (
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <a
-            href={buttonLink.url}
-            target="_blank"
-            rel="noreferrer"
-            className=""
-          >
+          <a href={buttonLink} target="_blank" rel="noreferrer" className="">
             <button className="project-play-btn">{buttonText}</button>
           </a>
         </div>
