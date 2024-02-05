@@ -28,6 +28,11 @@ import TaskifyCompleted from "./images/projects/taskify/taskify-completed.png";
 import TaskifyDelete from "./images/projects/taskify/daily-tasks-app.png";
 import TaskifyEdit from "./images/projects/taskify/taskify-edit.png";
 
+//My portfolio project photos
+import StartingPage from "./images/gitHubImages/starting-page-animation.gif";
+import About from "./images/gitHubImages/portfolio-aboutMe-dark.png";
+import Skills from "./images/gitHubImages/skills-new-dark.png";
+
 import Github from "./images/projects/github.png";
 
 const projectsData = [
@@ -159,7 +164,7 @@ const projectsData = [
       url: "https://github.com/andrei-alexandrov/my-portfolio",
       icon: Github,
     },
-    images: [TaskifyCompleted, TaskifyDelete, TaskifyEdit],
+    images: [StartingPage, About, Skills],
   },
 ];
 
