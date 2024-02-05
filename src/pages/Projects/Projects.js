@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import ProjectCard from "../../components/ProjectDescription/ProjectDescription";
 
 import ColoredLines from "../../components/ColoredLines/ColoredLines";
 import Arrows from "../../components/Arrows/Arrows";
 import SwiperComponent from "../../components/ImageSlider/ImageSlider";
-import Button from "../../components/Button/Button";
 
 // Sports match project photos
 import LoginPage from "../../images/projects/sports_match/loginPage.png";
@@ -74,63 +74,27 @@ export default function Projects() {
             </div>
 
             {/* Project 1 */}
-            <div className="project-title">1. Sports Match</div>
-            <div
-              className={
-                mode ? "portfolio-project-text" : "portfolio-project-text-light"
-              }
-            >
-              <div>
-                My own idea for a website that helps people with shared
-                interests to interact and participate together in different
-                sports. The website also provides an opportunity to choose the
-                most convenient place for the desired activity in the respective
-                city and neighborhood.
-                <br />
-                ---
-                <br />
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Used:&nbsp;
-                </span>
-                <span className="javascript">JavaScript,</span>
-                <span className="react">&nbsp;React.js,</span>
-                <span className="sass">&nbsp;Sass</span>
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Additional:&nbsp;{" "}
-                </span>
-                <span>
-                  react-bootstrap, react router, emoji-picker-react,
-                  sweetalert2, react-icons, AJAX, local/session storage.{" "}
-                </span>
-                <br />
-                <span>
-                  Possible chat between 2 users in 2 different tabs from the
-                  same browser.
-                </span>
-                <br />
-              </div>
-            </div>
-            <br />
-            <div className="link-content">
-              Source code:
-              <a
-                href="https://www.github.com/andrei-alexandrov/sports-match"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Github} alt="Github" />
-              </a>
-            </div>
+            <ProjectCard
+              title="1. Sports Match"
+              description=" My own idea for a website that helps people with shared
+              interests to interact and participate together in different
+              sports. The website also provides an opportunity to choose the
+              most convenient place for the desired activity in the respective
+              city and neighborhood."
+              used={[
+                { name: "JavaScript", className: "javascript" },
+                { name: "React.js", className: "react" },
+                { name: "Sass", className: "sass" },
+              ]}
+              additional="react-bootstrap, react router, emoji-picker-react,
+              sweetalert2, react-icons, AJAX, local/session storage.   
+              Possible chat between 2 users in 2 different tabs from the same browser."
+              sourceLink={{
+                url: "https://github.com/andrei-alexandrov/sports-match",
+                icon: Github,
+              }}
+              mode={mode}
+            />
 
             <SwiperComponent
               images={[
@@ -148,69 +112,28 @@ export default function Projects() {
             <Arrows swiperRef={swiperRefProjectOne} />
 
             {/* Project 2 */}
-            <div className="project-title">2. Cocktails site</div>
-            <div
-              className={
-                mode ? "portfolio-project-text" : "portfolio-project-text-light"
-              }
-            >
-              <div>
-                <span>
-                  Find interesting cocktails and get their recipes. If you like
-                  a specific one, add it to favorites.
-                </span>
-                <br />
-                ---
-                <br />
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Used:&nbsp;
-                </span>
-                <span className="javascript">JavaScript,</span>
-                <span className="react">&nbsp;React.js,</span>
-                <span className="redux">&nbsp;Redux,</span>
-                <span className="sass">&nbsp;Sass</span>
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Additional:&nbsp;
-                </span>
-                <span>
-                  redux thunk, react-router, gsap, react-boostrap, lottie-react,
-                  TheCocktailDb.
-                </span>
-                <br />
-              </div>
-            </div>
-
-            <a
-              href="https://cocktail-site-andrei.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button styleBtn="project-play-btn" hasOnClick={false}>
-                Visit here
-              </Button>
-            </a>
-
-            <br />
-            <div className="link-content">
-              Source code:
-              <a
-                href="https://github.com/andrei-alexandrov/cocktails-site"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Github} alt="Github" />
-              </a>
-            </div>
+            <ProjectCard
+              title="2. Cocktails Site"
+              description="Find interesting cocktails and get their recipes. If you like
+              a specific one, add it to favorites."
+              used={[
+                { name: "JavaScript", className: "javascript" },
+                { name: "React.js", className: "react" },
+                { name: "Sass", className: "sass" },
+                { name: "Redux", className: "redux" },
+              ]}
+              additional="redux thunk, react-router, gsap, react-boostrap, lottie-react,
+              TheCocktailDb."
+              buttonLink={{
+                url: "https://cocktail-site-andrei.netlify.app/",
+              }}
+              buttonText="Visit here"
+              sourceLink={{
+                url: "https://github.com/andrei-alexandrov/cocktails-site",
+                icon: Github,
+              }}
+              mode={mode}
+            />
 
             <SwiperComponent
               images={[
@@ -225,65 +148,25 @@ export default function Projects() {
             <Arrows swiperRef={swiperRefProjectTwo} />
 
             {/* Project 3 */}
-            <div className="project-title">3. IMDb clone</div>
-            <div
-              className={
-                mode ? "portfolio-project-text" : "portfolio-project-text-light"
-              }
-            >
-              <div>
-                <span>
-                  Find a movie, check trending and top rated movies in real
-                  time.
-                </span>
-                <br />
-                ---
-                <br />
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Used:&nbsp;
-                </span>
-                <span className="javascript">JavaScript,</span>
-                <span className="next-js">&nbsp;Next.js,</span>
-                <span className="sass">&nbsp;Tailwind css</span>
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Additional:&nbsp;
-                </span>
-                <span>Fully responsive</span>
-                <br />
-              </div>
-            </div>
-
-            <a
-              href="https://imdb-next-js-andrei-alexandrov.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button styleBtn="project-play-btn" hasOnClick={false}>
-                Visit here
-              </Button>
-            </a>
-
-            <br />
-            <div className="link-content">
-              Source code:
-              <a
-                href="https://github.com/andrei-alexandrov/imdb-next.js"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Github} alt="Github" />
-              </a>
-            </div>
+            <ProjectCard
+              title="3. IMDb clone"
+              description="Find a movie, check trending and top rated movies in real time."
+              used={[
+                { name: "JavaScript", className: "javascript" },
+                { name: "Next.js", className: "next-js" },
+                { name: "Tailwind CSS", className: "sass" },
+              ]}
+              additional="Fully responsive."
+              buttonLink={{
+                url: "https://imdb-next-js-andrei-alexandrov.vercel.app/",
+              }}
+              buttonText="Visit here"
+              sourceLink={{
+                url: "https://github.com/andrei-alexandrov/imdb-next.js",
+                icon: Github,
+              }}
+              mode={mode}
+            />
 
             <SwiperComponent
               images={[imdbImageOne, imdbImageTwo, imdbImageThree]}
@@ -293,61 +176,25 @@ export default function Projects() {
             <Arrows swiperRef={swiperRefProjectThree} />
 
             {/* Project 4 */}
-            <div className="project-title">4. Countdown game</div>
-            <div
-              className={
-                mode ? "portfolio-project-text" : "portfolio-project-text-light"
-              }
-            >
-              <div>
-                Stop the timer once you estimate that time is (almost) up.
-                Lowest score is 1, max is 99.
-                <br />
-                ---
-                <br />
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Used:&nbsp;
-                </span>
-                <span className="javascript">JavaScript,</span>
-                <span className="react">&nbsp;React.js,</span>
-                <span className="sass">&nbsp;Sass</span>
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Additional:{" "}
-                </span>
-                <span>&nbsp; Fully responsive.</span>
-              </div>
-            </div>
-
-            <a
-              href="https://countdown-timer-game.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button styleBtn="project-play-btn" hasOnClick={false}>
-                Play here
-              </Button>
-            </a>
-            <br />
-            <div className="link-content">
-              Source code:
-              <a
-                href="https://github.com/andrei-alexandrov/countdown-game"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Github} alt="Github" />
-              </a>
-            </div>
+            <ProjectCard
+              title="4. Countdown game"
+              description="Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99."
+              used={[
+                { name: "JavaScript", className: "javascript" },
+                { name: "React.js", className: "react" },
+                { name: "SASS", className: "sass" },
+              ]}
+              additional="Fully responsive."
+              buttonLink={{
+                url: "https://countdown-timer-game.netlify.app/",
+              }}
+              buttonText="Play here"
+              sourceLink={{
+                url: "https://github.com/andrei-alexandrov/countdown-game",
+                icon: Github,
+              }}
+              mode={mode}
+            />
 
             <SwiperComponent
               images={[CountdownGame, CountdownGameWin, CountdownGameLoss]}
@@ -357,64 +204,25 @@ export default function Projects() {
             <Arrows swiperRef={swiperRefProjectFour} />
 
             {/* Project 5 */}
-            <div className="project-title">5. Taskify</div>
-            <div
-              className={
-                mode ? "portfolio-project-text" : "portfolio-project-text-light"
-              }
-            >
-              <div>
-                Add/delete/edit one or more tasks. <br />
-                ---
-                <br />
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Used:&nbsp;
-                </span>
-                <span className="typescript">TypeScript,</span>
-                <span className="react">&nbsp;React.js,</span>
-                <span className="css">&nbsp;CSS</span>
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Additional:{" "}
-                </span>
-                <span>
-                  &nbsp;Fully responsive. This is my first project where I am
-                  learning to use TypeScript with React.js. I will implement
-                  redux toolkit and add new feautures soon.
-                </span>
-              </div>
-            </div>
-
-            <a
-              href="https://todo-app-typescript-andrei.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button styleBtn="project-play-btn" hasOnClick={false}>
-                Visit here
-              </Button>
-            </a>
-            <br />
-
-            <div className="link-content">
-              Source code:
-              <a
-                href="https://github.com/andrei-alexandrov/todo-app-typescript"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Github} alt="Github" />
-              </a>
-            </div>
+            <ProjectCard
+              title="5. Taskify"
+              description="Add/delete/edit one or more tasks."
+              used={[
+                { name: "TypeScript", className: "typescript" },
+                { name: "React.js", className: "react" },
+                { name: "CSS", className: "css" },
+              ]}
+              additional="Fully responsive."
+              buttonLink={{
+                url: "https://todo-app-typescript-andrei.vercel.app/",
+              }}
+              buttonText="Visit here"
+              sourceLink={{
+                url: "https://github.com/andrei-alexandrov/todo-app-typescript",
+                icon: Github,
+              }}
+              mode={mode}
+            />
 
             <SwiperComponent
               images={[TaskifyCompleted, TaskifyDelete, TaskifyEdit]}
@@ -424,54 +232,25 @@ export default function Projects() {
             <Arrows swiperRef={swiperRefProjectFive} />
 
             {/* Project 6 */}
-            <div className="project-title">6. This portfolio</div>
-            <div
-              className={
-                mode ? "portfolio-project-text" : "portfolio-project-text-light"
-              }
-            >
-              <div>
-                ---
-                <br />
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Used:&nbsp;
-                </span>
-                <span className="javascript">JavaScript,</span>
-                <span className="react">&nbsp;React.js,</span>
-                <span className="redux">&nbsp;Redux,</span>
-                <span className="sass">&nbsp;Sass,</span>
-                <br />
-                <span
-                  className={
-                    mode ? "used-additional-white" : "used-additional-black"
-                  }
-                >
-                  Additional:
-                </span>
-                <span>
-                  &nbsp;<span className="three-js">Three.js, </span>
-                  swiper, react-particles, emailJS, framer motion, react-scroll,
-                  iconscout/react-unicorns, tsparticles, TheCocktailDb API,
-                  react-lottie, gsap. Fully responsive.
-                </span>
-              </div>
-            </div>
-            <br />
-            <div className="link-content">
-              Source code:
-              <a
-                href="https://github.com/andrei-alexandrov/my-portfolio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Github} alt="Github" />
-              </a>
-            </div>
+            <ProjectCard
+              title="6. This portfolio"
+              description="A place where i can post my projects."
+              used={[
+                { name: "JavaScript", className: "javascript" },
+                { name: "React.js", className: "react" },
+                { name: "Redux", className: "redux" },
+                { name: "SASS", className: "sass" },
+              ]}
+              additional="three.js, swiper, react-particles, emailJS, framer motion, react-scroll,
+              iconscout/react-unicorns, tsparticles, TheCocktailDb API,
+              react-lottie, gsap. Fully responsive."
+              buttonText="Visit here"
+              sourceLink={{
+                url: "https://github.com/andrei-alexandrov/my-portfolio",
+                icon: Github,
+              }}
+              mode={mode}
+            />
 
             {enlargedImg && (
               <div
