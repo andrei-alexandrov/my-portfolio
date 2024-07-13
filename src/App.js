@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useSelector } from "react-redux"
 
 import ParticlesAnimation from "./components/Particles/ParticlesAnimation"
-import Navbar from "./components/Navbar/Navbar"
+import Navbar from "./components/NavBar/NavBar"
 import AboutMe from "./pages/AboutMe/AboutMe"
 import Skills from "./pages/Skills/Skills"
 import CardsCollection from "./pages/CardsCollection/CardsCollection"

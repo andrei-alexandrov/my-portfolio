@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import classNames from "classnames";
 
 import ColoredCircle from "../../components/ColoredCircle/ColoredCircle";
 import Button from "../../components/Button/Button";
@@ -84,7 +85,10 @@ export default function AboutMe() {
         <Col className="about-me-left-side">
           <div className="about-me">
             <span
-              className={`${isFadingOut ? "fade-out" : "fade-in"}`}
+              className={classNames({
+                "fade-out": isFadingOut,
+                "fade-in": !isFadingOut,
+              })}
               style={{ color: mode ? "whitesmoke" : "#232d48" }}
             >
               {greetings[greetingIndex]}, I am
@@ -92,7 +96,10 @@ export default function AboutMe() {
             <span className="special-font">Andrei Alexandrov</span>
 
             <span
-              className={mode ? "about-me-text" : "about-me-text-light-theme"}
+              className={classNames({
+                "global-text-description-dark": mode,
+                "global-text-description-light": !mode,
+              })}
             >
               <br />
               Front-End developer with JavaScript and React.js, based in Sofia,
@@ -102,10 +109,7 @@ export default function AboutMe() {
               I pay close attention to details and enjoy creating visually
               appealing and interactive web applications.
               <br />
-              <br />
-              {/* I am passionate about furthering my IT knowledge and<br />
-                            developing my skills and creativity as part of a dynamic team. */}
-              I am eager to further my IT knowledge, develop my skills and{" "}
+              <br />I am eager to further my IT knowledge, develop my skills and{" "}
               <br />
               use my creativity as a part of a dynamic team.
               <br />
@@ -143,7 +147,7 @@ export default function AboutMe() {
           </div>
         </Col>
 
-        <Col className="">
+        <Col>
           <ColoredCircle />
         </Col>
       </Row>

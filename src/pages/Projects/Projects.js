@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import ProjectCard from "../../components/ProjectDescription/ProjectDescription";
+import ProjectDescription from "../../components/ProjectDescription/ProjectDescription";
 import projectsData from "../../projectsData";
 
 import ColoredLines from "../../components/ColoredLines/ColoredLines";
@@ -39,12 +39,12 @@ export default function Projects() {
             </div>
             {projectsData.map((project, index) => (
               <React.Fragment key={index}>
-                <ProjectCard
+                <ProjectDescription
                   title={project.title}
                   description={project.description}
-                  used={project.used}
-                  additional={project.additional}
-                  sourceLink={project.sourceLink}
+                  usedTechnologies={project.usedTechnologies}
+                  additionalDescription={project.additionalDescription}
+                  sourceCodeLink={project.sourceCodeLink}
                   mode={mode}
                   buttonLink={project.buttonLink?.url}
                   buttonText={project.buttonLink?.buttonText}

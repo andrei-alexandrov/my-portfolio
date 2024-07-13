@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 
 import HumanPic from "../../images/cards/me1.png"
 import Lottie from 'lottie-react';
-import helloEmoji from "../../animations/helloAnimation.json"
+import rocket from "../../animations/rocket-lottie.json"
 
 import "./CardOne.css"
 
@@ -41,7 +41,7 @@ export default function CardOne() {
             </>
           ) : (
             <>
-              <Lottie style={{ width: "110px", position: "relative", left: "4rem" }} animationData={helloEmoji} />
+              <Lottie style={{ width: "110px", position: "relative", left: "4rem" }} animationData={rocket} />
               <h2 className="title">Nice to meet you!</h2>
               <p style={{ color: "#fba61e" }}>
               </p>

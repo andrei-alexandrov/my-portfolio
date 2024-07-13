@@ -41,14 +41,14 @@ const projectsData = [
     description: `My own idea for a website that helps people with shared interests to interact and participate together 
       in different sports. The website also provides an opportunity to choose the most convenient place for the desired 
       activity in the respective city and neighborhood.`,
-    used: [
+    usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "React.js", className: "react" },
       { name: "Sass", className: "sass" },
     ],
-    additional: `react-bootstrap, react router, emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage.   
+    additionalDescription: `react-bootstrap, react router, emoji-picker-react, sweetalert2, react-icons, AJAX, local/session storage.   
     Possible chat between 2 users in 2 different tabs from the same browser.`,
-    sourceLink: {
+    sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/sports-match",
       icon: Github,
     },
@@ -66,14 +66,14 @@ const projectsData = [
   {
     title: "2. Cocktails Site",
     description: `Find interesting cocktails and get their recipes. If you like a specific one, add it to favorites.`,
-    used: [
+    usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "React.js", className: "react" },
       { name: "Sass", className: "sass" },
       { name: "Redux", className: "redux" },
     ],
-    additional: `redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.`,
-    sourceLink: {
+    additionalDescription: `redux thunk, react-router, gsap, react-boostrap, lottie-react, TheCocktailDb.`,
+    sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/cocktails-site",
       icon: Github,
     },
@@ -91,14 +91,14 @@ const projectsData = [
 
   {
     title: "3. IMDb clone",
-    description: `Find a movie, check trending and top rated movies in real time.`,
-    used: [
+    additionalDescription: `Find a movie, check trending and top rated movies in real time.`,
+    usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "Next.js", className: "next-js" },
       { name: "Tailwind CSS", className: "sass" },
     ],
     additional: `Fully responsive.`,
-    sourceLink: {
+    sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/imdb-next.js",
       icon: Github,
     },
@@ -111,14 +111,14 @@ const projectsData = [
 
   {
     title: "4. Countdown game",
-    description: `Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.`,
-    used: [
+    additionalDescription: `Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.`,
+    usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "React.js", className: "react" },
       { name: "SASS", className: "sass" },
     ],
     additional: `Fully responsive.`,
-    sourceLink: {
+    sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/countdown-game",
       icon: Github,
     },
@@ -131,14 +131,14 @@ const projectsData = [
 
   {
     title: "5. Taskify",
-    description: `Add/delete/edit one or more tasks.`,
-    used: [
+    additionalDescription: `Add/delete/edit one or more tasks.`,
+    usedTechnologies: [
       { name: "TypeScript", className: "typescript" },
       { name: "React.js", className: "react" },
       { name: "CSS", className: "css" },
     ],
     additional: `Fully responsive.`,
-    sourceLink: {
+    sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/todo-app-typescript",
       icon: Github,
     },
@@ -151,8 +151,8 @@ const projectsData = [
 
   {
     title: "6. This portfolio",
-    description: `A place where i can post my projects.`,
-    used: [
+    additionalDescription: `A place where i can post my projects.`,
+    usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "React.js", className: "react" },
       { name: "Redux", className: "redux" },
@@ -160,7 +160,7 @@ const projectsData = [
     ],
     additional: `three.js, swiper, react-particles, emailJS, framer motion, react-scroll,
     iconscout/react-unicorns, tsparticles, TheCocktailDb API, react-lottie, gsap. Fully responsive.`,
-    sourceLink: {
+    sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/my-portfolio",
       icon: Github,
     },

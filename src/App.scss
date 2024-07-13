@@ -1,5 +1,23 @@
+@import "./variables.scss";
+
 .App {
     overflow: hidden;
+
+    .global-text-description {
+        font-weight: 100;
+        font-size: 1.3rem;
+        margin-top: 0.6rem;
+    }
+    
+    .global-text-description-dark {
+        @extend .global-text-description;
+        color: $secondary-color;
+    }
+    
+    .global-text-description-light {
+        @extend .global-text-description;
+        color: $third-color;
+    }
 
     .fade-in {
         opacity: 0;

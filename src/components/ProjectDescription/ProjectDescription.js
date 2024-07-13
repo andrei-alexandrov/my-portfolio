@@ -1,72 +1,74 @@
 import React from "react";
+import classNames from "classnames";
 
 const ProjectCard = ({
   title,
   description,
-  used,
-  additional,
-  specialFeature,
+  usedTechnologies,
+  additionalDescription,
   buttonLink,
   buttonText,
-  sourceLink,
+  sourceCodeLink,
   mode,
 }) => {
   return (
     <div>
       <div className="project-title">{title}</div>
       <div
-        className={
-          mode ? "portfolio-project-text" : "portfolio-project-text-light"
-        }
+        className={classNames({
+          "portfolio-project-text": mode,
+          "portfolio-project-text-light": !mode,
+        })}
       >
-        <div>
+        <div className="global-text-description">
           {description}
           <br />
           <br />
           <span
-            className={mode ? "used-additional-white" : "used-additional-black"}
+            className={classNames({
+              "use-white": mode,
+              "use-black": !mode,
+            })}
           >
             Used:&nbsp;
           </span>
-          {used.map((tech, index) => (
+          {usedTechnologies.map((tech, index) => (
             <span key={index} className={tech.className}>
               {tech.name}
-              {index < used.length - 1 ? "," : ""}&nbsp;
+              {index < usedTechnologies.length - 1 ? "," : ""}&nbsp;
             </span>
           ))}
           <br />
           <span
-            className={mode ? "used-additional-white" : "used-additional-black"}
+            className={classNames({
+              "use-white": mode,
+              "use-black": !mode,
+            })}
           >
             Additional:&nbsp;
           </span>
-          {additional}
+          {additionalDescription}
           <br />
-          {specialFeature && (
-            <span>
-              {specialFeature}
-              <br />
-            </span>
-          )}
         </div>
-      </div>
-      <br />
+        <br />
 
-      {buttonLink && (
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <a href={buttonLink} target="_blank" rel="noreferrer" className="">
-            <button className="project-play-btn">{buttonText}</button>
-          </a>
-        </div>
-      )}
-      {sourceLink && (
-        <div className="link-content">
-          Source code:
-          <a href={sourceLink.url} target="_blank" rel="noreferrer">
-            <img src={sourceLink.icon} alt="Github" />
-          </a>
-        </div>
-      )}
+        {buttonLink && (
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <a href={buttonLink} target="_blank" rel="noreferrer" className="">
+              <button className="project-play-btn">{buttonText}</button>
+            </a>
+          </div>
+        )}
+
+        {sourceCodeLink && (
+          <div className="link-content">
+            Source code:
+            <a href={sourceCodeLink.url} target="_blank" rel="noreferrer">
+              <img src={sourceCodeLink.icon} alt="Github" />
+            </a>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
