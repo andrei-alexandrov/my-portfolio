@@ -79,7 +79,7 @@ const StartingPage = ({ onEnter }) => {
             new THREE.Color('blue'),
         ];
 
-        //Първоначална анимация на цветовете
+        //Starting animation of the colors
         gsap.to(mesh.material.color, {
             r: colors[1].r,
             g: colors[1].g,

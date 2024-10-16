@@ -15,7 +15,7 @@ import jsIconTwo from "../../images/skills/javascript.png";
 import html from "../../images/skills/html_1051277.png";
 import css from "../../images/skills/social_11516361.png";
 import bootstrap from "../../images/skills/bootstrap5.jpeg";
-import tailwind from "../../images/skills/tailwind.png";
+// import tailwind from "../../images/skills/tailwind.png";
 import nextJsWhite from "../../images/skills/nextjs-white-bg.jpg";
 import nextJsBlack from "../../images/skills/next-js-black-bg.jpg";
 import reactImage from "../../images/skills/reactjs.png";
@@ -57,7 +57,7 @@ export default function Skills() {
               />
               <img src={tsIcon} alt="TypeScript icon" width={50} height={50} />
               <img className="github-image" src={github} alt="Github icon" />
-              <img className="git-image" src={git} alt="git-image" />
+              <img className="git-image" src={git} alt="git" />
             </div>
 
             <span
@@ -90,7 +90,7 @@ export default function Skills() {
                 width={39}
                 height={39}
               />
-              <img className="sass-image" src={tailwind} alt="taiwlind-icon" />
+              {/* <img className="sass-image" src={tailwind} alt="taiwlind-icon" /> */}
             </div>
 
             <span className={mode ? "skills-info" : "skills-info-light"}>
@@ -126,7 +126,7 @@ export default function Skills() {
               />
             </div>
 
-            <div>
+            <div style={{lineHeight: "1.6rem"}}>
               <span style={{ color: "#fba61e" }}>Education:</span>
               <div
                 className={classNames("global-text-description", {
@@ -134,7 +134,7 @@ export default function Skills() {
                   "global-text-description-light": !mode,
                 })}
               >
-                2024: React & TypeScript - The Practical Guide (Maximilian
+                2024 React & TypeScript: The Practical Guide (Maximilian
                 Schwarzmüller Udemy)
                 <br />
                 2022 - 2023: IT Talents training camp <br />
@@ -145,11 +145,25 @@ export default function Skills() {
                 2008 - 2012: Sofia University {`(Bachelor: European Studies)`}
               </div>
               <br />
+              <span style={{ color: "#fba61e" }}>Experience: </span>
+              <div className={classNames("global-text-description", {
+                "global-text-description-dark": mode,
+                "global-text-description-light": !mode,
+              })}>
+                2024 (March - July): <span style={{color: "#129dca"}}>EnduroSat AD </span><br />
+                Junior Front-End Developer for Satellite Operation Systems
+                Engaged in the design and development of a next-generation
+                satellite operations platform capable of autonomously managing
+                hundreds of satellites.
+                Built efficient components within an Electron-based application
+                utilizing React.js and Node.js.
+              </div>
+              <br />
               <span style={{ color: "#fba61e" }}>Hobbies: </span>
-              <div  className={classNames("global-text-description", {
-                  "global-text-description-dark": mode,
-                  "global-text-description-light": !mode,
-                })}>
+              <div className={classNames("global-text-description", {
+                "global-text-description-dark": mode,
+                "global-text-description-light": !mode,
+              })}>
                 Movie music composer {`(digital piano)`}
                 <br />
                 Badminton, Table tennis <br />

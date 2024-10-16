@@ -8,12 +8,19 @@
     background: linear-gradient(180deg, $main-color, $main-color);
     width: 8.8rem;
     height: 2.7rem;
+    transition: transform 0.7s, background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
     &:hover {
         background: white;
         cursor: pointer;
         color: $main-color;
         border: 1px solid $main-color;
+    }
+
+    &:active {
+        transform: translateY(10px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -28,12 +35,20 @@
             $colored-button-left-side,
             $colored-button-left-side, white, $colored-button-right-side,
             $colored-button-right-side);
+    transition: transform 0.7s, background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
     &:hover {
         background: white;
         cursor: pointer;
         color: $main-color;
         border: 1px solid $main-color;
+    }
+
+
+    &:active {
+        transform: translateY(10px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -44,10 +59,29 @@
     font-size: 14px;
     top: 2.3rem;
     font-family: "Gumela", sans-serif;
+    transition: transform 0.7s, background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    &:active {
+        transform: translateY(10px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 }
 
 @mixin coloredWords() {
     background: linear-gradient(45deg, #bdc3c7, #2c3e50);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@keyframes bounce-down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
 }

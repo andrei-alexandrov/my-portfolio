@@ -91,13 +91,13 @@ const projectsData = [
 
   {
     title: "3. IMDb clone",
-    additionalDescription: `Find a movie, check trending and top rated movies in real time.`,
+    description: `Find a movie, check trending and top rated movies in real time.`,
     usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "Next.js", className: "next-js" },
       { name: "Tailwind CSS", className: "sass" },
     ],
-    additional: `Fully responsive.`,
+    additionalDescription: `Fully responsive.`,
     sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/imdb-next.js",
       icon: Github,
@@ -111,13 +111,13 @@ const projectsData = [
 
   {
     title: "4. Countdown game",
-    additionalDescription: `Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.`,
+    description: `Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.`,
     usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "React.js", className: "react" },
       { name: "SASS", className: "sass" },
     ],
-    additional: `Fully responsive.`,
+    additionalDescription: `Fully responsive.`,
     sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/countdown-game",
       icon: Github,
@@ -131,13 +131,13 @@ const projectsData = [
 
   {
     title: "5. Taskify",
-    additionalDescription: `Add/delete/edit one or more tasks.`,
+    description: `Add/delete/edit one or more tasks. Mark them as completed.`,
     usedTechnologies: [
       { name: "TypeScript", className: "typescript" },
       { name: "React.js", className: "react" },
       { name: "CSS", className: "css" },
     ],
-    additional: `Fully responsive.`,
+    additionalDescription: `Fully responsive.`,
     sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/todo-app-typescript",
       icon: Github,
@@ -151,14 +151,14 @@ const projectsData = [
 
   {
     title: "6. This portfolio",
-    additionalDescription: `A place where i can post my projects.`,
+    description: `A place where i can post my projects.`,
     usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "React.js", className: "react" },
       { name: "Redux", className: "redux" },
       { name: "SASS", className: "sass" },
     ],
-    additional: `three.js, swiper, react-particles, emailJS, framer motion, react-scroll,
+    additionalDescription: `three.js, swiper, react-particles, emailJS, framer motion, react-scroll,
     iconscout/react-unicorns, tsparticles, TheCocktailDb API, react-lottie, gsap. Fully responsive.`,
     sourceCodeLink: {
       url: "https://github.com/andrei-alexandrov/my-portfolio",
