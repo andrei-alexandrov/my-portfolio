@@ -1,4 +1,13 @@
-// Sports match project photos
+//Artist portfolio photos
+import ArtistIntro from "./images/projects/artist-portfolio/artist-intro.JPG";
+import ArtistAboutOne from "./images/projects/artist-portfolio/artist-about.JPG";
+import ArtistAboutTwo from "./images/projects/artist-portfolio/artist-about-2.JPG";
+import ArtistActivities from "./images/projects/artist-portfolio/artist-activities.JPG";
+import ArtistGallery from "./images/projects/artist-portfolio/artist-gallery.JPG";
+import ArtistCourses from "./images/projects/artist-portfolio/artist-courses.JPG";
+import ArtistContacts from "./images/projects/artist-portfolio/artist-contact.JPG";
+
+//Sports match project photos
 import LoginPage from "./images/projects/sports_match/loginPage.png";
 import HomeScreen from "./images/projects/sports_match/homeScreen.png";
 import ProfilePage from "./images/projects/sports_match/profilePage.jpg";
@@ -37,7 +46,30 @@ import Github from "./images/projects/github.png";
 
 const projectsData = [
   {
-    title: "1. Sports Match",
+    title: "1. Freelance project - artist portfolio.",
+    description: `Official domain coming soon.`,
+    usedTechnologies: [
+      { name: "TypeScript", className: "typescript" },
+      { name: "Next.js 14", className: "next-js" },
+      { name: "Sass", className: "sass" },
+    ],
+    additionalDescription: `gsap, gsap-react, lottie-react, swiper, bootstrap, next-intl, react-icons, slick-carousel.`,
+    buttonLink: {
+      url: "https://artist-portfolio-andrei-alexandrov.vercel.app/",
+      buttonText: "Visit here",
+    },
+    images: [
+      ArtistIntro,
+      ArtistGallery,
+      ArtistAboutOne,
+      ArtistContacts,
+      ArtistAboutTwo,
+      ArtistActivities,
+      ArtistCourses,
+    ],
+  },
+  {
+    title: "2. Sports Match",
     description: `My own idea for a website that helps people with shared interests to interact and participate together 
       in different sports. The website also provides an opportunity to choose the most convenient place for the desired 
       activity in the respective city and neighborhood.`,
@@ -64,7 +96,7 @@ const projectsData = [
   },
 
   {
-    title: "2. Cocktails Site",
+    title: "3. Cocktails Site",
     description: `Find interesting cocktails and get their recipes. If you like a specific one, add it to favorites.`,
     usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
@@ -90,7 +122,7 @@ const projectsData = [
   },
 
   {
-    title: "3. IMDb clone",
+    title: "4. IMDb clone",
     description: `Find a movie, check trending and top rated movies in real time.`,
     usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
@@ -110,7 +142,7 @@ const projectsData = [
   },
 
   {
-    title: "4. Countdown game",
+    title: "5. Countdown game",
     description: `Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.`,
     usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
@@ -130,7 +162,7 @@ const projectsData = [
   },
 
   {
-    title: "5. Taskify",
+    title: "6. Taskify",
     description: `Add/delete/edit one or more tasks. Mark them as completed.`,
     usedTechnologies: [
       { name: "TypeScript", className: "typescript" },
@@ -150,7 +182,7 @@ const projectsData = [
   },
 
   {
-    title: "6. This portfolio",
+    title: "7. This portfolio",
     description: `A place where i can post my projects.`,
     usedTechnologies: [
       { name: "JavaScript", className: "javascript" },

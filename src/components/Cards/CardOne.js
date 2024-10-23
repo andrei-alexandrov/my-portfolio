@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 
-import HumanPic from "../../images/cards/me1.png"
-import Lottie from 'lottie-react';
+import HumanPic from "../../images/cards/me-3.jpg"
+import Lottie from 'lottie-react';  
 import rocket from "../../animations/rocket-lottie.json"
 
 import "./CardOne.css"
