@@ -46,7 +46,7 @@ import Github from "./images/projects/github.png";
 
 const projectsData = [
   {
-    title: "1. Freelance project - artist portfolio.",
+    title: "1. Freelance project - artist portfolio",
     description: `The portfolio was developed for a vocal and artist coach based in Sofia, Bulgaria.`,
     usedTechnologies: [
       { name: "TypeScript", className: "typescript" },
