@@ -26,6 +26,7 @@
     font-weight: bold;
     margin-top: 3.5rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .portfolio-project-text {
@@ -72,9 +73,13 @@
 
 @media screen and (max-width: 480px) {
   .portfolio {
+    .project-header {
+      margin-bottom: 0;
+    }
+
     .project-title {
       margin-top: 1.2rem;
-     
+      font-size: 28px;
     }
   }
 }
