@@ -47,15 +47,15 @@ import Github from "./images/projects/github.png";
 const projectsData = [
   {
     title: "1. Freelance project - artist portfolio.",
-    description: `Official domain coming soon.`,
+    description: `The portfolio was developed for a vocal and artist coach based in Sofia, Bulgaria.`,
     usedTechnologies: [
       { name: "TypeScript", className: "typescript" },
       { name: "Next.js 14", className: "next-js" },
       { name: "Sass", className: "sass" },
     ],
-    additionalDescription: `gsap, gsap-react, lottie-react, swiper, bootstrap, next-intl, react-icons, slick-carousel.`,
+    additionalDescription: `gsap, lottie-react, swiper, bootstrap, next-intl, react-icons, slick-carousel.`,
     buttonLink: {
-      url: "https://artist-portfolio-andrei-alexandrov.vercel.app/",
+      url: "https://www.iskra-vocal-coach.com/bg",
       buttonText: "Visit here",
     },
     images: [

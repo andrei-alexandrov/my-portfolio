@@ -1,0 +1,152 @@
+@import "../../variables";
+
+.client-card-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-container {
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 1.2rem;
+  gap: 5rem;
+
+  .clients-container {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 1.5s;
+
+    & span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i) * (360deg / var(--total)))) translateZ(380px);
+
+      & .carousel-image {
+        object-fit: cover;
+        user-select: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        box-shadow: 0 0 6px $secondary-color, 0 0 6px $secondary-color, 0 0 6px $secondary-color;
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0 6px $main-color, 0 0 6px $main-color, 0 0 6px $main-color;
+        }
+      }
+
+      & .image-name {
+        position: relative;
+        text-align: center;
+        top: 10rem;
+        font-size: 14px;
+        color: $main-color;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .clients-container {
+      width: 220px;
+      height: 140px;
+    }
+
+    .buttons {
+      .btn {
+        top: 11rem !important;
+      }
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    .clients-container {
+      width: 180px;
+      height: 120px;
+    }
+
+    .buttons {
+      .btn {
+        top: 10.3rem !important;
+      }
+    }
+  }
+
+  @media (max-width: 479px) {
+    .clients-container {
+      bottom: 2rem;
+      width: 150px;
+      height: 100px;
+
+      & span {
+        transform: rotateY(calc(var(--i) * (360deg / var(--total)))) translateZ(210px);
+      }
+    }
+
+    .buttons {
+      .btn {
+        top: 7rem !important;
+      }
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    display: flex;
+    gap: 16px;
+
+    .btn {
+      position: relative;
+      top: 12.3rem;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $main-color;
+      cursor: pointer;
+      z-index: 999;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid $secondary-color;
+        border-right: 2px solid $secondary-color;
+        transform: rotate(45deg) translate(-2px, 2px);
+
+      }
+
+      &.prev::before {
+        transform: rotate(225deg) translate(-2px, 2px);
+      }
+
+      &:hover {
+        background-color: $main-color;
+
+        &::before {
+          border-top-color: white;
+          border-right-color: white;
+        }
+      }
+    }
+  }
+}
