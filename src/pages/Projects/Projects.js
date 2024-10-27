@@ -37,7 +37,7 @@ export default function Projects() {
                   buttonLink={project.buttonLink?.url}
                   buttonText={project.buttonLink?.buttonText}
                 />
-                <div className="projects-gallery-title">Gallery</div>
+                <div className="project-gallery-title">Gallery</div>
                 <SwiperComponent
                   images={project.images}
                 />

@@ -39,7 +39,6 @@
             gap: 2rem;
             align-items: center;
             justify-content: center;
-            // margin-left: 8rem;
         }
     }
 
@@ -78,6 +77,14 @@
         img {
             width: 60px;
             height: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        .title {
+            margin-top: 3rem;
         }
     }
 }

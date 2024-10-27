@@ -24,7 +24,7 @@
     color: $main-color;
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     margin-bottom: 1rem;
   }
 
@@ -62,7 +62,7 @@
     }
   }
 
-  .projects-gallery-title {
+  .project-gallery-title {
     position: relative;
     color: $main-color;
     top: 30px;
@@ -73,7 +73,8 @@
 @media screen and (max-width: 480px) {
   .portfolio {
     .project-title {
-      text-align: center;
+      margin-top: 1.2rem;
+     
     }
   }
 }
