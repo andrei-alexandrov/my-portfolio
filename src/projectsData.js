@@ -54,6 +54,12 @@ const projectsData = [
       { name: "Sass", className: "sass" },
     ],
     additionalDescription: `gsap, lottie-react, swiper, bootstrap, next-intl, react-icons, slick-carousel.`,
+
+    sourceCodeLink: {
+      url: "https://github.com/andrei-alexandrov/artist-portfolio",
+      icon: Github,
+    },
+
     buttonLink: {
       url: "https://www.iskra-vocal-coach.com/bg",
       buttonText: "Visit here",

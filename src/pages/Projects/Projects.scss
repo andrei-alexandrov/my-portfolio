@@ -49,6 +49,7 @@
     align-items: center;
     font-size: 1.8rem;
     color: $main-color;
+    margin-top: 10px;
   }
 
   .link-content img {
@@ -78,8 +79,17 @@
     }
 
     .project-title {
-      margin-top: 1.2rem;
+      margin-top: 5px;
       font-size: 28px;
+    }
+
+    .link-content {
+      position: relative;
+      top: 14px;
+    }
+
+    .project-gallery-title {
+      top: 50px;
     }
   }
 }
