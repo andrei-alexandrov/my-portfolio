@@ -104,7 +104,7 @@ export default function Contact() {
               )}
             </span>
 
-            <span style={{ color: "#fba61e", fontSize: "20px" }}>
+            <span style={{ color: "#fba61e", fontSize: "20px", textAlign: "center" }}>
               {isError && <div>Currently, sending messages is disabled. Reach out to me at andrei.alxv@gmail.com</div>}
             </span>
 
