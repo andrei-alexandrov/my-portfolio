@@ -138,7 +138,7 @@ export default function Skills() {
                 Schwarzmüller Udemy)
                 <br />
                 2022 - 2023: IT Talents training camp <br />
-                2020 - 2021: Software university {`(Java basics, 2 months)`}{" "}
+                2020 - 2021: Software university {`(Java basics)`}{" "}
                 <br />
                 2014 - 2016: Sofia University {`(Master: European Projects)`}{" "}
                 <br />
