@@ -126,7 +126,7 @@ export default function Skills() {
               />
             </div>
 
-            <div style={{lineHeight: "1.6rem"}}>
+            <div style={{ lineHeight: "1.6rem" }}>
               <span style={{ color: "#fba61e" }}>Education:</span>
               <div
                 className={classNames("global-text-description", {
@@ -134,10 +134,10 @@ export default function Skills() {
                   "global-text-description-light": !mode,
                 })}
               >
-                2024 React & TypeScript: The Practical Guide (Maximilian
+                2024 <span className="react">React</span> & <span className="typescript">TypeScript</span>: The Practical Guide (Maximilian
                 Schwarzmüller Udemy)
                 <br />
-                2022 - 2023: IT Talents training camp <br />
+                2022 - 2023: IT Talents training camp (<span className="react">React</span> & <span className="javascript">JavaScript</span> - basic and advanced) <br />
                 2020 - 2021: Software university {`(Java basics)`}{" "}
                 <br />
                 2014 - 2016: Sofia University {`(Master: European Projects)`}{" "}
@@ -150,7 +150,7 @@ export default function Skills() {
                 "global-text-description-dark": mode,
                 "global-text-description-light": !mode,
               })}>
-                2024 (March - July): <span style={{color: "#129dca"}}>EnduroSat AD </span><br />
+                2024 (March - July): <span style={{ color: "#129dca" }}>EnduroSat AD </span><br />
                 Junior Front-End Developer for Satellite Operation Systems
                 Engaged in the design and development of a next-generation
                 satellite operations platform capable of autonomously managing
