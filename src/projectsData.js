@@ -46,7 +46,7 @@ import Github from "./images/projects/github.png";
 
 const projectsData = [
   {
-    title: "1. Freelance project - artist portfolio",
+    title: "1. Freelance project - Vocal coach portfolio",
     description: `The portfolio was developed for a vocal and artist coach based in Sofia, Bulgaria.`,
     usedTechnologies: [
       { name: "TypeScript", className: "typescript" },
@@ -78,7 +78,7 @@ const projectsData = [
     title: "2. Sports Match",
     description: `My own idea for a website that helps people with shared interests to interact and participate together 
       in different sports. The website also provides an opportunity to choose the most convenient place for the desired 
-      activity in the respective city and neighborhood.`,
+      activity in the respective city and neighborhood.\n Comprehensive improvements and design changes are planned in the future.`,
     usedTechnologies: [
       { name: "JavaScript", className: "javascript" },
       { name: "React.js", className: "react" },

@@ -11,12 +11,10 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: $nav-font;
-            transition: transform 1s;
 
             &:hover {
                 cursor: pointer;
-                transform: scale(1.05);
-                font-weight: bold;
+                filter: brightness(1.2);
             }
         }
 

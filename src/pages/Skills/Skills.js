@@ -134,7 +134,7 @@ export default function Skills() {
                   "global-text-description-light": !mode,
                 })}
               >
-                2024 <span className="react">React</span> & <span className="typescript">TypeScript</span>: The Practical Guide (Maximilian
+                2024: <span className="react">React</span> & <span className="typescript">TypeScript</span>: The Practical Guide (Maximilian
                 Schwarzmüller Udemy)
                 <br />
                 2022 - 2023: IT Talents training camp (<span className="react">React</span> & <span className="javascript">JavaScript</span> - basic and advanced) <br />
@@ -150,13 +150,14 @@ export default function Skills() {
                 "global-text-description-dark": mode,
                 "global-text-description-light": !mode,
               })}>
+                2024 (October): Freelance project for a vocal coach from Sofia/Bulgaria, created with <span className="react">React</span>, <span className="typescript">TypeScript</span> and <span className="sass">SASS</span>.<br /><br />
                 2024 (March - July): <span style={{ color: "#129dca" }}>EnduroSat AD </span><br />
-                Junior Front-End Developer for Satellite Operation Systems
+                Junior Front-End developer for Satellite Operation Systems.
                 Engaged in the design and development of a next-generation
                 satellite operations platform capable of autonomously managing
                 hundreds of satellites.
-                Built efficient components within an Electron-based application
-                utilizing React.js and Node.js.
+                Built efficient components within an <span className="electron">Electron</span>-based application
+                using <span className="react">React</span>, <span className="node-js">Node.js</span>, <span className="sass">SASS</span> and <span className="redux">Redux</span>.
               </div>
               <br />
               <span style={{ color: "#fba61e" }}>Hobbies: </span>
