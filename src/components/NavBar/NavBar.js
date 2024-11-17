@@ -40,10 +40,10 @@ export default function CustomNavbar() {
           <Music />
           <Nav className="ms-auto nav-btns d-flex flex-row justify-content-center align-items-center mt-3">
             <Link spy={true} to="contact" smooth={true} duration={60} offset={115}>
-              <Button styleBtn="nav-btn" hasOnClick={false}>Contact me</Button>
+              <Button styleBtn="colored-btn" hasOnClick={false}>Contact me</Button>
             </Link>
             <a href="/pdf-files/Andrei_Alexandrov_CV.pdf" download aria-label="Download CV">
-              <Button styleBtn="nav-btn" hasOnClick={false}>Dowload CV</Button>
+              <Button styleBtn="colored-btn" hasOnClick={false}>Dowload CV</Button>
             </a>
           </Nav>
         </Navbar.Collapse>

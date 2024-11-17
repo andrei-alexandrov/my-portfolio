@@ -134,37 +134,54 @@ export default function Skills() {
                   "global-text-description-light": !mode,
                 })}
               >
-                2024: <span className="react">React</span> & <span className="typescript">TypeScript</span>: The Practical Guide (Maximilian
-                Schwarzmüller Udemy)
+                2024: <span className="react">React</span> &{" "}
+                <span className="typescript">TypeScript</span>: The Practical
+                Guide (Maximilian Schwarzmüller Udemy)
                 <br />
-                2022 - 2023: IT Talents training camp (<span className="react">React</span> & <span className="javascript">JavaScript</span> - basic and advanced) <br />
-                2020 - 2021: Software university {`(Java basics)`}{" "}
-                <br />
+                2022 - 2023: IT Talents training camp (
+                <span className="react">React</span> &{" "}
+                <span className="javascript">JavaScript</span> - basic and
+                advanced) <br />
+                2020 - 2021: Software university {`(Java basics)`} <br />
                 2014 - 2016: Sofia University {`(Master: European Projects)`}{" "}
                 <br />
                 2008 - 2012: Sofia University {`(Bachelor: European Studies)`}
               </div>
               <br />
               <span style={{ color: "#fba61e" }}>Experience: </span>
-              <div className={classNames("global-text-description", {
-                "global-text-description-dark": mode,
-                "global-text-description-light": !mode,
-              })}>
-                2024 (October): Freelance project for a vocal coach from Sofia/Bulgaria, created with <span className="react">React</span>, <span className="typescript">TypeScript</span> and <span className="sass">SASS</span>.<br /><br />
-                2024 (March - July): <span style={{ color: "#129dca" }}>EnduroSat AD </span><br />
+              <div
+                className={classNames("global-text-description", {
+                  "global-text-description-dark": mode,
+                  "global-text-description-light": !mode,
+                })}
+              >
+                2024 (October): Freelance project for a vocal coach from
+                Sofia/Bulgaria, created with{" "}
+                <span className="react">React</span>,{" "}
+                <span className="typescript">TypeScript</span> and{" "}
+                <span className="sass">SASS</span>.<br />
+                <br />
+                2024 (March - July):{" "}
+                <span style={{ color: "#129dca" }}>EnduroSat AD </span>
+                <br />
                 Junior Front-End developer for Satellite Operation Systems.
                 Engaged in the design and development of a next-generation
                 satellite operations platform capable of autonomously managing
-                hundreds of satellites.
-                Built efficient components within an <span className="electron">Electron</span>-based application
-                using <span className="react">React</span>, <span className="node-js">Node.js</span>, <span className="sass">SASS</span> and <span className="redux">Redux</span>.
+                hundreds of satellites. Built efficient components within an{" "}
+                <span className="">Electron</span>-based application using{" "}
+                <span className="react">React</span>,{" "}
+                <span className="node-js">Node.js</span>,{" "}
+                <span className="sass">SASS</span> and{" "}
+                <span className="redux">Redux</span>.
               </div>
               <br />
               <span style={{ color: "#fba61e" }}>Hobbies: </span>
-              <div className={classNames("global-text-description", {
-                "global-text-description-dark": mode,
-                "global-text-description-light": !mode,
-              })}>
+              <div
+                className={classNames("global-text-description", {
+                  "global-text-description-dark": mode,
+                  "global-text-description-light": !mode,
+                })}
+              >
                 Movie music composer {`(digital piano)`}
                 <br />
                 Badminton, Table tennis <br />
@@ -180,13 +197,13 @@ export default function Skills() {
                 duration={60}
                 offset={115}
               >
-                <Button styleBtn="contact-btn" hasOnClick={false}>
+                <Button style={{marginLeft: "20px"}} styleBtn="skills-colored-btn" hasOnClick={false}>
                   Contact me
-                </Button>
+                </Button> 
               </Link>
 
               <a href="/pdf-files/Andrei_Alexandrov_CV.pdf" download>
-                <Button styleBtn="contact-btn" hasOnClick={false}>
+                <Button styleBtn="skills-colored-btn" hasOnClick={false}>
                   Download CV
                 </Button>
               </a>
