@@ -65,17 +65,17 @@ const projectsData = [
       buttonText: "Visit here",
     },
     images: [
-      ArtistIntro,
-      ArtistGallery,
-      ArtistAboutOne,
       ArtistContacts,
+      ArtistIntro,
       ArtistAboutTwo,
       ArtistActivities,
       ArtistCourses,
+      ArtistGallery,
+      ArtistAboutOne,
     ],
   },
   {
-    title: "2. Sports Match",
+    title: "2. Sports Match (rework in progress)",
     description: `My own idea for a website that helps people with shared interests to interact and participate together 
       in different sports. The website also provides an opportunity to choose the most convenient place for the desired 
       activity in the respective city and neighborhood.\n Comprehensive improvements and design changes are planned in the future.`,
@@ -91,13 +91,13 @@ const projectsData = [
       icon: Github,
     },
     images: [
-      HomeScreen,
       BuddySearch,
       ChatPage,
       LoginPage,
       ProfilePage,
       ActivitiesPage,
       PlacesPage,
+      HomeScreen,
     ],
   },
 
@@ -116,10 +116,10 @@ const projectsData = [
       icon: Github,
     },
     images: [
-      CocktailsStartingPage,
       CocktailsHomePage,
       CocktailsFavoritesPage,
       CocktailsDetailsPage,
+      CocktailsStartingPage,
     ],
     buttonLink: {
       url: "https://cocktail-site-andrei.netlify.app/",
@@ -140,7 +140,7 @@ const projectsData = [
       url: "https://github.com/andrei-alexandrov/imdb-next.js",
       icon: Github,
     },
-    images: [imdbImageOne, imdbImageTwo, imdbImageThree],
+    images: [imdbImageOne, imdbImageThree, imdbImageTwo],
     buttonLink: {
       url: "https://imdb-next-js-andrei-alexandrov.vercel.app/",
       buttonText: "Visit here",
@@ -160,7 +160,7 @@ const projectsData = [
       url: "https://github.com/andrei-alexandrov/countdown-game",
       icon: Github,
     },
-    images: [CountdownGame, CountdownGameWin, CountdownGameLoss],
+    images: [CountdownGameWin, CountdownGameLoss, CountdownGame],
     buttonLink: {
       url: "https://countdown-timer-game.netlify.app/",
       buttonText: "Play here",
@@ -202,7 +202,7 @@ const projectsData = [
       url: "https://github.com/andrei-alexandrov/my-portfolio",
       icon: Github,
     },
-    images: [StartingPage, About, Skills],
+    images: [About, Skills, StartingPage],
   },
 ];
 

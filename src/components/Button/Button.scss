@@ -1,37 +1,42 @@
 @import "../../mixins";
 
 .colored-btn {
-    @include coloredButton();
-    font-size: 0.9rem;
-    margin-left: 10px;
+  @include coloredButton();
+  font-size: 0.9rem;
+  margin-left: 10px;
 }
 
 .skills-colored-btn {
-    @include coloredButton();
-    position: relative;
-    font-size: 0.9rem;
+  @include coloredButton();
+  position: relative;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .skills-colored-btn {
     right: 12px;
-    margin-left: 10px;
-    margin-top: 5px;
+  }
 }
 
 .cocktail-btn {
-    @include coloredButton();
-    width: 16rem;
-    height: 2.8rem;
-    color: black;
-    font-family: "Gumela", sans-serif;
+  @include coloredButton();
+  width: 16rem;
+  height: 2.8rem;
+  color: black;
+  font-family: "Gumela", sans-serif;
 }
 
 .default-contact-btn {
-    @include button();
-    font-size: 14px;
-    margin-top: 1rem;
-    margin-right: 5px;
+  @include button();
+  font-size: 14px;
+  margin-top: 1rem;
+  margin-right: 5px;
 }
 
 .project-play-btn {
-    @include coloredButton();
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  @include coloredButton();
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
